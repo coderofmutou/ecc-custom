@@ -1,0 +1,17 @@
+{
+  "name": "ecc-dependency-graph-tools",
+  "private": true,
+  "description": "ECC 依赖关系图谱工具(仅限本目录内部使用,不影响仓库根目录 package.json / npm test)",
+  "scripts": {
+    "generate:rules": "node scripts/generate-rule-registry.js --write",
+    "generate:skills": "node scripts/generate-skill-registry.js --write",
+    "generate:agents": "node scripts/generate-agent-registry.js --write",
+    "generate:hooks": "node scripts/generate-hook-registry.js --write",
+    "generate:graph": "node scripts/relationship-graph.js --write",
+    "generate:all": "npm run generate:rules && npm run generate:skills && npm run generate:agents && npm run generate:hooks && npm run generate:graph",
+    "render": "node scripts/relationship-render.js --write",
+    "refresh": "npm run generate:all && npm run render",
+    "query:orphans": "node scripts/relationship-query.js orphans",
+    "test": "node scripts/self-test.js"
+  }
+}

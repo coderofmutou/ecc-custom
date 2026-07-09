@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "totalHooks": 29,
+  "hooks": [
+    {
+      "id": "pre:bash:dispatcher",
+      "event": "PreToolUse",
+      "matcher": "Bash",
+      "description": "Consolidated Bash preflight dispatcher for quality, tmux, push, and GateGuard checks",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/pre-bash-dispatcher.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:write:doc-file-warning",
+      "event": "PreToolUse",
+      "matcher": "Write",
+      "description": "Doc file warning: warn about non-standard documentation files (exit code 0; warns only)",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/doc-file-warning.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:edit-write:suggest-compact",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "description": "Suggest manual compaction at logical intervals",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/suggest-compact.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:observe:continuous-learning",
+      "event": "PreToolUse",
+      "matcher": "*",
+      "description": "Capture tool use observations for continuous learning",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/observe-runner.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:governance-capture",
+      "event": "PreToolUse",
+      "matcher": "Bash|Write|Edit|MultiEdit",
+      "description": "Capture governance events (secrets, policy violations, approval requests). Enable with ECC_GOVERNANCE_CAPTURE=1",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/governance-capture.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:config-protection",
+      "event": "PreToolUse",
+      "matcher": "Write|Edit|MultiEdit",
+      "description": "Block modifications to linter/formatter config files. Steers agent to fix code instead of weakening configs.",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/config-protection.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:mcp-health-check",
+      "event": "PreToolUse",
+      "matcher": "*",
+      "description": "Check MCP server health before MCP tool execution and block unhealthy MCP calls",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/mcp-health-check.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:edit-write:gateguard-fact-force",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write|MultiEdit",
+      "description": "Fact-forcing gate: block first Edit/Write/MultiEdit per file and demand investigation (importers, data schemas, user instruction) before allowing",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/gateguard-fact-force.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "pre:compact",
+      "event": "PreCompact",
+      "matcher": "*",
+      "description": "Save state before context compaction",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/pre-compact.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "session:start",
+      "event": "SessionStart",
+      "matcher": "*",
+      "description": "Load previous context and detect package manager on new session",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/session-start-bootstrap.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:bash:dispatcher",
+      "event": "PostToolUse",
+      "matcher": "Bash",
+      "description": "Consolidated Bash postflight dispatcher for logging, PR, and build notifications",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/post-bash-dispatcher.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:quality-gate",
+      "event": "PostToolUse",
+      "matcher": "Edit|Write|MultiEdit",
+      "description": "Run quality gate checks after file edits",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/quality-gate.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:edit:design-quality-check",
+      "event": "PostToolUse",
+      "matcher": "Edit|Write|MultiEdit",
+      "description": "Warn when frontend edits drift toward generic template-looking UI",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/design-quality-check.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:edit:accumulator",
+      "event": "PostToolUse",
+      "matcher": "Edit|Write|MultiEdit",
+      "description": "Record edited JS/TS file paths for batch format+typecheck at Stop time",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/post-edit-accumulator.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:edit:console-warn",
+      "event": "PostToolUse",
+      "matcher": "Edit",
+      "description": "Warn about console.log statements after edits",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/post-edit-console-warn.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:governance-capture",
+      "event": "PostToolUse",
+      "matcher": "Bash|Write|Edit|MultiEdit",
+      "description": "Capture governance events from tool outputs. Enable with ECC_GOVERNANCE_CAPTURE=1",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/governance-capture.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:session-activity-tracker",
+      "event": "PostToolUse",
+      "matcher": "*",
+      "description": "Track per-session tool calls and file activity for ECC2 metrics",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/session-activity-tracker.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:observe:continuous-learning",
+      "event": "PostToolUse",
+      "matcher": "*",
+      "description": "Capture tool use results for continuous learning",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/observe-runner.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:ecc-metrics-bridge",
+      "event": "PostToolUse",
+      "matcher": "*",
+      "description": "Maintain running session metrics aggregate for statusline and context monitor",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/ecc-metrics-bridge.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:ecc-context-monitor",
+      "event": "PostToolUse",
+      "matcher": "*",
+      "description": "Inject agent warnings on context exhaustion, high cost, scope creep, or tool loops",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/ecc-context-monitor.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "post:mcp-health-check",
+      "event": "PostToolUseFailure",
+      "matcher": "*",
+      "description": "Track failed MCP tool calls, mark unhealthy servers, and attempt reconnect",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/mcp-health-check.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "stop:format-typecheck",
+      "event": "Stop",
+      "matcher": "*",
+      "description": "Batch format (Biome/Prettier) and typecheck (tsc) all JS/TS files edited this response — runs once at Stop instead of after every Edit",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/stop-format-typecheck.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "stop:check-console-log",
+      "event": "Stop",
+      "matcher": "*",
+      "description": "Check for console.log in modified files after each response",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/check-console-log.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "stop:session-end",
+      "event": "Stop",
+      "matcher": "*",
+      "description": "Persist session state after each response (Stop carries transcript_path)",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/session-end.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "stop:evaluate-session",
+      "event": "Stop",
+      "matcher": "*",
+      "description": "Evaluate session for extractable patterns",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/evaluate-session.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "stop:cost-tracker",
+      "event": "Stop",
+      "matcher": "*",
+      "description": "Track token and cost metrics per session",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/cost-tracker.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "stop:desktop-notify",
+      "event": "Stop",
+      "matcher": "*",
+      "description": "Send desktop notification (macOS/WSL) with task summary when Claude responds",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/desktop-notify.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "session:end:marker",
+      "event": "SessionEnd",
+      "matcher": "*",
+      "description": "Session end lifecycle marker (non-blocking)",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/session-end-marker.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "session:end",
+      "event": "SessionEnd",
+      "matcher": null,
+      "description": "Persist session-end summaries when transcript metadata is available.",
+      "sourceFile": "hooks/memory-persistence/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/session-end.js",
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "brokenScriptReferences": []
+  }
+}

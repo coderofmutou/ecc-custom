@@ -1,0 +1,12 @@
+{
+  "_readme": ".claude/skills/dependency-graph 的人工覆盖配置。suppress 用来移除 generator 误判出来的边(比如某个加粗词恰好跟真实的 skill/agent 名字撞了,但其实不是真的引用);manual 用来补充静态扫描识别不出来、但确实存在的引用。两者都是可选的,默认都是空数组。",
+  "suppress": [
+    {
+      "from": "skill:plan-orchestrate",
+      "to": "agent:reviewer-class",
+      "type": "references_agent",
+      "note": "plan-orchestrate 文档里的 'reviewer-class agent' 是描述性类别(如 <lang>-reviewer/code-reviewer/security-reviewer/database-reviewer),不是某个具体 agent"
+    }
+  ],
+  "manual": []
+}

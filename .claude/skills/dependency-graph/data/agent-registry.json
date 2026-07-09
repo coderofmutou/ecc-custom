@@ -1,0 +1,650 @@
+{
+  "schemaVersion": 1,
+  "totalAgents": 67,
+  "agents": [
+    {
+      "agent": "a11y-architect",
+      "path": "agents/a11y-architect.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "agent-evaluator",
+      "path": "agents/agent-evaluator.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "agent-self-evaluation"
+      ]
+    },
+    {
+      "agent": "architect",
+      "path": "agents/architect.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "build-error-resolver",
+      "path": "agents/build-error-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "chief-of-staff",
+      "path": "agents/chief-of-staff.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\", \"Write\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "code-architect",
+      "path": "agents/code-architect.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep, Glob, Bash]",
+      "agents": [
+        "architect"
+      ],
+      "skills": []
+    },
+    {
+      "agent": "code-explorer",
+      "path": "agents/code-explorer.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep, Glob]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "code-reviewer",
+      "path": "agents/code-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "code-simplifier",
+      "path": "agents/code-simplifier.md",
+      "model": "sonnet",
+      "tools": "[Read, Write, Edit, Bash, Grep, Glob]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "comment-analyzer",
+      "path": "agents/comment-analyzer.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep, Glob]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "conversation-analyzer",
+      "path": "agents/conversation-analyzer.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "cpp-build-resolver",
+      "path": "agents/cpp-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "cpp-coding-standards"
+      ]
+    },
+    {
+      "agent": "cpp-reviewer",
+      "path": "agents/cpp-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "cpp-coding-standards"
+      ]
+    },
+    {
+      "agent": "csharp-reviewer",
+      "path": "agents/csharp-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "csharp-testing",
+        "dotnet-patterns"
+      ]
+    },
+    {
+      "agent": "dart-build-resolver",
+      "path": "agents/dart-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "flutter-dart-code-review"
+      ]
+    },
+    {
+      "agent": "database-reviewer",
+      "path": "agents/database-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "django-build-resolver",
+      "path": "agents/django-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "django-patterns",
+        "django-security"
+      ]
+    },
+    {
+      "agent": "django-reviewer",
+      "path": "agents/django-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "django-patterns",
+        "django-security",
+        "django-tdd"
+      ]
+    },
+    {
+      "agent": "doc-updater",
+      "path": "agents/doc-updater.md",
+      "model": "haiku",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "docs-lookup",
+      "path": "agents/docs-lookup.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"mcp__context7__resolve-library-id\", \"mcp__context7__query-docs\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "e2e-runner",
+      "path": "agents/e2e-runner.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "e2e-testing"
+      ]
+    },
+    {
+      "agent": "fastapi-reviewer",
+      "path": "agents/fastapi-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "flutter-reviewer",
+      "path": "agents/flutter-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "fsharp-reviewer",
+      "path": "agents/fsharp-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "dotnet-patterns",
+        "fsharp-testing"
+      ]
+    },
+    {
+      "agent": "gan-evaluator",
+      "path": "agents/gan-evaluator.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Write\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "gan-generator",
+      "path": "agents/gan-generator.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "gan-planner",
+      "path": "agents/gan-planner.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Write\", \"Grep\", \"Glob\"]",
+      "agents": [
+        "planner"
+      ],
+      "skills": []
+    },
+    {
+      "agent": "go-build-resolver",
+      "path": "agents/go-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "golang-patterns"
+      ]
+    },
+    {
+      "agent": "go-reviewer",
+      "path": "agents/go-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "golang-patterns"
+      ]
+    },
+    {
+      "agent": "harmonyos-app-resolver",
+      "path": "agents/harmonyos-app-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "harness-optimizer",
+      "path": "agents/harness-optimizer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "healthcare-reviewer",
+      "path": "agents/healthcare-reviewer.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "homelab-architect",
+      "path": "agents/homelab-architect.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "java-build-resolver",
+      "path": "agents/java-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "quarkus-patterns",
+        "springboot-patterns"
+      ]
+    },
+    {
+      "agent": "java-reviewer",
+      "path": "agents/java-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "quarkus-patterns",
+        "springboot-patterns"
+      ]
+    },
+    {
+      "agent": "kotlin-build-resolver",
+      "path": "agents/kotlin-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "kotlin-patterns"
+      ]
+    },
+    {
+      "agent": "kotlin-reviewer",
+      "path": "agents/kotlin-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "loop-operator",
+      "path": "agents/loop-operator.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "marketing-agent",
+      "path": "agents/marketing-agent.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"WebSearch\", \"WebFetch\"]",
+      "agents": [],
+      "skills": [
+        "marketing-campaign"
+      ]
+    },
+    {
+      "agent": "mle-reviewer",
+      "path": "agents/mle-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "mle-workflow"
+      ]
+    },
+    {
+      "agent": "network-architect",
+      "path": "agents/network-architect.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "network-config-reviewer",
+      "path": "agents/network-config-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "network-troubleshooter",
+      "path": "agents/network-troubleshooter.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Bash\", \"Grep\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "opensource-forker",
+      "path": "agents/opensource-forker.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "opensource-packager",
+      "path": "agents/opensource-packager.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "opensource-sanitizer",
+      "path": "agents/opensource-sanitizer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "performance-optimizer",
+      "path": "agents/performance-optimizer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "php-reviewer",
+      "path": "agents/php-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "planner",
+      "path": "agents/planner.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "pr-test-analyzer",
+      "path": "agents/pr-test-analyzer.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep, Glob, Bash]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "python-reviewer",
+      "path": "agents/python-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "python-patterns"
+      ]
+    },
+    {
+      "agent": "pytorch-build-resolver",
+      "path": "agents/pytorch-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "react-build-resolver",
+      "path": "agents/react-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [
+        "react-reviewer"
+      ],
+      "skills": [
+        "frontend-patterns",
+        "react-patterns"
+      ]
+    },
+    {
+      "agent": "react-reviewer",
+      "path": "agents/react-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "accessibility",
+        "react-patterns",
+        "react-testing"
+      ]
+    },
+    {
+      "agent": "refactor-cleaner",
+      "path": "agents/refactor-cleaner.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "rust-build-resolver",
+      "path": "agents/rust-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "rust-patterns"
+      ]
+    },
+    {
+      "agent": "rust-reviewer",
+      "path": "agents/rust-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "rust-patterns"
+      ]
+    },
+    {
+      "agent": "security-reviewer",
+      "path": "agents/security-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "security-review"
+      ]
+    },
+    {
+      "agent": "seo-specialist",
+      "path": "agents/seo-specialist.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"WebSearch\", \"WebFetch\"]",
+      "agents": [],
+      "skills": [
+        "seo"
+      ]
+    },
+    {
+      "agent": "silent-failure-hunter",
+      "path": "agents/silent-failure-hunter.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep, Glob, Bash]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "spec-miner",
+      "path": "agents/spec-miner.md",
+      "model": "opus",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Write\"]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "swift-build-resolver",
+      "path": "agents/swift-build-resolver.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "agents": [],
+      "skills": [
+        "swift-concurrency-6-2"
+      ]
+    },
+    {
+      "agent": "swift-reviewer",
+      "path": "agents/swift-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "swift-concurrency-6-2"
+      ]
+    },
+    {
+      "agent": "tdd-guide",
+      "path": "agents/tdd-guide.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\"]",
+      "agents": [],
+      "skills": [
+        "tdd-workflow"
+      ]
+    },
+    {
+      "agent": "type-design-analyzer",
+      "path": "agents/type-design-analyzer.md",
+      "model": "sonnet",
+      "tools": "[Read, Grep, Glob]",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "agent": "typescript-reviewer",
+      "path": "agents/typescript-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [
+        "react-reviewer"
+      ],
+      "skills": []
+    },
+    {
+      "agent": "vue-reviewer",
+      "path": "agents/vue-reviewer.md",
+      "model": "sonnet",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
+      "agents": [],
+      "skills": [
+        "vue-patterns"
+      ]
+    }
+  ],
+  "statistics": {
+    "skillUsage": {
+      "accessibility": 1,
+      "agent-self-evaluation": 1,
+      "cpp-coding-standards": 2,
+      "csharp-testing": 1,
+      "django-patterns": 2,
+      "django-security": 2,
+      "django-tdd": 1,
+      "dotnet-patterns": 2,
+      "e2e-testing": 1,
+      "flutter-dart-code-review": 1,
+      "frontend-patterns": 1,
+      "fsharp-testing": 1,
+      "golang-patterns": 2,
+      "kotlin-patterns": 1,
+      "marketing-campaign": 1,
+      "mle-workflow": 1,
+      "python-patterns": 1,
+      "quarkus-patterns": 2,
+      "react-patterns": 2,
+      "react-testing": 1,
+      "rust-patterns": 2,
+      "security-review": 1,
+      "seo": 1,
+      "springboot-patterns": 2,
+      "swift-concurrency-6-2": 2,
+      "tdd-workflow": 1,
+      "vue-patterns": 1
+    },
+    "agentUsage": {
+      "architect": 1,
+      "planner": 1,
+      "react-reviewer": 2
+    }
+  }
+}

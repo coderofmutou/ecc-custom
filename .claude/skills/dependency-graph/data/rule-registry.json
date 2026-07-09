@@ -1,0 +1,1778 @@
+{
+  "schemaVersion": 1,
+  "totalRules": 122,
+  "rules": [
+    {
+      "rule": "README.md",
+      "path": "rules/README.md",
+      "paths": [],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "angular/coding-style.md",
+      "path": "rules/angular/coding-style.md",
+      "paths": [
+        "**/*.component.ts",
+        "**/*.component.html",
+        "**/*.service.ts",
+        "**/*.directive.ts",
+        "**/*.pipe.ts",
+        "**/*.guard.ts",
+        "**/*.resolver.ts",
+        "**/*.module.ts"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "angular/hooks.md",
+      "path": "rules/angular/hooks.md",
+      "paths": [
+        "**/*.component.ts",
+        "**/*.component.html",
+        "**/*.service.ts",
+        "**/*.directive.ts",
+        "**/*.pipe.ts",
+        "**/*.spec.ts"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "angular/patterns.md",
+      "path": "rules/angular/patterns.md",
+      "paths": [
+        "**/*.component.ts",
+        "**/*.component.html",
+        "**/*.service.ts",
+        "**/*.store.ts",
+        "**/*.routes.ts"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "angular-developer"
+      ]
+    },
+    {
+      "rule": "angular/security.md",
+      "path": "rules/angular/security.md",
+      "paths": [
+        "**/*.component.ts",
+        "**/*.component.html",
+        "**/*.service.ts",
+        "**/*.interceptor.ts"
+      ],
+      "extends": "common/security.md",
+      "agents": [
+        "security-reviewer"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "angular/testing.md",
+      "path": "rules/angular/testing.md",
+      "paths": [
+        "**/*.spec.ts",
+        "**/*.test.ts"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "angular-developer"
+      ]
+    },
+    {
+      "rule": "arkts/coding-style.md",
+      "path": "rules/arkts/coding-style.md",
+      "paths": [
+        "**/*.ets",
+        "**/*.ts",
+        "**/module.json5",
+        "**/oh-package.json5",
+        "**/build-profile.json5"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "arkts/hooks.md",
+      "path": "rules/arkts/hooks.md",
+      "paths": [
+        "**/*.ets",
+        "**/*.ts",
+        "**/module.json5",
+        "**/oh-package.json5"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "arkts/patterns.md",
+      "path": "rules/arkts/patterns.md",
+      "paths": [
+        "**/*.ets",
+        "**/*.ts"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "arkts/security.md",
+      "path": "rules/arkts/security.md",
+      "paths": [
+        "**/*.ets",
+        "**/*.ts",
+        "**/module.json5"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "arkts/testing.md",
+      "path": "rules/arkts/testing.md",
+      "paths": [
+        "**/*.ets",
+        "**/*.ts",
+        "**/ohosTest/**"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "common/agents.md",
+      "path": "rules/common/agents.md",
+      "paths": [],
+      "extends": null,
+      "agents": [
+        "architect",
+        "code-reviewer",
+        "planner",
+        "tdd-guide"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "common/code-review.md",
+      "path": "rules/common/code-review.md",
+      "paths": [],
+      "extends": null,
+      "agents": [
+        "code-reviewer",
+        "go-reviewer",
+        "python-reviewer",
+        "rust-reviewer",
+        "security-reviewer",
+        "typescript-reviewer"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "common/coding-style.md",
+      "path": "rules/common/coding-style.md",
+      "paths": [],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "common/development-workflow.md",
+      "path": "rules/common/development-workflow.md",
+      "paths": [],
+      "extends": "common/git-workflow.md",
+      "agents": [
+        "code-reviewer",
+        "planner",
+        "tdd-guide"
+      ],
+      "skills": [
+        "git-workflow"
+      ]
+    },
+    {
+      "rule": "common/git-workflow.md",
+      "path": "rules/common/git-workflow.md",
+      "paths": [],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "common/hooks.md",
+      "path": "rules/common/hooks.md",
+      "paths": [],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "common/patterns.md",
+      "path": "rules/common/patterns.md",
+      "paths": [],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "common/performance.md",
+      "path": "rules/common/performance.md",
+      "paths": [],
+      "extends": null,
+      "agents": [
+        "build-error-resolver"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "common/security.md",
+      "path": "rules/common/security.md",
+      "paths": [],
+      "extends": null,
+      "agents": [
+        "security-reviewer"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "common/testing.md",
+      "path": "rules/common/testing.md",
+      "paths": [],
+      "extends": null,
+      "agents": [
+        "tdd-guide"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "cpp/coding-style.md",
+      "path": "rules/cpp/coding-style.md",
+      "paths": [
+        "**/*.cpp",
+        "**/*.hpp",
+        "**/*.cc",
+        "**/*.hh",
+        "**/*.cxx",
+        "**/*.h",
+        "**/CMakeLists.txt"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "cpp-coding-standards"
+      ]
+    },
+    {
+      "rule": "cpp/hooks.md",
+      "path": "rules/cpp/hooks.md",
+      "paths": [
+        "**/*.cpp",
+        "**/*.hpp",
+        "**/*.cc",
+        "**/*.hh",
+        "**/*.cxx",
+        "**/*.h",
+        "**/CMakeLists.txt"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "cpp/patterns.md",
+      "path": "rules/cpp/patterns.md",
+      "paths": [
+        "**/*.cpp",
+        "**/*.hpp",
+        "**/*.cc",
+        "**/*.hh",
+        "**/*.cxx",
+        "**/*.h",
+        "**/CMakeLists.txt"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "cpp-coding-standards"
+      ]
+    },
+    {
+      "rule": "cpp/security.md",
+      "path": "rules/cpp/security.md",
+      "paths": [
+        "**/*.cpp",
+        "**/*.hpp",
+        "**/*.cc",
+        "**/*.hh",
+        "**/*.cxx",
+        "**/*.h",
+        "**/CMakeLists.txt"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "cpp-coding-standards"
+      ]
+    },
+    {
+      "rule": "cpp/testing.md",
+      "path": "rules/cpp/testing.md",
+      "paths": [
+        "**/*.cpp",
+        "**/*.hpp",
+        "**/*.cc",
+        "**/*.hh",
+        "**/*.cxx",
+        "**/*.h",
+        "**/CMakeLists.txt"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "cpp-testing"
+      ]
+    },
+    {
+      "rule": "csharp/coding-style.md",
+      "path": "rules/csharp/coding-style.md",
+      "paths": [
+        "**/*.cs",
+        "**/*.csx"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "csharp/hooks.md",
+      "path": "rules/csharp/hooks.md",
+      "paths": [
+        "**/*.cs",
+        "**/*.csx",
+        "**/*.csproj",
+        "**/*.sln",
+        "**/Directory.Build.props",
+        "**/Directory.Build.targets"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "csharp/patterns.md",
+      "path": "rules/csharp/patterns.md",
+      "paths": [
+        "**/*.cs",
+        "**/*.csx"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "csharp/security.md",
+      "path": "rules/csharp/security.md",
+      "paths": [
+        "**/*.cs",
+        "**/*.csx",
+        "**/*.csproj",
+        "**/appsettings*.json"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "security-review"
+      ]
+    },
+    {
+      "rule": "csharp/testing.md",
+      "path": "rules/csharp/testing.md",
+      "paths": [
+        "**/*.cs",
+        "**/*.csx",
+        "**/*.csproj"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "dart/coding-style.md",
+      "path": "rules/dart/coding-style.md",
+      "paths": [
+        "**/*.dart",
+        "**/pubspec.yaml",
+        "**/analysis_options.yaml"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "dart/hooks.md",
+      "path": "rules/dart/hooks.md",
+      "paths": [
+        "**/*.dart",
+        "**/pubspec.yaml",
+        "**/analysis_options.yaml"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "dart/patterns.md",
+      "path": "rules/dart/patterns.md",
+      "paths": [
+        "**/*.dart",
+        "**/pubspec.yaml"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "compose-multiplatform-patterns",
+        "flutter-dart-code-review"
+      ]
+    },
+    {
+      "rule": "dart/security.md",
+      "path": "rules/dart/security.md",
+      "paths": [
+        "**/*.dart",
+        "**/pubspec.yaml",
+        "**/AndroidManifest.xml",
+        "**/Info.plist"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "dart/testing.md",
+      "path": "rules/dart/testing.md",
+      "paths": [
+        "**/*.dart",
+        "**/pubspec.yaml",
+        "**/analysis_options.yaml"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "fsharp/coding-style.md",
+      "path": "rules/fsharp/coding-style.md",
+      "paths": [
+        "**/*.fs",
+        "**/*.fsx"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "fsharp/hooks.md",
+      "path": "rules/fsharp/hooks.md",
+      "paths": [
+        "**/*.fs",
+        "**/*.fsx",
+        "**/*.fsproj",
+        "**/*.sln",
+        "**/*.slnx",
+        "**/Directory.Build.props",
+        "**/Directory.Build.targets"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "fsharp/patterns.md",
+      "path": "rules/fsharp/patterns.md",
+      "paths": [
+        "**/*.fs",
+        "**/*.fsx"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "fsharp/security.md",
+      "path": "rules/fsharp/security.md",
+      "paths": [
+        "**/*.fs",
+        "**/*.fsx",
+        "**/*.fsproj",
+        "**/appsettings*.json"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "security-review"
+      ]
+    },
+    {
+      "rule": "fsharp/testing.md",
+      "path": "rules/fsharp/testing.md",
+      "paths": [
+        "**/*.fs",
+        "**/*.fsx",
+        "**/*.fsproj"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "golang/coding-style.md",
+      "path": "rules/golang/coding-style.md",
+      "paths": [
+        "**/*.go",
+        "**/go.mod",
+        "**/go.sum"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "golang-patterns"
+      ]
+    },
+    {
+      "rule": "golang/hooks.md",
+      "path": "rules/golang/hooks.md",
+      "paths": [
+        "**/*.go",
+        "**/go.mod",
+        "**/go.sum"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "golang/patterns.md",
+      "path": "rules/golang/patterns.md",
+      "paths": [
+        "**/*.go",
+        "**/go.mod",
+        "**/go.sum"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "golang-patterns"
+      ]
+    },
+    {
+      "rule": "golang/security.md",
+      "path": "rules/golang/security.md",
+      "paths": [
+        "**/*.go",
+        "**/go.mod",
+        "**/go.sum"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "golang/testing.md",
+      "path": "rules/golang/testing.md",
+      "paths": [
+        "**/*.go",
+        "**/go.mod",
+        "**/go.sum"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "golang-testing"
+      ]
+    },
+    {
+      "rule": "java/coding-style.md",
+      "path": "rules/java/coding-style.md",
+      "paths": [
+        "**/*.java"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "java-coding-standards",
+        "jpa-patterns"
+      ]
+    },
+    {
+      "rule": "java/hooks.md",
+      "path": "rules/java/hooks.md",
+      "paths": [
+        "**/*.java",
+        "**/pom.xml",
+        "**/build.gradle",
+        "**/build.gradle.kts"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "java/patterns.md",
+      "path": "rules/java/patterns.md",
+      "paths": [
+        "**/*.java"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "jpa-patterns",
+        "quarkus-patterns",
+        "springboot-patterns"
+      ]
+    },
+    {
+      "rule": "java/security.md",
+      "path": "rules/java/security.md",
+      "paths": [
+        "**/*.java"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "quarkus-security",
+        "security-review",
+        "springboot-security"
+      ]
+    },
+    {
+      "rule": "java/testing.md",
+      "path": "rules/java/testing.md",
+      "paths": [
+        "**/*.java"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "java-coding-standards",
+        "quarkus-tdd",
+        "springboot-tdd"
+      ]
+    },
+    {
+      "rule": "kotlin/coding-style.md",
+      "path": "rules/kotlin/coding-style.md",
+      "paths": [
+        "**/*.kt",
+        "**/*.kts"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "kotlin/hooks.md",
+      "path": "rules/kotlin/hooks.md",
+      "paths": [
+        "**/*.kt",
+        "**/*.kts",
+        "**/build.gradle.kts"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "kotlin/patterns.md",
+      "path": "rules/kotlin/patterns.md",
+      "paths": [
+        "**/*.kt",
+        "**/*.kts"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "android-clean-architecture",
+        "kotlin-coroutines-flows"
+      ]
+    },
+    {
+      "rule": "kotlin/security.md",
+      "path": "rules/kotlin/security.md",
+      "paths": [
+        "**/*.kt",
+        "**/*.kts"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "kotlin/testing.md",
+      "path": "rules/kotlin/testing.md",
+      "paths": [
+        "**/*.kt",
+        "**/*.kts"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "nuxt/coding-style.md",
+      "path": "rules/nuxt/coding-style.md",
+      "paths": [
+        "**/nuxt.config.*",
+        "**/app.config.*",
+        "**/app.vue",
+        "**/pages/**",
+        "**/layouts/**",
+        "**/middleware/**"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "nuxt/hooks.md",
+      "path": "rules/nuxt/hooks.md",
+      "paths": [
+        "**/nuxt.config.*",
+        "**/app.config.*",
+        "**/server/**/*.ts",
+        "**/*.vue"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "nuxt/patterns.md",
+      "path": "rules/nuxt/patterns.md",
+      "paths": [
+        "**/nuxt.config.*",
+        "**/app.config.*",
+        "**/app.vue",
+        "**/server/**/*.ts",
+        "**/pages/**",
+        "**/middleware/**"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "nuxt/security.md",
+      "path": "rules/nuxt/security.md",
+      "paths": [
+        "**/nuxt.config.*",
+        "**/app.config.*",
+        "**/server/**/*.ts"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "security-review"
+      ]
+    },
+    {
+      "rule": "nuxt/testing.md",
+      "path": "rules/nuxt/testing.md",
+      "paths": [
+        "**/nuxt.config.*",
+        "**/server/**/*.ts",
+        "**/pages/**",
+        "**/layouts/**",
+        "**/middleware/**"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "perl/coding-style.md",
+      "path": "rules/perl/coding-style.md",
+      "paths": [
+        "**/*.pl",
+        "**/*.pm",
+        "**/*.t",
+        "**/*.psgi",
+        "**/*.cgi"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "perl-patterns"
+      ]
+    },
+    {
+      "rule": "perl/hooks.md",
+      "path": "rules/perl/hooks.md",
+      "paths": [
+        "**/*.pl",
+        "**/*.pm",
+        "**/*.t",
+        "**/*.psgi",
+        "**/*.cgi"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "perl/patterns.md",
+      "path": "rules/perl/patterns.md",
+      "paths": [
+        "**/*.pl",
+        "**/*.pm",
+        "**/*.t",
+        "**/*.psgi",
+        "**/*.cgi"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "perl-patterns"
+      ]
+    },
+    {
+      "rule": "perl/security.md",
+      "path": "rules/perl/security.md",
+      "paths": [
+        "**/*.pl",
+        "**/*.pm",
+        "**/*.t",
+        "**/*.psgi",
+        "**/*.cgi"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "perl-security"
+      ]
+    },
+    {
+      "rule": "perl/testing.md",
+      "path": "rules/perl/testing.md",
+      "paths": [
+        "**/*.pl",
+        "**/*.pm",
+        "**/*.t",
+        "**/*.psgi",
+        "**/*.cgi"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "perl-testing"
+      ]
+    },
+    {
+      "rule": "php/coding-style.md",
+      "path": "rules/php/coding-style.md",
+      "paths": [
+        "**/*.php",
+        "**/composer.json"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "backend-patterns"
+      ]
+    },
+    {
+      "rule": "php/hooks.md",
+      "path": "rules/php/hooks.md",
+      "paths": [
+        "**/*.php",
+        "**/composer.json",
+        "**/phpstan.neon",
+        "**/phpstan.neon.dist",
+        "**/psalm.xml"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "php/patterns.md",
+      "path": "rules/php/patterns.md",
+      "paths": [
+        "**/*.php",
+        "**/composer.json"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "api-design",
+        "laravel-patterns"
+      ]
+    },
+    {
+      "rule": "php/security.md",
+      "path": "rules/php/security.md",
+      "paths": [
+        "**/*.php",
+        "**/composer.lock",
+        "**/composer.json"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "laravel-security"
+      ]
+    },
+    {
+      "rule": "php/testing.md",
+      "path": "rules/php/testing.md",
+      "paths": [
+        "**/*.php",
+        "**/phpunit.xml",
+        "**/phpunit.xml.dist",
+        "**/composer.json"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "laravel-tdd",
+        "tdd-workflow"
+      ]
+    },
+    {
+      "rule": "python/coding-style.md",
+      "path": "rules/python/coding-style.md",
+      "paths": [
+        "**/*.py",
+        "**/*.pyi"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "python-patterns"
+      ]
+    },
+    {
+      "rule": "python/fastapi.md",
+      "path": "rules/python/fastapi.md",
+      "paths": [
+        "**/app/**/*.py",
+        "**/fastapi/**/*.py",
+        "**/*_api.py"
+      ],
+      "extends": null,
+      "agents": [],
+      "skills": [
+        "fastapi-patterns"
+      ]
+    },
+    {
+      "rule": "python/hooks.md",
+      "path": "rules/python/hooks.md",
+      "paths": [
+        "**/*.py",
+        "**/*.pyi"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "python/patterns.md",
+      "path": "rules/python/patterns.md",
+      "paths": [
+        "**/*.py",
+        "**/*.pyi"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "python-patterns"
+      ]
+    },
+    {
+      "rule": "python/security.md",
+      "path": "rules/python/security.md",
+      "paths": [
+        "**/*.py",
+        "**/*.pyi"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "django-security"
+      ]
+    },
+    {
+      "rule": "python/testing.md",
+      "path": "rules/python/testing.md",
+      "paths": [
+        "**/*.py",
+        "**/*.pyi"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "python-testing"
+      ]
+    },
+    {
+      "rule": "react-native/accessibility.md",
+      "path": "rules/react-native/accessibility.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react-native/coding-style.md",
+      "path": "rules/react-native/coding-style.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react-native/hooks.md",
+      "path": "rules/react-native/hooks.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react-native/patterns.md",
+      "path": "rules/react-native/patterns.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react-native/performance.md",
+      "path": "rules/react-native/performance.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/performance.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react-native/production-readiness.md",
+      "path": "rules/react-native/production-readiness.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react-native/security.md",
+      "path": "rules/react-native/security.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "security-scan"
+      ]
+    },
+    {
+      "rule": "react-native/testing.md",
+      "path": "rules/react-native/testing.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react/coding-style.md",
+      "path": "rules/react/coding-style.md",
+      "paths": [
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/components/**/*.ts",
+        "**/components/**/*.js",
+        "**/hooks/**/*.ts",
+        "**/hooks/**/*.js"
+      ],
+      "extends": "typescript/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react/hooks.md",
+      "path": "rules/react/hooks.md",
+      "paths": [
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/hooks/**/*.ts",
+        "**/hooks/**/*.js",
+        "**/use-*.ts",
+        "**/use-*.tsx"
+      ],
+      "extends": null,
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react/patterns.md",
+      "path": "rules/react/patterns.md",
+      "paths": [
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/components/**/*.ts",
+        "**/components/**/*.js",
+        "**/app/**/*.tsx",
+        "**/pages/**/*.tsx"
+      ],
+      "extends": "typescript/patterns.md",
+      "agents": [],
+      "skills": [
+        "accessibility",
+        "frontend-patterns",
+        "react-patterns"
+      ]
+    },
+    {
+      "rule": "react/security.md",
+      "path": "rules/react/security.md",
+      "paths": [
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/components/**/*.ts",
+        "**/app/**/*.ts",
+        "**/pages/**/*.ts"
+      ],
+      "extends": "typescript/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "react/testing.md",
+      "path": "rules/react/testing.md",
+      "paths": [
+        "**/*.test.tsx",
+        "**/*.test.jsx",
+        "**/*.spec.tsx",
+        "**/*.spec.jsx",
+        "**/__tests__/**/*.ts",
+        "**/__tests__/**/*.tsx"
+      ],
+      "extends": "typescript/testing.md",
+      "agents": [],
+      "skills": [
+        "e2e-testing",
+        "react-testing"
+      ]
+    },
+    {
+      "rule": "ruby/coding-style.md",
+      "path": "rules/ruby/coding-style.md",
+      "paths": [
+        "**/*.rb",
+        "**/*.rake",
+        "**/Gemfile",
+        "**/*.gemspec",
+        "**/config.ru"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "backend-patterns"
+      ]
+    },
+    {
+      "rule": "ruby/hooks.md",
+      "path": "rules/ruby/hooks.md",
+      "paths": [
+        "**/*.rb",
+        "**/*.rake",
+        "**/Gemfile",
+        "**/Gemfile.lock",
+        "**/config/routes.rb"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "ruby/patterns.md",
+      "path": "rules/ruby/patterns.md",
+      "paths": [
+        "**/*.rb",
+        "**/*.rake",
+        "**/Gemfile",
+        "**/app/**/*.erb",
+        "**/config/routes.rb"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "backend-patterns"
+      ]
+    },
+    {
+      "rule": "ruby/security.md",
+      "path": "rules/ruby/security.md",
+      "paths": [
+        "**/*.rb",
+        "**/*.rake",
+        "**/Gemfile",
+        "**/Gemfile.lock",
+        "**/config/routes.rb",
+        "**/config/credentials*.yml.enc"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "security-review"
+      ]
+    },
+    {
+      "rule": "ruby/testing.md",
+      "path": "rules/ruby/testing.md",
+      "paths": [
+        "**/*.rb",
+        "**/*.rake",
+        "**/Gemfile",
+        "**/test/**/*.rb",
+        "**/spec/**/*.rb",
+        "**/config/routes.rb"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "tdd-workflow"
+      ]
+    },
+    {
+      "rule": "rust/coding-style.md",
+      "path": "rules/rust/coding-style.md",
+      "paths": [
+        "**/*.rs"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": [
+        "rust-patterns"
+      ]
+    },
+    {
+      "rule": "rust/hooks.md",
+      "path": "rules/rust/hooks.md",
+      "paths": [
+        "**/*.rs",
+        "**/Cargo.toml"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "rust/patterns.md",
+      "path": "rules/rust/patterns.md",
+      "paths": [
+        "**/*.rs"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "rust-patterns"
+      ]
+    },
+    {
+      "rule": "rust/security.md",
+      "path": "rules/rust/security.md",
+      "paths": [
+        "**/*.rs"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": [
+        "rust-patterns",
+        "security-review"
+      ]
+    },
+    {
+      "rule": "rust/testing.md",
+      "path": "rules/rust/testing.md",
+      "paths": [
+        "**/*.rs"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "rust-testing"
+      ]
+    },
+    {
+      "rule": "swift/coding-style.md",
+      "path": "rules/swift/coding-style.md",
+      "paths": [
+        "**/*.swift",
+        "**/Package.swift"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "swift/hooks.md",
+      "path": "rules/swift/hooks.md",
+      "paths": [
+        "**/*.swift",
+        "**/Package.swift"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "swift/patterns.md",
+      "path": "rules/swift/patterns.md",
+      "paths": [
+        "**/*.swift",
+        "**/Package.swift"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": [
+        "swift-actor-persistence",
+        "swift-protocol-di-testing"
+      ]
+    },
+    {
+      "rule": "swift/security.md",
+      "path": "rules/swift/security.md",
+      "paths": [
+        "**/*.swift",
+        "**/Package.swift"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "swift/testing.md",
+      "path": "rules/swift/testing.md",
+      "paths": [
+        "**/*.swift",
+        "**/Package.swift"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": [
+        "swift-protocol-di-testing"
+      ]
+    },
+    {
+      "rule": "typescript/coding-style.md",
+      "path": "rules/typescript/coding-style.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "typescript/hooks.md",
+      "path": "rules/typescript/hooks.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "typescript/patterns.md",
+      "path": "rules/typescript/patterns.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "typescript/security.md",
+      "path": "rules/typescript/security.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+      ],
+      "extends": "common/security.md",
+      "agents": [
+        "security-reviewer"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "typescript/testing.md",
+      "path": "rules/typescript/testing.md",
+      "paths": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+      ],
+      "extends": "common/testing.md",
+      "agents": [
+        "e2e-runner"
+      ],
+      "skills": []
+    },
+    {
+      "rule": "vue/coding-style.md",
+      "path": "rules/vue/coding-style.md",
+      "paths": [
+        "**/*.vue"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "vue/hooks.md",
+      "path": "rules/vue/hooks.md",
+      "paths": [
+        "**/*.vue",
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "vue/patterns.md",
+      "path": "rules/vue/patterns.md",
+      "paths": [
+        "**/*.vue"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "vue/security.md",
+      "path": "rules/vue/security.md",
+      "paths": [
+        "**/*.vue"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "vue/testing.md",
+      "path": "rules/vue/testing.md",
+      "paths": [
+        "**/*.vue"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/coding-style.md",
+      "path": "rules/web/coding-style.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/coding-style.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/design-quality.md",
+      "path": "rules/web/design-quality.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/hooks.md",
+      "path": "rules/web/hooks.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/hooks.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/patterns.md",
+      "path": "rules/web/patterns.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/patterns.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/performance.md",
+      "path": "rules/web/performance.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/performance.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/security.md",
+      "path": "rules/web/security.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/security.md",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "rule": "web/testing.md",
+      "path": "rules/web/testing.md",
+      "paths": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.html",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.vue",
+        "**/*.svelte"
+      ],
+      "extends": "common/testing.md",
+      "agents": [],
+      "skills": []
+    }
+  ],
+  "statistics": {
+    "extendedBy": {
+      "common/coding-style.md": [
+        "angular/coding-style.md",
+        "arkts/coding-style.md",
+        "cpp/coding-style.md",
+        "csharp/coding-style.md",
+        "dart/coding-style.md",
+        "fsharp/coding-style.md",
+        "golang/coding-style.md",
+        "java/coding-style.md",
+        "kotlin/coding-style.md",
+        "nuxt/coding-style.md",
+        "perl/coding-style.md",
+        "php/coding-style.md",
+        "python/coding-style.md",
+        "react-native/coding-style.md",
+        "ruby/coding-style.md",
+        "rust/coding-style.md",
+        "swift/coding-style.md",
+        "typescript/coding-style.md",
+        "vue/coding-style.md",
+        "web/coding-style.md"
+      ],
+      "common/git-workflow.md": [
+        "common/development-workflow.md"
+      ],
+      "common/hooks.md": [
+        "angular/hooks.md",
+        "arkts/hooks.md",
+        "cpp/hooks.md",
+        "csharp/hooks.md",
+        "dart/hooks.md",
+        "fsharp/hooks.md",
+        "golang/hooks.md",
+        "java/hooks.md",
+        "kotlin/hooks.md",
+        "nuxt/hooks.md",
+        "perl/hooks.md",
+        "php/hooks.md",
+        "python/hooks.md",
+        "react-native/hooks.md",
+        "ruby/hooks.md",
+        "rust/hooks.md",
+        "swift/hooks.md",
+        "typescript/hooks.md",
+        "vue/hooks.md",
+        "web/hooks.md"
+      ],
+      "common/patterns.md": [
+        "angular/patterns.md",
+        "arkts/patterns.md",
+        "cpp/patterns.md",
+        "csharp/patterns.md",
+        "dart/patterns.md",
+        "fsharp/patterns.md",
+        "golang/patterns.md",
+        "java/patterns.md",
+        "kotlin/patterns.md",
+        "nuxt/patterns.md",
+        "perl/patterns.md",
+        "php/patterns.md",
+        "python/patterns.md",
+        "react-native/patterns.md",
+        "ruby/patterns.md",
+        "rust/patterns.md",
+        "swift/patterns.md",
+        "typescript/patterns.md",
+        "vue/patterns.md",
+        "web/design-quality.md",
+        "web/patterns.md"
+      ],
+      "common/performance.md": [
+        "react-native/performance.md",
+        "web/performance.md"
+      ],
+      "common/security.md": [
+        "angular/security.md",
+        "arkts/security.md",
+        "cpp/security.md",
+        "csharp/security.md",
+        "dart/security.md",
+        "fsharp/security.md",
+        "golang/security.md",
+        "java/security.md",
+        "kotlin/security.md",
+        "nuxt/security.md",
+        "perl/security.md",
+        "php/security.md",
+        "python/security.md",
+        "react-native/security.md",
+        "ruby/security.md",
+        "rust/security.md",
+        "swift/security.md",
+        "typescript/security.md",
+        "vue/security.md",
+        "web/security.md"
+      ],
+      "common/testing.md": [
+        "angular/testing.md",
+        "arkts/testing.md",
+        "cpp/testing.md",
+        "csharp/testing.md",
+        "dart/testing.md",
+        "fsharp/testing.md",
+        "golang/testing.md",
+        "java/testing.md",
+        "kotlin/testing.md",
+        "nuxt/testing.md",
+        "perl/testing.md",
+        "php/testing.md",
+        "python/testing.md",
+        "react-native/testing.md",
+        "ruby/testing.md",
+        "rust/testing.md",
+        "swift/testing.md",
+        "typescript/testing.md",
+        "vue/testing.md",
+        "web/testing.md"
+      ],
+      "typescript/coding-style.md": [
+        "react/coding-style.md"
+      ],
+      "typescript/patterns.md": [
+        "react/patterns.md"
+      ],
+      "typescript/security.md": [
+        "react/security.md"
+      ],
+      "typescript/testing.md": [
+        "react/testing.md"
+      ]
+    }
+  }
+}
