@@ -190,24 +190,30 @@
     },
     {
       "id": "command:go-build",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "针对 Go 语言构建，与用户主要的 Java 技术栈无关"
+      "suggestedReason": "针对 Go 语言构建，与用户主要的 Java 技术栈无关",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:go-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "针对 Go 代码审查，与用户主要技术栈无关"
+      "suggestedReason": "针对 Go 代码审查，与用户主要技术栈无关",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:go-test",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "针对 Go 的 TDD 工作流，与用户主要技术栈无关"
+      "suggestedReason": "针对 Go 的 TDD 工作流，与用户主要技术栈无关",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:gradle-build",
@@ -766,10 +772,12 @@
     },
     {
       "id": "skill:angular-developer",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Angular框架专用技能，项目CLAUDE.md显示用户前端栈是React而非Angular"
+      "suggestedReason": "Angular框架专用技能，项目CLAUDE.md显示用户前端栈是React而非Angular",
+      "reason": "前端框架,WMS(apollo)fe 模块使用原生 JS/HTML/CSS/lowcode DSL,非 Angular 生态",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:api-connector-builder",
@@ -1463,17 +1471,21 @@
     },
     {
       "id": "skill:golang-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要使用 Java/Spring Boot，Go 不是核心技术栈，Claude 无需自动触发，用户很少调用"
+      "suggestedReason": "用户主要使用 Java/Spring Boot，Go 不是核心技术栈，Claude 无需自动触发，用户很少调用",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:golang-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Go 技术栈不是用户核心关注，与用户主要的 Java/Spring Boot 开发工作无关，无需保留上下文"
+      "suggestedReason": "Go 技术栈不是用户核心关注，与用户主要的 Java/Spring Boot 开发工作无关，无需保留上下文",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:google-workspace-ops",
@@ -1981,10 +1993,12 @@
     },
     {
       "id": "skill:nuxt4-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户偶尔前端开发，可能用到 Vue/Nuxt 框架，保留手动调用入口"
+      "suggestedReason": "用户偶尔前端开发，可能用到 Vue/Nuxt 框架，保留手动调用入口",
+      "reason": "Vue/Nuxt SSR 框架,WMS fe 模块非 Vue 生态",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:openclaw-persona-forge",
@@ -2051,24 +2065,30 @@
     },
     {
       "id": "skill:perl-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户技术栈以 Java/Spring Boot 为主，不涉及 Perl 开发。"
+      "suggestedReason": "用户技术栈以 Java/Spring Boot 为主，不涉及 Perl 开发。",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:perl-security",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Perl 安全工具与用户的 Java 技术栈无关。"
+      "suggestedReason": "Perl 安全工具与用户的 Java 技术栈无关。",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:perl-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Perl 测试模式与用户的技术栈不符。"
+      "suggestedReason": "Perl 测试模式与用户的技术栈不符。",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:plan-orchestrate",
@@ -2219,10 +2239,12 @@
     },
     {
       "id": "skill:react-native-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户偶尔参与前端开发但主要是 Web；涉及 React Native 项目时可手动调用"
+      "suggestedReason": "用户偶尔参与前端开发但主要是 Web；涉及 React Native 项目时可手动调用",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:react-patterns",
@@ -2972,6 +2994,252 @@
       "id": "agent:fsharp-reviewer",
       "decision": "exclude",
       "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:golang/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:golang/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:golang/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:golang/security.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:golang/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:go-build-resolver",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:go-reviewer",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:perl/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:perl/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:perl/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:perl/security.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:perl/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:php/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:php/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:php/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:php/security.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:php/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:php-reviewer",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,dependents 查询确认零关联组件被依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:ruby/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,且仓库内无任何关联 skill/agent/command,零风险裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:ruby/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,且仓库内无任何关联 skill/agent/command,零风险裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:ruby/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,且仓库内无任何关联 skill/agent/command,零风险裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:ruby/security.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,且仓库内无任何关联 skill/agent/command,零风险裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:ruby/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java 后端/WMS 画像无关的后端语言,且仓库内无任何关联 skill/agent/command,零风险裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:angular/coding-style.md",
+      "decision": "exclude",
+      "reason": "前端框架,WMS(apollo)fe 模块使用原生 JS/HTML/CSS/lowcode DSL,非 Angular 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:angular/hooks.md",
+      "decision": "exclude",
+      "reason": "前端框架,WMS(apollo)fe 模块使用原生 JS/HTML/CSS/lowcode DSL,非 Angular 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:angular/patterns.md",
+      "decision": "exclude",
+      "reason": "前端框架,WMS(apollo)fe 模块使用原生 JS/HTML/CSS/lowcode DSL,非 Angular 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:angular/security.md",
+      "decision": "exclude",
+      "reason": "前端框架,WMS(apollo)fe 模块使用原生 JS/HTML/CSS/lowcode DSL,非 Angular 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:angular/testing.md",
+      "decision": "exclude",
+      "reason": "前端框架,WMS(apollo)fe 模块使用原生 JS/HTML/CSS/lowcode DSL,非 Angular 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:nuxt/coding-style.md",
+      "decision": "exclude",
+      "reason": "Vue/Nuxt SSR 框架,WMS fe 模块非 Vue 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:nuxt/hooks.md",
+      "decision": "exclude",
+      "reason": "Vue/Nuxt SSR 框架,WMS fe 模块非 Vue 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:nuxt/patterns.md",
+      "decision": "exclude",
+      "reason": "Vue/Nuxt SSR 框架,WMS fe 模块非 Vue 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:nuxt/security.md",
+      "decision": "exclude",
+      "reason": "Vue/Nuxt SSR 框架,WMS fe 模块非 Vue 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:nuxt/testing.md",
+      "decision": "exclude",
+      "reason": "Vue/Nuxt SSR 框架,WMS fe 模块非 Vue 生态",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/accessibility.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/coding-style.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/hooks.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/patterns.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/performance.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/production-readiness.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/security.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:react-native/testing.md",
+      "decision": "exclude",
+      "reason": "移动端框架,与 Java 后端/WMS 画像无关",
       "decidedAt": "2026-07-11"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalSkills": 255,
+  "totalSkills": 247,
   "skills": [
     {
       "skill": "accessibility",
@@ -90,15 +90,6 @@
       "description": "Regression testing strategies for AI-assisted development. Sandbox-mode API testing without database dependencies, automated bug-check workflows, and patterns to catch AI blind spots where the same model writes and reviews code.",
       "agents": [],
       "skills": []
-    },
-    {
-      "skill": "angular-developer",
-      "path": "skills/angular-developer/SKILL.md",
-      "description": "Generates Angular code and provides architectural guidance. Trigger when creating projects, components, or services, or for best practices on reactivity (signals, linkedSignal, resource), forms, dependency injection, routing, SSR, accessibility (ARIA), animations, styling (component styles, Tailwind CSS), testing, or CLI tooling.",
-      "agents": [],
-      "skills": [
-        "e2e-testing"
-      ]
     },
     {
       "skill": "api-connector-builder",
@@ -738,20 +729,6 @@
       "skills": []
     },
     {
-      "skill": "golang-patterns",
-      "path": "skills/golang-patterns/SKILL.md",
-      "description": "Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "golang-testing",
-      "path": "skills/golang-testing/SKILL.md",
-      "description": "Go testing patterns including table-driven tests, subtests, benchmarks, fuzzing, and test coverage. Follows TDD methodology with idiomatic Go practices.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "google-workspace-ops",
       "path": "skills/google-workspace-ops/SKILL.md",
       "description": "Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents. Use when the user needs to find, summarize, edit, migrate, or clean up Google Workspace assets without dropping to raw tool calls.",
@@ -1231,13 +1208,6 @@
       "skills": []
     },
     {
-      "skill": "nuxt4-patterns",
-      "path": "skills/nuxt4-patterns/SKILL.md",
-      "description": "Nuxt 4 app patterns for hydration safety, performance, route rules, lazy loading, and SSR-safe data fetching with useFetch and useAsyncData.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "openclaw-persona-forge",
       "path": "skills/openclaw-persona-forge/SKILL.md",
       "description": "为 OpenClaw AI Agent 锻造完整的龙虾灵魂方案。根据用户偏好或随机抽卡， 输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像生图提示词。 如当前环境提供已审核的生图 skill，可自动生成统一风格头像图片。 当用户需要创建、设计或定制 OpenClaw 龙虾灵魂时使用。 不适用于：微调已有 SOUL.md、非 OpenClaw 平台的角色设计、纯工具型无性格 Agent。 触发词：龙虾灵魂、虾魂、OpenClaw 灵魂、养虾灵魂、龙虾角色、龙虾定位、 龙虾剧本杀角色、龙虾游戏角色、龙虾 NPC、龙虾性格、龙虾背景故事、 lobster soul、lobster character、抽卡、随机龙虾、龙虾 SOUL、gacha。",
@@ -1309,27 +1279,6 @@
       "skill": "parallel-execution-optimizer",
       "path": "skills/parallel-execution-optimizer/SKILL.md",
       "description": "Use when the user wants a task done much faster through parallel work, concurrent agents, batched tool calls, isolated worktrees, or many independent verification lanes without losing correctness.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "perl-patterns",
-      "path": "skills/perl-patterns/SKILL.md",
-      "description": "Modern Perl 5.36+ idioms, best practices, and conventions for building robust, maintainable Perl applications.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "perl-security",
-      "path": "skills/perl-security/SKILL.md",
-      "description": "Comprehensive Perl security covering taint mode, input validation, safe process execution, DBI parameterized queries, web security (XSS/SQLi/CSRF), and perlcritic security policies.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "perl-testing",
-      "path": "skills/perl-testing/SKILL.md",
-      "description": "Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology.",
       "agents": [],
       "skills": []
     },
@@ -1511,20 +1460,12 @@
       "skills": []
     },
     {
-      "skill": "react-native-patterns",
-      "path": "skills/react-native-patterns/SKILL.md",
-      "description": "React Native and Expo app patterns — Expo Router navigation, state separation (server/client/route/form), TanStack Query data fetching with Zod, performant lists, NativeWind/StyleSheet styling, native APIs, and secure storage. Use when building or editing React Native / Expo screens, components, navigation, or data layers.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "react-patterns",
       "path": "skills/react-patterns/SKILL.md",
       "description": "React 18/19 patterns including hooks discipline, server/client component boundaries, Suspense + error boundaries, form actions, data fetching, state management decision trees, and accessibility-first composition. Use when writing or reviewing React components.",
       "agents": [],
       "skills": [
         "accessibility",
-        "angular-developer",
         "frontend-patterns",
         "react-performance",
         "react-testing"
@@ -1930,7 +1871,6 @@
   "statistics": {
     "skillUsage": {
       "accessibility": 5,
-      "angular-developer": 1,
       "backend-patterns": 3,
       "blueprint": 1,
       "browser-qa": 3,
@@ -1942,7 +1882,7 @@
       "deployment-patterns": 1,
       "design-system": 1,
       "django-patterns": 1,
-      "e2e-testing": 3,
+      "e2e-testing": 2,
       "ecc-guide": 1,
       "error-handling": 1,
       "frontend-patterns": 2,

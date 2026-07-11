@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalRules": 82,
+  "totalRules": 44,
   "rules": [
     {
       "rule": "README.md",
@@ -9,82 +9,6 @@
       "extends": null,
       "agents": [],
       "skills": []
-    },
-    {
-      "rule": "angular/coding-style.md",
-      "path": "rules/angular/coding-style.md",
-      "paths": [
-        "**/*.component.ts",
-        "**/*.component.html",
-        "**/*.service.ts",
-        "**/*.directive.ts",
-        "**/*.pipe.ts",
-        "**/*.guard.ts",
-        "**/*.resolver.ts",
-        "**/*.module.ts"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "angular/hooks.md",
-      "path": "rules/angular/hooks.md",
-      "paths": [
-        "**/*.component.ts",
-        "**/*.component.html",
-        "**/*.service.ts",
-        "**/*.directive.ts",
-        "**/*.pipe.ts",
-        "**/*.spec.ts"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "angular/patterns.md",
-      "path": "rules/angular/patterns.md",
-      "paths": [
-        "**/*.component.ts",
-        "**/*.component.html",
-        "**/*.service.ts",
-        "**/*.store.ts",
-        "**/*.routes.ts"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "angular-developer"
-      ]
-    },
-    {
-      "rule": "angular/security.md",
-      "path": "rules/angular/security.md",
-      "paths": [
-        "**/*.component.ts",
-        "**/*.component.html",
-        "**/*.service.ts",
-        "**/*.interceptor.ts"
-      ],
-      "extends": "common/security.md",
-      "agents": [
-        "security-reviewer"
-      ],
-      "skills": []
-    },
-    {
-      "rule": "angular/testing.md",
-      "path": "rules/angular/testing.md",
-      "paths": [
-        "**/*.spec.ts",
-        "**/*.test.ts"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "angular-developer"
-      ]
     },
     {
       "rule": "common/agents.md",
@@ -106,7 +30,6 @@
       "extends": null,
       "agents": [
         "code-reviewer",
-        "go-reviewer",
         "python-reviewer",
         "security-reviewer",
         "typescript-reviewer"
@@ -190,72 +113,6 @@
       "skills": []
     },
     {
-      "rule": "golang/coding-style.md",
-      "path": "rules/golang/coding-style.md",
-      "paths": [
-        "**/*.go",
-        "**/go.mod",
-        "**/go.sum"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": [
-        "golang-patterns"
-      ]
-    },
-    {
-      "rule": "golang/hooks.md",
-      "path": "rules/golang/hooks.md",
-      "paths": [
-        "**/*.go",
-        "**/go.mod",
-        "**/go.sum"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "golang/patterns.md",
-      "path": "rules/golang/patterns.md",
-      "paths": [
-        "**/*.go",
-        "**/go.mod",
-        "**/go.sum"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "golang-patterns"
-      ]
-    },
-    {
-      "rule": "golang/security.md",
-      "path": "rules/golang/security.md",
-      "paths": [
-        "**/*.go",
-        "**/go.mod",
-        "**/go.sum"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "golang/testing.md",
-      "path": "rules/golang/testing.md",
-      "paths": [
-        "**/*.go",
-        "**/go.mod",
-        "**/go.sum"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "golang-testing"
-      ]
-    },
-    {
       "rule": "java/coding-style.md",
       "path": "rules/java/coding-style.md",
       "paths": [
@@ -321,226 +178,6 @@
         "java-coding-standards",
         "quarkus-tdd",
         "springboot-tdd"
-      ]
-    },
-    {
-      "rule": "nuxt/coding-style.md",
-      "path": "rules/nuxt/coding-style.md",
-      "paths": [
-        "**/nuxt.config.*",
-        "**/app.config.*",
-        "**/app.vue",
-        "**/pages/**",
-        "**/layouts/**",
-        "**/middleware/**"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "nuxt/hooks.md",
-      "path": "rules/nuxt/hooks.md",
-      "paths": [
-        "**/nuxt.config.*",
-        "**/app.config.*",
-        "**/server/**/*.ts",
-        "**/*.vue"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "nuxt/patterns.md",
-      "path": "rules/nuxt/patterns.md",
-      "paths": [
-        "**/nuxt.config.*",
-        "**/app.config.*",
-        "**/app.vue",
-        "**/server/**/*.ts",
-        "**/pages/**",
-        "**/middleware/**"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "nuxt/security.md",
-      "path": "rules/nuxt/security.md",
-      "paths": [
-        "**/nuxt.config.*",
-        "**/app.config.*",
-        "**/server/**/*.ts"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "security-review"
-      ]
-    },
-    {
-      "rule": "nuxt/testing.md",
-      "path": "rules/nuxt/testing.md",
-      "paths": [
-        "**/nuxt.config.*",
-        "**/server/**/*.ts",
-        "**/pages/**",
-        "**/layouts/**",
-        "**/middleware/**"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "perl/coding-style.md",
-      "path": "rules/perl/coding-style.md",
-      "paths": [
-        "**/*.pl",
-        "**/*.pm",
-        "**/*.t",
-        "**/*.psgi",
-        "**/*.cgi"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": [
-        "perl-patterns"
-      ]
-    },
-    {
-      "rule": "perl/hooks.md",
-      "path": "rules/perl/hooks.md",
-      "paths": [
-        "**/*.pl",
-        "**/*.pm",
-        "**/*.t",
-        "**/*.psgi",
-        "**/*.cgi"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "perl/patterns.md",
-      "path": "rules/perl/patterns.md",
-      "paths": [
-        "**/*.pl",
-        "**/*.pm",
-        "**/*.t",
-        "**/*.psgi",
-        "**/*.cgi"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "perl-patterns"
-      ]
-    },
-    {
-      "rule": "perl/security.md",
-      "path": "rules/perl/security.md",
-      "paths": [
-        "**/*.pl",
-        "**/*.pm",
-        "**/*.t",
-        "**/*.psgi",
-        "**/*.cgi"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "perl-security"
-      ]
-    },
-    {
-      "rule": "perl/testing.md",
-      "path": "rules/perl/testing.md",
-      "paths": [
-        "**/*.pl",
-        "**/*.pm",
-        "**/*.t",
-        "**/*.psgi",
-        "**/*.cgi"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "perl-testing"
-      ]
-    },
-    {
-      "rule": "php/coding-style.md",
-      "path": "rules/php/coding-style.md",
-      "paths": [
-        "**/*.php",
-        "**/composer.json"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": [
-        "backend-patterns"
-      ]
-    },
-    {
-      "rule": "php/hooks.md",
-      "path": "rules/php/hooks.md",
-      "paths": [
-        "**/*.php",
-        "**/composer.json",
-        "**/phpstan.neon",
-        "**/phpstan.neon.dist",
-        "**/psalm.xml"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "php/patterns.md",
-      "path": "rules/php/patterns.md",
-      "paths": [
-        "**/*.php",
-        "**/composer.json"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "api-design",
-        "laravel-patterns"
-      ]
-    },
-    {
-      "rule": "php/security.md",
-      "path": "rules/php/security.md",
-      "paths": [
-        "**/*.php",
-        "**/composer.lock",
-        "**/composer.json"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "laravel-security"
-      ]
-    },
-    {
-      "rule": "php/testing.md",
-      "path": "rules/php/testing.md",
-      "paths": [
-        "**/*.php",
-        "**/phpunit.xml",
-        "**/phpunit.xml.dist",
-        "**/composer.json"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "laravel-tdd",
-        "tdd-workflow"
       ]
     },
     {
@@ -621,96 +258,6 @@
       ]
     },
     {
-      "rule": "react-native/accessibility.md",
-      "path": "rules/react-native/accessibility.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": null,
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "react-native/coding-style.md",
-      "path": "rules/react-native/coding-style.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "react-native/hooks.md",
-      "path": "rules/react-native/hooks.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "react-native/patterns.md",
-      "path": "rules/react-native/patterns.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "react-native/performance.md",
-      "path": "rules/react-native/performance.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": "common/performance.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "react-native/production-readiness.md",
-      "path": "rules/react-native/production-readiness.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": null,
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "react-native/security.md",
-      "path": "rules/react-native/security.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "security-scan"
-      ]
-    },
-    {
-      "rule": "react-native/testing.md",
-      "path": "rules/react-native/testing.md",
-      "paths": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": []
-    },
-    {
       "rule": "react/coding-style.md",
       "path": "rules/react/coding-style.md",
       "paths": [
@@ -789,86 +336,6 @@
       "skills": [
         "e2e-testing",
         "react-testing"
-      ]
-    },
-    {
-      "rule": "ruby/coding-style.md",
-      "path": "rules/ruby/coding-style.md",
-      "paths": [
-        "**/*.rb",
-        "**/*.rake",
-        "**/Gemfile",
-        "**/*.gemspec",
-        "**/config.ru"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": [
-        "backend-patterns"
-      ]
-    },
-    {
-      "rule": "ruby/hooks.md",
-      "path": "rules/ruby/hooks.md",
-      "paths": [
-        "**/*.rb",
-        "**/*.rake",
-        "**/Gemfile",
-        "**/Gemfile.lock",
-        "**/config/routes.rb"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "ruby/patterns.md",
-      "path": "rules/ruby/patterns.md",
-      "paths": [
-        "**/*.rb",
-        "**/*.rake",
-        "**/Gemfile",
-        "**/app/**/*.erb",
-        "**/config/routes.rb"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "backend-patterns"
-      ]
-    },
-    {
-      "rule": "ruby/security.md",
-      "path": "rules/ruby/security.md",
-      "paths": [
-        "**/*.rb",
-        "**/*.rake",
-        "**/Gemfile",
-        "**/Gemfile.lock",
-        "**/config/routes.rb",
-        "**/config/credentials*.yml.enc"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "security-review"
-      ]
-    },
-    {
-      "rule": "ruby/testing.md",
-      "path": "rules/ruby/testing.md",
-      "paths": [
-        "**/*.rb",
-        "**/*.rake",
-        "**/Gemfile",
-        "**/test/**/*.rb",
-        "**/spec/**/*.rb",
-        "**/config/routes.rb"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "tdd-workflow"
       ]
     },
     {
@@ -1122,15 +589,8 @@
   "statistics": {
     "extendedBy": {
       "common/coding-style.md": [
-        "angular/coding-style.md",
-        "golang/coding-style.md",
         "java/coding-style.md",
-        "nuxt/coding-style.md",
-        "perl/coding-style.md",
-        "php/coding-style.md",
         "python/coding-style.md",
-        "react-native/coding-style.md",
-        "ruby/coding-style.md",
         "typescript/coding-style.md",
         "vue/coding-style.md",
         "web/coding-style.md"
@@ -1139,62 +599,33 @@
         "common/development-workflow.md"
       ],
       "common/hooks.md": [
-        "angular/hooks.md",
-        "golang/hooks.md",
         "java/hooks.md",
-        "nuxt/hooks.md",
-        "perl/hooks.md",
-        "php/hooks.md",
         "python/hooks.md",
-        "react-native/hooks.md",
-        "ruby/hooks.md",
         "typescript/hooks.md",
         "vue/hooks.md",
         "web/hooks.md"
       ],
       "common/patterns.md": [
-        "angular/patterns.md",
-        "golang/patterns.md",
         "java/patterns.md",
-        "nuxt/patterns.md",
-        "perl/patterns.md",
-        "php/patterns.md",
         "python/patterns.md",
-        "react-native/patterns.md",
-        "ruby/patterns.md",
         "typescript/patterns.md",
         "vue/patterns.md",
         "web/design-quality.md",
         "web/patterns.md"
       ],
       "common/performance.md": [
-        "react-native/performance.md",
         "web/performance.md"
       ],
       "common/security.md": [
-        "angular/security.md",
-        "golang/security.md",
         "java/security.md",
-        "nuxt/security.md",
-        "perl/security.md",
-        "php/security.md",
         "python/security.md",
-        "react-native/security.md",
-        "ruby/security.md",
         "typescript/security.md",
         "vue/security.md",
         "web/security.md"
       ],
       "common/testing.md": [
-        "angular/testing.md",
-        "golang/testing.md",
         "java/testing.md",
-        "nuxt/testing.md",
-        "perl/testing.md",
-        "php/testing.md",
         "python/testing.md",
-        "react-native/testing.md",
-        "ruby/testing.md",
         "typescript/testing.md",
         "vue/testing.md",
         "web/testing.md"

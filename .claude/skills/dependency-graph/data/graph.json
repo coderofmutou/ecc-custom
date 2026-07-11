@@ -11,81 +11,6 @@
       }
     },
     {
-      "id": "rule:angular/coding-style.md",
-      "type": "rule",
-      "name": "angular/coding-style.md",
-      "path": "rules/angular/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.component.ts",
-          "**/*.component.html",
-          "**/*.service.ts",
-          "**/*.directive.ts",
-          "**/*.pipe.ts",
-          "**/*.guard.ts",
-          "**/*.resolver.ts",
-          "**/*.module.ts"
-        ]
-      }
-    },
-    {
-      "id": "rule:angular/hooks.md",
-      "type": "rule",
-      "name": "angular/hooks.md",
-      "path": "rules/angular/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.component.ts",
-          "**/*.component.html",
-          "**/*.service.ts",
-          "**/*.directive.ts",
-          "**/*.pipe.ts",
-          "**/*.spec.ts"
-        ]
-      }
-    },
-    {
-      "id": "rule:angular/patterns.md",
-      "type": "rule",
-      "name": "angular/patterns.md",
-      "path": "rules/angular/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.component.ts",
-          "**/*.component.html",
-          "**/*.service.ts",
-          "**/*.store.ts",
-          "**/*.routes.ts"
-        ]
-      }
-    },
-    {
-      "id": "rule:angular/security.md",
-      "type": "rule",
-      "name": "angular/security.md",
-      "path": "rules/angular/security.md",
-      "meta": {
-        "paths": [
-          "**/*.component.ts",
-          "**/*.component.html",
-          "**/*.service.ts",
-          "**/*.interceptor.ts"
-        ]
-      }
-    },
-    {
-      "id": "rule:angular/testing.md",
-      "type": "rule",
-      "name": "angular/testing.md",
-      "path": "rules/angular/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.spec.ts",
-          "**/*.test.ts"
-        ]
-      }
-    },
-    {
       "id": "rule:common/agents.md",
       "type": "rule",
       "name": "common/agents.md",
@@ -176,71 +101,6 @@
       }
     },
     {
-      "id": "rule:golang/coding-style.md",
-      "type": "rule",
-      "name": "golang/coding-style.md",
-      "path": "rules/golang/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.go",
-          "**/go.mod",
-          "**/go.sum"
-        ]
-      }
-    },
-    {
-      "id": "rule:golang/hooks.md",
-      "type": "rule",
-      "name": "golang/hooks.md",
-      "path": "rules/golang/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.go",
-          "**/go.mod",
-          "**/go.sum"
-        ]
-      }
-    },
-    {
-      "id": "rule:golang/patterns.md",
-      "type": "rule",
-      "name": "golang/patterns.md",
-      "path": "rules/golang/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.go",
-          "**/go.mod",
-          "**/go.sum"
-        ]
-      }
-    },
-    {
-      "id": "rule:golang/security.md",
-      "type": "rule",
-      "name": "golang/security.md",
-      "path": "rules/golang/security.md",
-      "meta": {
-        "paths": [
-          "**/*.go",
-          "**/go.mod",
-          "**/go.sum"
-        ]
-      }
-    },
-    {
-      "id": "rule:golang/testing.md",
-      "type": "rule",
-      "name": "golang/testing.md",
-      "path": "rules/golang/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.go",
-          "**/go.mod",
-          "**/go.sum"
-        ]
-      }
-    },
-    {
       "id": "rule:java/coding-style.md",
       "type": "rule",
       "name": "java/coding-style.md",
@@ -295,221 +155,6 @@
       "meta": {
         "paths": [
           "**/*.java"
-        ]
-      }
-    },
-    {
-      "id": "rule:nuxt/coding-style.md",
-      "type": "rule",
-      "name": "nuxt/coding-style.md",
-      "path": "rules/nuxt/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/nuxt.config.*",
-          "**/app.config.*",
-          "**/app.vue",
-          "**/pages/**",
-          "**/layouts/**",
-          "**/middleware/**"
-        ]
-      }
-    },
-    {
-      "id": "rule:nuxt/hooks.md",
-      "type": "rule",
-      "name": "nuxt/hooks.md",
-      "path": "rules/nuxt/hooks.md",
-      "meta": {
-        "paths": [
-          "**/nuxt.config.*",
-          "**/app.config.*",
-          "**/server/**/*.ts",
-          "**/*.vue"
-        ]
-      }
-    },
-    {
-      "id": "rule:nuxt/patterns.md",
-      "type": "rule",
-      "name": "nuxt/patterns.md",
-      "path": "rules/nuxt/patterns.md",
-      "meta": {
-        "paths": [
-          "**/nuxt.config.*",
-          "**/app.config.*",
-          "**/app.vue",
-          "**/server/**/*.ts",
-          "**/pages/**",
-          "**/middleware/**"
-        ]
-      }
-    },
-    {
-      "id": "rule:nuxt/security.md",
-      "type": "rule",
-      "name": "nuxt/security.md",
-      "path": "rules/nuxt/security.md",
-      "meta": {
-        "paths": [
-          "**/nuxt.config.*",
-          "**/app.config.*",
-          "**/server/**/*.ts"
-        ]
-      }
-    },
-    {
-      "id": "rule:nuxt/testing.md",
-      "type": "rule",
-      "name": "nuxt/testing.md",
-      "path": "rules/nuxt/testing.md",
-      "meta": {
-        "paths": [
-          "**/nuxt.config.*",
-          "**/server/**/*.ts",
-          "**/pages/**",
-          "**/layouts/**",
-          "**/middleware/**"
-        ]
-      }
-    },
-    {
-      "id": "rule:perl/coding-style.md",
-      "type": "rule",
-      "name": "perl/coding-style.md",
-      "path": "rules/perl/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.pl",
-          "**/*.pm",
-          "**/*.t",
-          "**/*.psgi",
-          "**/*.cgi"
-        ]
-      }
-    },
-    {
-      "id": "rule:perl/hooks.md",
-      "type": "rule",
-      "name": "perl/hooks.md",
-      "path": "rules/perl/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.pl",
-          "**/*.pm",
-          "**/*.t",
-          "**/*.psgi",
-          "**/*.cgi"
-        ]
-      }
-    },
-    {
-      "id": "rule:perl/patterns.md",
-      "type": "rule",
-      "name": "perl/patterns.md",
-      "path": "rules/perl/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.pl",
-          "**/*.pm",
-          "**/*.t",
-          "**/*.psgi",
-          "**/*.cgi"
-        ]
-      }
-    },
-    {
-      "id": "rule:perl/security.md",
-      "type": "rule",
-      "name": "perl/security.md",
-      "path": "rules/perl/security.md",
-      "meta": {
-        "paths": [
-          "**/*.pl",
-          "**/*.pm",
-          "**/*.t",
-          "**/*.psgi",
-          "**/*.cgi"
-        ]
-      }
-    },
-    {
-      "id": "rule:perl/testing.md",
-      "type": "rule",
-      "name": "perl/testing.md",
-      "path": "rules/perl/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.pl",
-          "**/*.pm",
-          "**/*.t",
-          "**/*.psgi",
-          "**/*.cgi"
-        ]
-      }
-    },
-    {
-      "id": "rule:php/coding-style.md",
-      "type": "rule",
-      "name": "php/coding-style.md",
-      "path": "rules/php/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.php",
-          "**/composer.json"
-        ]
-      }
-    },
-    {
-      "id": "rule:php/hooks.md",
-      "type": "rule",
-      "name": "php/hooks.md",
-      "path": "rules/php/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.php",
-          "**/composer.json",
-          "**/phpstan.neon",
-          "**/phpstan.neon.dist",
-          "**/psalm.xml"
-        ]
-      }
-    },
-    {
-      "id": "rule:php/patterns.md",
-      "type": "rule",
-      "name": "php/patterns.md",
-      "path": "rules/php/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.php",
-          "**/composer.json"
-        ]
-      }
-    },
-    {
-      "id": "rule:php/security.md",
-      "type": "rule",
-      "name": "php/security.md",
-      "path": "rules/php/security.md",
-      "meta": {
-        "paths": [
-          "**/*.php",
-          "**/composer.lock",
-          "**/composer.json"
-        ]
-      }
-    },
-    {
-      "id": "rule:php/testing.md",
-      "type": "rule",
-      "name": "php/testing.md",
-      "path": "rules/php/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.php",
-          "**/phpunit.xml",
-          "**/phpunit.xml.dist",
-          "**/composer.json"
         ]
       }
     },
@@ -583,102 +228,6 @@
         "paths": [
           "**/*.py",
           "**/*.pyi"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/accessibility.md",
-      "type": "rule",
-      "name": "react-native/accessibility.md",
-      "path": "rules/react-native/accessibility.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/coding-style.md",
-      "type": "rule",
-      "name": "react-native/coding-style.md",
-      "path": "rules/react-native/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/hooks.md",
-      "type": "rule",
-      "name": "react-native/hooks.md",
-      "path": "rules/react-native/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/patterns.md",
-      "type": "rule",
-      "name": "react-native/patterns.md",
-      "path": "rules/react-native/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/performance.md",
-      "type": "rule",
-      "name": "react-native/performance.md",
-      "path": "rules/react-native/performance.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/production-readiness.md",
-      "type": "rule",
-      "name": "react-native/production-readiness.md",
-      "path": "rules/react-native/production-readiness.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/security.md",
-      "type": "rule",
-      "name": "react-native/security.md",
-      "path": "rules/react-native/security.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:react-native/testing.md",
-      "type": "rule",
-      "name": "react-native/testing.md",
-      "path": "rules/react-native/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.ts",
-          "**/*.tsx"
         ]
       }
     },
@@ -758,83 +307,6 @@
           "**/*.spec.jsx",
           "**/__tests__/**/*.ts",
           "**/__tests__/**/*.tsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:ruby/coding-style.md",
-      "type": "rule",
-      "name": "ruby/coding-style.md",
-      "path": "rules/ruby/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.rb",
-          "**/*.rake",
-          "**/Gemfile",
-          "**/*.gemspec",
-          "**/config.ru"
-        ]
-      }
-    },
-    {
-      "id": "rule:ruby/hooks.md",
-      "type": "rule",
-      "name": "ruby/hooks.md",
-      "path": "rules/ruby/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.rb",
-          "**/*.rake",
-          "**/Gemfile",
-          "**/Gemfile.lock",
-          "**/config/routes.rb"
-        ]
-      }
-    },
-    {
-      "id": "rule:ruby/patterns.md",
-      "type": "rule",
-      "name": "ruby/patterns.md",
-      "path": "rules/ruby/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.rb",
-          "**/*.rake",
-          "**/Gemfile",
-          "**/app/**/*.erb",
-          "**/config/routes.rb"
-        ]
-      }
-    },
-    {
-      "id": "rule:ruby/security.md",
-      "type": "rule",
-      "name": "ruby/security.md",
-      "path": "rules/ruby/security.md",
-      "meta": {
-        "paths": [
-          "**/*.rb",
-          "**/*.rake",
-          "**/Gemfile",
-          "**/Gemfile.lock",
-          "**/config/routes.rb",
-          "**/config/credentials*.yml.enc"
-        ]
-      }
-    },
-    {
-      "id": "rule:ruby/testing.md",
-      "type": "rule",
-      "name": "ruby/testing.md",
-      "path": "rules/ruby/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.rb",
-          "**/*.rake",
-          "**/Gemfile",
-          "**/test/**/*.rb",
-          "**/spec/**/*.rb",
-          "**/config/routes.rb"
         ]
       }
     },
@@ -1204,15 +676,6 @@
       "path": "skills/ai-regression-testing/SKILL.md",
       "meta": {
         "description": "Regression testing strategies for AI-assisted development. Sandbox-mode API testing without database dependencies, automated bug-check workflows, and patterns to catch AI blind spots where the same model writes and reviews code."
-      }
-    },
-    {
-      "id": "skill:angular-developer",
-      "type": "skill",
-      "name": "angular-developer",
-      "path": "skills/angular-developer/SKILL.md",
-      "meta": {
-        "description": "Generates Angular code and provides architectural guidance. Trigger when creating projects, components, or services, or for best practices on reactivity (signals, linkedSignal, resource), forms, dependency injection, routing, SSR, accessibility (ARIA), animations, styling (component styles, Tailwind CSS), testing, or CLI tooling."
       }
     },
     {
@@ -1999,24 +1462,6 @@
       }
     },
     {
-      "id": "skill:golang-patterns",
-      "type": "skill",
-      "name": "golang-patterns",
-      "path": "skills/golang-patterns/SKILL.md",
-      "meta": {
-        "description": "Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications."
-      }
-    },
-    {
-      "id": "skill:golang-testing",
-      "type": "skill",
-      "name": "golang-testing",
-      "path": "skills/golang-testing/SKILL.md",
-      "meta": {
-        "description": "Go testing patterns including table-driven tests, subtests, benchmarks, fuzzing, and test coverage. Follows TDD methodology with idiomatic Go practices."
-      }
-    },
-    {
       "id": "skill:google-workspace-ops",
       "type": "skill",
       "name": "google-workspace-ops",
@@ -2584,15 +2029,6 @@
       }
     },
     {
-      "id": "skill:nuxt4-patterns",
-      "type": "skill",
-      "name": "nuxt4-patterns",
-      "path": "skills/nuxt4-patterns/SKILL.md",
-      "meta": {
-        "description": "Nuxt 4 app patterns for hydration safety, performance, route rules, lazy loading, and SSR-safe data fetching with useFetch and useAsyncData."
-      }
-    },
-    {
       "id": "skill:openclaw-persona-forge",
       "type": "skill",
       "name": "openclaw-persona-forge",
@@ -2671,33 +2107,6 @@
       "path": "skills/parallel-execution-optimizer/SKILL.md",
       "meta": {
         "description": "Use when the user wants a task done much faster through parallel work, concurrent agents, batched tool calls, isolated worktrees, or many independent verification lanes without losing correctness."
-      }
-    },
-    {
-      "id": "skill:perl-patterns",
-      "type": "skill",
-      "name": "perl-patterns",
-      "path": "skills/perl-patterns/SKILL.md",
-      "meta": {
-        "description": "Modern Perl 5.36+ idioms, best practices, and conventions for building robust, maintainable Perl applications."
-      }
-    },
-    {
-      "id": "skill:perl-security",
-      "type": "skill",
-      "name": "perl-security",
-      "path": "skills/perl-security/SKILL.md",
-      "meta": {
-        "description": "Comprehensive Perl security covering taint mode, input validation, safe process execution, DBI parameterized queries, web security (XSS/SQLi/CSRF), and perlcritic security policies."
-      }
-    },
-    {
-      "id": "skill:perl-testing",
-      "type": "skill",
-      "name": "perl-testing",
-      "path": "skills/perl-testing/SKILL.md",
-      "meta": {
-        "description": "Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology."
       }
     },
     {
@@ -2896,15 +2305,6 @@
       "path": "skills/ralphinho-rfc-pipeline/SKILL.md",
       "meta": {
         "description": "RFC-driven multi-agent DAG execution pattern with quality gates, merge queues, and work unit orchestration."
-      }
-    },
-    {
-      "id": "skill:react-native-patterns",
-      "type": "skill",
-      "name": "react-native-patterns",
-      "path": "skills/react-native-patterns/SKILL.md",
-      "meta": {
-        "description": "React Native and Expo app patterns — Expo Router navigation, state separation (server/client/route/form), TanStack Query data fetching with Zod, performant lists, NativeWind/StyleSheet styling, native APIs, and secure storage. Use when building or editing React Native / Expo screens, components, navigation, or data layers."
       }
     },
     {
@@ -3604,26 +3004,6 @@
       }
     },
     {
-      "id": "agent:go-build-resolver",
-      "type": "agent",
-      "name": "go-build-resolver",
-      "path": "agents/go-build-resolver.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
-      }
-    },
-    {
-      "id": "agent:go-reviewer",
-      "type": "agent",
-      "name": "go-reviewer",
-      "path": "agents/go-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
       "id": "agent:harness-optimizer",
       "type": "agent",
       "name": "harness-optimizer",
@@ -3771,16 +3151,6 @@
       "meta": {
         "model": "sonnet",
         "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
-      }
-    },
-    {
-      "id": "agent:php-reviewer",
-      "type": "agent",
-      "name": "php-reviewer",
-      "path": "agents/php-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
       }
     },
     {
@@ -4121,36 +3491,6 @@
       "meta": {
         "description": "Run a generator/evaluator design loop for frontend or visual work with bounded iterations and scoring.",
         "commandType": "planning"
-      }
-    },
-    {
-      "id": "command:go-build",
-      "type": "command",
-      "name": "go-build",
-      "path": "commands/go-build.md",
-      "meta": {
-        "description": "Fix Go build errors, go vet warnings, and linter issues incrementally. Invokes the go-build-resolver agent for minimal, surgical fixes.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:go-review",
-      "type": "command",
-      "name": "go-review",
-      "path": "commands/go-review.md",
-      "meta": {
-        "description": "Comprehensive Go code review for idiomatic patterns, concurrency safety, error handling, and security. Invokes the go-reviewer agent.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:go-test",
-      "type": "command",
-      "name": "go-test",
-      "path": "commands/go-test.md",
-      "meta": {
-        "description": "Enforce TDD workflow for Go. Write table-driven tests first, then implement. Verify 80%+ coverage with go test -cover.",
-        "commandType": "testing"
       }
     },
     {
@@ -5582,46 +4922,6 @@
   ],
   "edges": [
     {
-      "from": "rule:angular/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:angular/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:angular/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:angular/patterns.md",
-      "to": "skill:angular-developer",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:angular/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:angular/security.md",
-      "to": "agent:security-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "rule:angular/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:angular/testing.md",
-      "to": "skill:angular-developer",
-      "type": "references_skill"
-    },
-    {
       "from": "rule:common/agents.md",
       "to": "agent:architect",
       "type": "references_agent"
@@ -5644,11 +4944,6 @@
     {
       "from": "rule:common/code-review.md",
       "to": "agent:code-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "rule:common/code-review.md",
-      "to": "agent:go-reviewer",
       "type": "references_agent"
     },
     {
@@ -5705,46 +5000,6 @@
       "from": "rule:common/testing.md",
       "to": "agent:tdd-guide",
       "type": "references_agent"
-    },
-    {
-      "from": "rule:golang/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:golang/coding-style.md",
-      "to": "skill:golang-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:golang/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:golang/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:golang/patterns.md",
-      "to": "skill:golang-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:golang/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:golang/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:golang/testing.md",
-      "to": "skill:golang-testing",
-      "type": "references_skill"
     },
     {
       "from": "rule:java/coding-style.md",
@@ -5827,136 +5082,6 @@
       "type": "references_skill"
     },
     {
-      "from": "rule:nuxt/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:nuxt/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:nuxt/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:nuxt/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:nuxt/security.md",
-      "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:nuxt/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:perl/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:perl/coding-style.md",
-      "to": "skill:perl-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:perl/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:perl/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:perl/patterns.md",
-      "to": "skill:perl-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:perl/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:perl/security.md",
-      "to": "skill:perl-security",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:perl/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:perl/testing.md",
-      "to": "skill:perl-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:php/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:php/coding-style.md",
-      "to": "skill:backend-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:php/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:php/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:php/patterns.md",
-      "to": "skill:api-design",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:php/patterns.md",
-      "to": "skill:laravel-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:php/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:php/security.md",
-      "to": "skill:laravel-security",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:php/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:php/testing.md",
-      "to": "skill:laravel-tdd",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:php/testing.md",
-      "to": "skill:tdd-workflow",
-      "type": "references_skill"
-    },
-    {
       "from": "rule:python/coding-style.md",
       "to": "rule:common/coding-style.md",
       "type": "extends"
@@ -6007,41 +5132,6 @@
       "type": "references_skill"
     },
     {
-      "from": "rule:react-native/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:react-native/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:react-native/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:react-native/performance.md",
-      "to": "rule:common/performance.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:react-native/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:react-native/security.md",
-      "to": "skill:security-scan",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:react-native/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
       "from": "rule:react/coding-style.md",
       "to": "rule:typescript/coding-style.md",
       "type": "extends"
@@ -6084,51 +5174,6 @@
     {
       "from": "rule:react/testing.md",
       "to": "skill:react-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:ruby/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:ruby/coding-style.md",
-      "to": "skill:backend-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:ruby/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:ruby/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:ruby/patterns.md",
-      "to": "skill:backend-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:ruby/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:ruby/security.md",
-      "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:ruby/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:ruby/testing.md",
-      "to": "skill:tdd-workflow",
       "type": "references_skill"
     },
     {
@@ -6239,11 +5284,6 @@
     {
       "from": "skill:agent-sort",
       "to": "skill:skill-library",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:angular-developer",
-      "to": "skill:e2e-testing",
       "type": "references_skill"
     },
     {
@@ -6558,11 +5598,6 @@
     },
     {
       "from": "skill:react-patterns",
-      "to": "skill:angular-developer",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:react-patterns",
       "to": "skill:frontend-patterns",
       "type": "references_skill"
     },
@@ -6712,16 +5747,6 @@
       "type": "references_agent"
     },
     {
-      "from": "agent:go-build-resolver",
-      "to": "skill:golang-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:go-reviewer",
-      "to": "skill:golang-patterns",
-      "type": "references_skill"
-    },
-    {
       "from": "agent:java-build-resolver",
       "to": "skill:quarkus-patterns",
       "type": "references_skill"
@@ -6834,41 +5859,6 @@
     {
       "from": "command:evolve",
       "to": "skill:continuous-learning-v2",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:go-build",
-      "to": "agent:go-build-resolver",
-      "type": "references_agent"
-    },
-    {
-      "from": "command:go-build",
-      "to": "skill:golang-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:go-review",
-      "to": "agent:go-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "command:go-review",
-      "to": "skill:golang-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:go-review",
-      "to": "skill:golang-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:go-test",
-      "to": "skill:golang-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:go-test",
-      "to": "skill:tdd-workflow",
       "type": "references_skill"
     },
     {
@@ -7443,7 +6433,7 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:angular-developer",
+      "to": "skill:android-clean-architecture",
       "type": "installs_skill"
     },
     {
@@ -7463,6 +6453,36 @@
     },
     {
       "from": "module:framework-language",
+      "to": "skill:compose-multiplatform-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:csharp-testing",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:fsharp-testing",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:cpp-coding-standards",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:cpp-testing",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:dart-flutter-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
       "to": "skill:django-patterns",
       "type": "installs_skill"
     },
@@ -7474,6 +6494,11 @@
     {
       "from": "module:framework-language",
       "to": "skill:django-verification",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:dotnet-patterns",
       "type": "installs_skill"
     },
     {
@@ -7508,17 +6533,32 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:golang-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:golang-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
       "to": "skill:java-coding-standards",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:kotlin-coroutines-flows",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:kotlin-exposed-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:kotlin-ktor-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:kotlin-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:kotlin-testing",
       "type": "installs_skill"
     },
     {
@@ -7549,16 +6589,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:nestjs-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:perl-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:perl-testing",
       "type": "installs_skill"
     },
     {
@@ -7599,6 +6629,16 @@
     {
       "from": "module:framework-language",
       "to": "skill:react-testing",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:rust-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:rust-testing",
       "type": "installs_skill"
     },
     {
@@ -7648,6 +6688,11 @@
     },
     {
       "from": "module:framework-language",
+      "to": "skill:flutter-dart-code-review",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
       "to": "skill:frontend-a11y",
       "type": "installs_skill"
     },
@@ -7679,16 +6724,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:nextjs-turbopack",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:nuxt4-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:react-native-patterns",
       "type": "installs_skill"
     },
     {
@@ -8024,11 +7059,6 @@
     {
       "from": "module:security",
       "to": "skill:nodejs-keccak256",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:perl-security",
       "type": "installs_skill"
     },
     {

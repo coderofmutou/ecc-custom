@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalAgents": 54,
+  "totalAgents": 51,
   "agents": [
     {
       "agent": "a11y-architect",
@@ -186,26 +186,6 @@
       "skills": []
     },
     {
-      "agent": "go-build-resolver",
-      "path": "agents/go-build-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": [
-        "golang-patterns"
-      ]
-    },
-    {
-      "agent": "go-reviewer",
-      "path": "agents/go-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": [
-        "golang-patterns"
-      ]
-    },
-    {
       "agent": "harness-optimizer",
       "path": "agents/harness-optimizer.md",
       "model": "sonnet",
@@ -332,14 +312,6 @@
       "path": "agents/performance-optimizer.md",
       "model": "sonnet",
       "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "agent": "php-reviewer",
-      "path": "agents/php-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
       "agents": [],
       "skills": []
     },
@@ -494,7 +466,6 @@
       "django-tdd": 1,
       "e2e-testing": 1,
       "frontend-patterns": 1,
-      "golang-patterns": 2,
       "marketing-campaign": 1,
       "mle-workflow": 1,
       "python-patterns": 1,
