@@ -143,24 +143,30 @@
     },
     {
       "id": "command:flutter-build",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "针对 Flutter/Dart 移动开发，与用户主要的后端开发工作无关"
+      "suggestedReason": "针对 Flutter/Dart 移动开发，与用户主要的后端开发工作无关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:flutter-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "针对 Flutter/Dart 代码审查，与用户主要技术栈无关"
+      "suggestedReason": "针对 Flutter/Dart 代码审查，与用户主要技术栈无关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:flutter-test",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "针对 Flutter/Dart 测试，与用户主要技术栈无关"
+      "suggestedReason": "针对 Flutter/Dart 测试，与用户主要技术栈无关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:gan-build",
@@ -199,10 +205,12 @@
     },
     {
       "id": "command:gradle-build",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要使用 Maven/Spring Boot，Gradle 偶尔涉及；用户需要时可手动调用"
+      "suggestedReason": "用户主要使用 Maven/Spring Boot，Gradle 偶尔涉及；用户需要时可手动调用",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:harness-audit",
@@ -269,24 +277,30 @@
     },
     {
       "id": "command:kotlin-build",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin，与画像弱相关"
+      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin，与画像弱相关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:kotlin-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin，与画像弱相关"
+      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin，与画像弱相关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:kotlin-test",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin TDD 工作流，与画像弱相关"
+      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin TDD 工作流，与画像弱相关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:learn",
@@ -731,10 +745,12 @@
     },
     {
       "id": "skill:android-clean-architecture",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Android/KMP移动端架构模式，用户是Java后端+偶尔Web前端，不涉及移动开发"
+      "suggestedReason": "Android/KMP移动端架构模式，用户是Java后端+偶尔Web前端，不涉及移动开发",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:angular-developer",
@@ -955,10 +971,12 @@
     },
     {
       "id": "skill:compose-multiplatform-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "KMP/Android UI 开发与 Java 后端工程师主要工作关系弱，且用户的前端开发指 Web 前端而非移动"
+      "suggestedReason": "KMP/Android UI 开发与 Java 后端工程师主要工作关系弱，且用户的前端开发指 Web 前端而非移动",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:config-gc",
@@ -1088,10 +1106,12 @@
     },
     {
       "id": "skill:dart-flutter-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Dart/Flutter移动开发模式，用户不涉及移动端，逻辑同已排除的flutter-dart-code-review"
+      "suggestedReason": "Dart/Flutter移动开发模式，用户不涉及移动端，逻辑同已排除的flutter-dart-code-review",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:dashboard-builder",
@@ -1333,17 +1353,21 @@
     },
     {
       "id": "skill:flutter-dart-code-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户的技术栈中不包含 Flutter/Dart，不涉及移动端开发"
+      "suggestedReason": "用户的技术栈中不包含 Flutter/Dart，不涉及移动端开发",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:foundation-models-on-device",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "iOS 特定框架，用户工作领域无关"
+      "suggestedReason": "iOS 特定框架，用户工作领域无关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:frontend-a11y",
@@ -1571,10 +1595,12 @@
     },
     {
       "id": "skill:ios-icon-gen",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "iOS 特定工具，用户仅偶尔参与前端且主要是后端"
+      "suggestedReason": "iOS 特定工具，用户仅偶尔参与前端且主要是后端",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:iterative-retrieval",
@@ -1641,38 +1667,48 @@
     },
     {
       "id": "skill:kotlin-coroutines-flows",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Kotlin 不在用户主要技术栈中，超出核心开发范围"
+      "suggestedReason": "Kotlin 不在用户主要技术栈中，超出核心开发范围",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:kotlin-exposed-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Kotlin ORM，与用户的 Java/MyBatis 技术栈完全无关"
+      "suggestedReason": "Kotlin ORM，与用户的 Java/MyBatis 技术栈完全无关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:kotlin-ktor-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Kotlin 框架，用户主要使用 Spring Boot，完全无关"
+      "suggestedReason": "Kotlin 框架，用户主要使用 Spring Boot，完全无关",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:kotlin-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Kotlin 开发模式，用户主要使用 Java，超出技术栈"
+      "suggestedReason": "Kotlin 开发模式，用户主要使用 Java，超出技术栈",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:kotlin-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Kotlin 测试模式，用户关注代码质量但主要使用 Java/JUnit，不需要"
+      "suggestedReason": "Kotlin 测试模式，用户关注代码质量但主要使用 Java/JUnit，不需要",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:kubernetes-patterns",
@@ -1732,10 +1768,12 @@
     },
     {
       "id": "skill:liquid-glass-design",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "iOS 26 特定设计系统，用户前端开发主要是 Web，不涉及 iOS 应用开发"
+      "suggestedReason": "iOS 26 特定设计系统，用户前端开发主要是 Web，不涉及 iOS 应用开发",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:llm-trading-agent-security",
@@ -2418,31 +2456,39 @@
     },
     {
       "id": "skill:swift-actor-persistence",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Swift/iOS 开发与 Java 后端工程师画像无关，用户不会使用"
+      "suggestedReason": "Swift/iOS 开发与 Java 后端工程师画像无关，用户不会使用",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:swift-concurrency-6-2",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像无关（不做 Swift/iOS 开发），Claude 不需要自动触发"
+      "suggestedReason": "与用户画像无关（不做 Swift/iOS 开发），Claude 不需要自动触发",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:swift-protocol-di-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Swift 测试模式针对 iOS 开发，用户主要技术栈为 Spring Boot/MyBatis/MySQL"
+      "suggestedReason": "Swift 测试模式针对 iOS 开发，用户主要技术栈为 Spring Boot/MyBatis/MySQL",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:swiftui-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像无关（不做 iOS/macOS UI 开发），Claude 不需要自动触发"
+      "suggestedReason": "与用户画像无关（不做 iOS/macOS UI 开发），Claude 不需要自动触发",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:taste",
@@ -2583,6 +2629,132 @@
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
       "suggestedReason": "与用户画像无关，用户无社交媒体集成需求"
+    },
+    {
+      "id": "rule:swift/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:swift/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:swift/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:swift/security.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:swift/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:dart/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:dart/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:dart/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:dart/security.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:dart/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:kotlin/coding-style.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:kotlin/hooks.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:kotlin/patterns.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:kotlin/security.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:kotlin/testing.md",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:swift-reviewer",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:swift-build-resolver",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:dart-build-resolver",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:flutter-reviewer",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:kotlin-reviewer",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:kotlin-build-resolver",
+      "decision": "exclude",
+      "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
     }
   ]
 }

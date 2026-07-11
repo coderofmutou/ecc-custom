@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalRules": 122,
+  "totalRules": 107,
   "rules": [
     {
       "rule": "README.md",
@@ -405,69 +405,6 @@
       "skills": []
     },
     {
-      "rule": "dart/coding-style.md",
-      "path": "rules/dart/coding-style.md",
-      "paths": [
-        "**/*.dart",
-        "**/pubspec.yaml",
-        "**/analysis_options.yaml"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "dart/hooks.md",
-      "path": "rules/dart/hooks.md",
-      "paths": [
-        "**/*.dart",
-        "**/pubspec.yaml",
-        "**/analysis_options.yaml"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "dart/patterns.md",
-      "path": "rules/dart/patterns.md",
-      "paths": [
-        "**/*.dart",
-        "**/pubspec.yaml"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "compose-multiplatform-patterns",
-        "flutter-dart-code-review"
-      ]
-    },
-    {
-      "rule": "dart/security.md",
-      "path": "rules/dart/security.md",
-      "paths": [
-        "**/*.dart",
-        "**/pubspec.yaml",
-        "**/AndroidManifest.xml",
-        "**/Info.plist"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "dart/testing.md",
-      "path": "rules/dart/testing.md",
-      "paths": [
-        "**/*.dart",
-        "**/pubspec.yaml",
-        "**/analysis_options.yaml"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": []
-    },
-    {
       "rule": "fsharp/coding-style.md",
       "path": "rules/fsharp/coding-style.md",
       "paths": [
@@ -665,65 +602,6 @@
         "quarkus-tdd",
         "springboot-tdd"
       ]
-    },
-    {
-      "rule": "kotlin/coding-style.md",
-      "path": "rules/kotlin/coding-style.md",
-      "paths": [
-        "**/*.kt",
-        "**/*.kts"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "kotlin/hooks.md",
-      "path": "rules/kotlin/hooks.md",
-      "paths": [
-        "**/*.kt",
-        "**/*.kts",
-        "**/build.gradle.kts"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "kotlin/patterns.md",
-      "path": "rules/kotlin/patterns.md",
-      "paths": [
-        "**/*.kt",
-        "**/*.kts"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "android-clean-architecture",
-        "kotlin-coroutines-flows"
-      ]
-    },
-    {
-      "rule": "kotlin/security.md",
-      "path": "rules/kotlin/security.md",
-      "paths": [
-        "**/*.kt",
-        "**/*.kts"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "kotlin/testing.md",
-      "path": "rules/kotlin/testing.md",
-      "paths": [
-        "**/*.kt",
-        "**/*.kts"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": []
     },
     {
       "rule": "nuxt/coding-style.md",
@@ -1334,66 +1212,6 @@
       ]
     },
     {
-      "rule": "swift/coding-style.md",
-      "path": "rules/swift/coding-style.md",
-      "paths": [
-        "**/*.swift",
-        "**/Package.swift"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "swift/hooks.md",
-      "path": "rules/swift/hooks.md",
-      "paths": [
-        "**/*.swift",
-        "**/Package.swift"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "swift/patterns.md",
-      "path": "rules/swift/patterns.md",
-      "paths": [
-        "**/*.swift",
-        "**/Package.swift"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "swift-actor-persistence",
-        "swift-protocol-di-testing"
-      ]
-    },
-    {
-      "rule": "swift/security.md",
-      "path": "rules/swift/security.md",
-      "paths": [
-        "**/*.swift",
-        "**/Package.swift"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "swift/testing.md",
-      "path": "rules/swift/testing.md",
-      "paths": [
-        "**/*.swift",
-        "**/Package.swift"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "swift-protocol-di-testing"
-      ]
-    },
-    {
       "rule": "typescript/coding-style.md",
       "path": "rules/typescript/coding-style.md",
       "paths": [
@@ -1648,11 +1466,9 @@
         "arkts/coding-style.md",
         "cpp/coding-style.md",
         "csharp/coding-style.md",
-        "dart/coding-style.md",
         "fsharp/coding-style.md",
         "golang/coding-style.md",
         "java/coding-style.md",
-        "kotlin/coding-style.md",
         "nuxt/coding-style.md",
         "perl/coding-style.md",
         "php/coding-style.md",
@@ -1660,7 +1476,6 @@
         "react-native/coding-style.md",
         "ruby/coding-style.md",
         "rust/coding-style.md",
-        "swift/coding-style.md",
         "typescript/coding-style.md",
         "vue/coding-style.md",
         "web/coding-style.md"
@@ -1673,11 +1488,9 @@
         "arkts/hooks.md",
         "cpp/hooks.md",
         "csharp/hooks.md",
-        "dart/hooks.md",
         "fsharp/hooks.md",
         "golang/hooks.md",
         "java/hooks.md",
-        "kotlin/hooks.md",
         "nuxt/hooks.md",
         "perl/hooks.md",
         "php/hooks.md",
@@ -1685,7 +1498,6 @@
         "react-native/hooks.md",
         "ruby/hooks.md",
         "rust/hooks.md",
-        "swift/hooks.md",
         "typescript/hooks.md",
         "vue/hooks.md",
         "web/hooks.md"
@@ -1695,11 +1507,9 @@
         "arkts/patterns.md",
         "cpp/patterns.md",
         "csharp/patterns.md",
-        "dart/patterns.md",
         "fsharp/patterns.md",
         "golang/patterns.md",
         "java/patterns.md",
-        "kotlin/patterns.md",
         "nuxt/patterns.md",
         "perl/patterns.md",
         "php/patterns.md",
@@ -1707,7 +1517,6 @@
         "react-native/patterns.md",
         "ruby/patterns.md",
         "rust/patterns.md",
-        "swift/patterns.md",
         "typescript/patterns.md",
         "vue/patterns.md",
         "web/design-quality.md",
@@ -1722,11 +1531,9 @@
         "arkts/security.md",
         "cpp/security.md",
         "csharp/security.md",
-        "dart/security.md",
         "fsharp/security.md",
         "golang/security.md",
         "java/security.md",
-        "kotlin/security.md",
         "nuxt/security.md",
         "perl/security.md",
         "php/security.md",
@@ -1734,7 +1541,6 @@
         "react-native/security.md",
         "ruby/security.md",
         "rust/security.md",
-        "swift/security.md",
         "typescript/security.md",
         "vue/security.md",
         "web/security.md"
@@ -1744,11 +1550,9 @@
         "arkts/testing.md",
         "cpp/testing.md",
         "csharp/testing.md",
-        "dart/testing.md",
         "fsharp/testing.md",
         "golang/testing.md",
         "java/testing.md",
-        "kotlin/testing.md",
         "nuxt/testing.md",
         "perl/testing.md",
         "php/testing.md",
@@ -1756,7 +1560,6 @@
         "react-native/testing.md",
         "ruby/testing.md",
         "rust/testing.md",
-        "swift/testing.md",
         "typescript/testing.md",
         "vue/testing.md",
         "web/testing.md"

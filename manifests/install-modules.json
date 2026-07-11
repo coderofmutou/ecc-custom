@@ -658,38 +658,6 @@
       "stability": "beta"
     },
     {
-      "id": "swift-apple",
-      "kind": "skills",
-      "description": "Swift, SwiftUI, and Apple platform skills including concurrency, persistence, and design patterns.",
-      "paths": [
-        "skills/foundation-models-on-device",
-        "skills/liquid-glass-design",
-        "skills/swift-actor-persistence",
-        "skills/swift-concurrency-6-2",
-        "skills/swift-protocol-di-testing",
-        "skills/swiftui-patterns",
-        "skills/ios-icon-gen"
-      ],
-      "targets": [
-        "claude",
-        "claude-project",
-        "cursor",
-        "antigravity",
-        "codex",
-        "opencode",
-        "codebuddy",
-        "joycode",
-        "qwen",
-        "zed"
-      ],
-      "dependencies": [
-        "platform-configs"
-      ],
-      "defaultInstall": false,
-      "cost": "medium",
-      "stability": "stable"
-    },
-    {
       "id": "agentic-patterns",
       "kind": "skills",
       "description": "Agentic engineering, autonomous loops, agent harness construction, and LLM pipeline optimization skills.",

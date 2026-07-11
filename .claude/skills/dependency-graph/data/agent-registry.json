@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalAgents": 67,
+  "totalAgents": 61,
   "agents": [
     {
       "agent": "a11y-architect",
@@ -126,16 +126,6 @@
       ]
     },
     {
-      "agent": "dart-build-resolver",
-      "path": "agents/dart-build-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": [
-        "flutter-dart-code-review"
-      ]
-    },
-    {
       "agent": "database-reviewer",
       "path": "agents/database-reviewer.md",
       "model": "sonnet",
@@ -195,14 +185,6 @@
     {
       "agent": "fastapi-reviewer",
       "path": "agents/fastapi-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "agent": "flutter-reviewer",
-      "path": "agents/flutter-reviewer.md",
       "model": "sonnet",
       "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
       "agents": [],
@@ -318,24 +300,6 @@
         "quarkus-patterns",
         "springboot-patterns"
       ]
-    },
-    {
-      "agent": "kotlin-build-resolver",
-      "path": "agents/kotlin-build-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": [
-        "kotlin-patterns"
-      ]
-    },
-    {
-      "agent": "kotlin-reviewer",
-      "path": "agents/kotlin-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": []
     },
     {
       "agent": "loop-operator",
@@ -553,26 +517,6 @@
       "skills": []
     },
     {
-      "agent": "swift-build-resolver",
-      "path": "agents/swift-build-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": [
-        "swift-concurrency-6-2"
-      ]
-    },
-    {
-      "agent": "swift-reviewer",
-      "path": "agents/swift-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": [
-        "swift-concurrency-6-2"
-      ]
-    },
-    {
       "agent": "tdd-guide",
       "path": "agents/tdd-guide.md",
       "model": "sonnet",
@@ -622,11 +566,9 @@
       "django-tdd": 1,
       "dotnet-patterns": 2,
       "e2e-testing": 1,
-      "flutter-dart-code-review": 1,
       "frontend-patterns": 1,
       "fsharp-testing": 1,
       "golang-patterns": 2,
-      "kotlin-patterns": 1,
       "marketing-campaign": 1,
       "mle-workflow": 1,
       "python-patterns": 1,
@@ -637,7 +579,6 @@
       "security-review": 1,
       "seo": 1,
       "springboot-patterns": 2,
-      "swift-concurrency-6-2": 2,
       "tdd-workflow": 1,
       "vue-patterns": 1
     },
