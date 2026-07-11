@@ -71,7 +71,7 @@ node .claude/skills/dependency-graph/scripts/relationship-query.js uses module:f
 
 ## 决策台账:要不要把某个组件留在 fork 里
 
-如果你在维护一个精简过的 fork,想决定"哪些组件的源文件不该留在仓库里",看 [DECISIONS.md](DECISIONS.md)——`scripts/decision-ledger.js` 提供 `record`/`list`/`prune`/`diff-upstream` 子命令,记录决策并驱动真实裁剪。**这是决定权在人的工具**:`decisions.json` 里可能有从外部数据源批量导入的 `suggestedDecision`(建议),但只有你自己显式 `record` 过的 `decision` 才会被 `prune` 执行,不会替你做决定。
+如果你在维护一个精简过的 fork,想决定"哪些组件的源文件不该留在仓库里",看 [DECISIONS.md](DECISIONS.md)——`scripts/decision-ledger.js` 提供 `record`/`list`/`prune`/`diff-upstream` 子命令,记录决策并驱动真实裁剪。**这是决定权在人的工具**:`decisions.json` 里可能有从外部数据源批量导入的 `suggestedDecision`(建议),但只有你自己显式 `record` 过的 `decision` 才会被 `prune` 执行,不会替你做决定。`prune --apply` 顺带处理 `manifests/install-modules.json` 里"整个 module 全部路径都死了"的安全情况,但**不会**、以后也**不该**顺手跑 `scripts/ci/catalog.js --write`/`scripts/ci/generate-command-registry.js --write` 之类不属于本技能、且可能跟 upstream 撞车的仓库脚本——见 [DECISIONS.md 里"裁剪之后不要自作主张做的事"一节](DECISIONS.md#裁剪之后不要自作主张做的事)。
 
 和上游仓库同步、处理"已裁剪组件在上游被改动"产生的合并冲突,看 [upstream-sync 技能](../upstream-sync/SKILL.md)——它只读引用本技能导出的函数,不修改本目录任何文件。
 

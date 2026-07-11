@@ -19,6 +19,7 @@ const ruleRegistry = require('./generate-rule-registry');
 const skillRegistry = require('./generate-skill-registry');
 const agentRegistry = require('./generate-agent-registry');
 const hookRegistry = require('./generate-hook-registry');
+const decisionLedger = require('./decision-ledger');
 const { buildGraph, findDependents, findUses, findOrphans } = require('./relationship-graph');
 
 function createFixtureRoot() {
@@ -106,6 +107,155 @@ function writeFixture(root) {
   );
 }
 
+// 专门覆盖 decision-ledger.js 的 prune --apply:回归测试"组件文件是本次
+// apply 才删除的,同一次调用里对应的 module(如果因此变成全死)也要能被
+// 一并清理"这个时序场景——manifestPlan 一旦提前到 applyPrunePlan 之前算,
+// 就会看到"文件还在"而漏检,必须跑两次才能补上,这里专门盯着这一点。
+// 用独立的临时目录,不跟上面那套 fixture 混用,避免互相干扰。
+function testDecisionLedgerManifestCleanup() {
+  const root = createFixtureRoot();
+  try {
+    fs.mkdirSync(path.join(root, 'skills', 'ledger-demo-skill'), { recursive: true });
+    fs.writeFileSync(
+      path.join(root, 'skills', 'ledger-demo-skill', 'SKILL.md'),
+      '---\nname: ledger-demo-skill\ndescription: Decision-ledger self-test fixture.\n---\n# Ledger Demo Skill\n'
+    );
+    // 单独一个不会被这次 prune 动到的 skill,专门用来在 mixed module 里当
+    // "始终存活"的那一条——不能跟 ledger-demo-skill 共用,否则它被删掉之后
+    // mixed module 会变成全死,测不出"部分死不该被自动改"这条断言。
+    fs.mkdirSync(path.join(root, 'skills', 'ledger-alive-skill'), { recursive: true });
+    fs.writeFileSync(
+      path.join(root, 'skills', 'ledger-alive-skill', 'SKILL.md'),
+      '---\nname: ledger-alive-skill\ndescription: Stays alive throughout this fixture.\n---\n# Ledger Alive Skill\n'
+    );
+
+    fs.mkdirSync(path.join(root, 'manifests'), { recursive: true });
+    fs.writeFileSync(
+      path.join(root, 'manifests', 'install-modules.json'),
+      JSON.stringify({
+        modules: [
+          {
+            id: 'ledger-demo-module',
+            kind: 'skills',
+            description: 'Module whose only path becomes dead in this same prune --apply run.',
+            paths: ['skills/ledger-demo-skill'],
+          },
+          {
+            id: 'ledger-mixed-module',
+            kind: 'skills',
+            description: 'Module mixing a dead path with a still-alive one.',
+            paths: ['skills/ledger-alive-skill', 'skills/does-not-exist'],
+          },
+        ],
+      }, null, 2)
+    );
+
+    const ledgerPath = path.join(root, 'decisions.json');
+    fs.writeFileSync(
+      ledgerPath,
+      JSON.stringify({
+        version: 1,
+        entries: [{ id: 'skill:ledger-demo-skill', decision: 'exclude', reason: 'self-test' }],
+      }, null, 2)
+    );
+
+    // dry-run 阶段 ledger-demo-skill 还没被删,ledger-demo-module 唯一的路径
+    // 还活着,不该出现在计划里;ledger-mixed-module 的 does-not-exist 从一
+    // 开始就是死的,该被判定为 report-only(还有一条存活路径,不能整块删)。
+    const dryRunPlan = decisionLedger.buildManifestCleanupPlan(root);
+    assert.strictEqual(
+      dryRunPlan.length,
+      1,
+      'dry-run 阶段只有本来就带着固定死路径的 mixed module,demo module 的路径还没被删,不该出现在计划里'
+    );
+    assert.strictEqual(dryRunPlan[0].moduleId, 'ledger-mixed-module', 'dry-run 阶段唯一该出现的是 mixed module');
+    assert.strictEqual(dryRunPlan[0].action, 'report-only', 'mixed module 在组件真正删除前就该是 report-only');
+
+    // CLI 层的 dry-run(`prune`,不加 --apply)不只是查"现在"的死路径,还要
+    // 模拟"如果真的 --apply 了会怎样"——ledger-demo-skill 还没被删,但它是
+    // ledger-demo-module 唯一的路径,一旦 apply 就会让这个 module 变成全死,
+    // dry-run 的预览应该提前把这个后果显示出来,而不是等用户执行完 --apply
+    // 才发现多删了一个 module。同时验证 dry-run 本身绝不改动磁盘。
+    const dryRunOutput = [];
+    const dryRunStream = { write: chunk => dryRunOutput.push(chunk) };
+    const dryRunExitCode = decisionLedger.run(['prune'], {
+      root,
+      ledgerPath,
+      stdout: dryRunStream,
+      stderr: dryRunStream,
+    });
+    assert.strictEqual(dryRunExitCode, 0, 'CLI 层 dry-run 应该成功退出');
+
+    const dryRunText = dryRunOutput.join('');
+    assert.ok(
+      dryRunText.includes('将删除整个 module') && dryRunText.includes('ledger-demo-module'),
+      'CLI dry-run 应该提前预告 ledger-demo-module 在 --apply 之后会变成全死' +
+        '(回归测试:曾经 dry-run 只查磁盘现状,不模拟即将发生的组件删除,完全不会提示这个后果)'
+    );
+    assert.ok(
+      dryRunText.includes('需人工判断') && dryRunText.includes('ledger-mixed-module'),
+      'CLI dry-run 也该照常报告 mixed module 的固有死路径'
+    );
+    assert.ok(
+      fs.existsSync(path.join(root, 'skills', 'ledger-demo-skill')),
+      'CLI dry-run 不应该真的删除任何组件文件'
+    );
+    assert.ok(
+      JSON.parse(fs.readFileSync(path.join(root, 'manifests', 'install-modules.json'), 'utf8'))
+        .modules.some(module => module.id === 'ledger-demo-module'),
+      'CLI dry-run 不应该真的改动 manifests/install-modules.json'
+    );
+
+    const capturedOutput = [];
+    const fakeStream = { write: chunk => capturedOutput.push(chunk) };
+    const exitCode = decisionLedger.run(['prune', '--apply'], {
+      root,
+      ledgerPath,
+      stdout: fakeStream,
+      stderr: fakeStream,
+    });
+
+    assert.strictEqual(exitCode, 0, 'prune --apply 应该成功退出');
+    assert.ok(
+      !fs.existsSync(path.join(root, 'skills', 'ledger-demo-skill')),
+      '组件文件应该被删除'
+    );
+
+    const manifestAfter = JSON.parse(
+      fs.readFileSync(path.join(root, 'manifests', 'install-modules.json'), 'utf8')
+    );
+    const moduleIds = manifestAfter.modules.map(module => module.id);
+    assert.ok(
+      !moduleIds.includes('ledger-demo-module'),
+      '同一次 prune --apply 里,组件被删除后立刻变成全死的 module 应该被一并清理' +
+        '(回归测试:曾因 manifestPlan 计算时机在删除之前而漏检,需要跑第二次才补上)'
+    );
+    assert.ok(
+      moduleIds.includes('ledger-mixed-module'),
+      '混合了存活路径的 module 不应该被自动删除'
+    );
+
+    const mixedModule = manifestAfter.modules.find(module => module.id === 'ledger-mixed-module');
+    assert.deepStrictEqual(
+      mixedModule.paths,
+      ['skills/ledger-alive-skill', 'skills/does-not-exist'],
+      '混合 module 的 paths 数组不该被自动改动,即使其中一条已经失效'
+    );
+
+    const outputText = capturedOutput.join('');
+    assert.ok(
+      outputText.includes('已删除整个 module') && outputText.includes('ledger-demo-module'),
+      '--apply 模式下应该在输出里报告已删除的 module'
+    );
+    assert.ok(
+      outputText.includes('需人工判断') && outputText.includes('ledger-mixed-module'),
+      '混合 module 应该在输出里被报告为需要人工判断,而不是被静默处理'
+    );
+  } finally {
+    cleanupFixtureRoot(root);
+  }
+}
+
 function run() {
   const root = createFixtureRoot();
   let failures = 0;
@@ -174,6 +324,8 @@ function run() {
       orphans.some(entry => entry.from === 'module:broken-module' && entry.to === 'skill:missing-install-skill'),
       'install module 里指向不存在 skill 的路径也应该在孤儿列表里出现'
     );
+
+    testDecisionLedgerManifestCleanup();
 
     console.log('self-test: 全部断言通过');
   } catch (error) {

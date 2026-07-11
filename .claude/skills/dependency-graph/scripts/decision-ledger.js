@@ -229,6 +229,87 @@ function applyPrunePlan(plan, root) {
   }
 }
 
+function readJson(filePath, label) {
+  let raw;
+  try {
+    raw = fs.readFileSync(filePath, 'utf8');
+  } catch (error) {
+    throw new Error(`读取 ${label} 失败:${error.message}`);
+  }
+  try {
+    return JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`解析 ${label} 失败,请检查 JSON 语法:${error.message}`);
+  }
+}
+
+// manifests/install-modules.json 不属于依赖图节点,prune 只删组件文件本身,
+// 从来不碰这个共享清单——但组件被删掉后,清单里引用它的 module.paths 条目
+// 就变成了死路径。这里只处理"整个 module 全部路径都死了"这一种安全情况
+// (跟删一整个组件文件同类风险,可以自动化);只要 module 里还混着存活路径,
+// 就只报告、绝不自动编辑这个共享数组——upstream 会持续往这类通用 module 里
+// 加新内容,自动改行反而会制造未来合并冲突,判断权必须留给人工。
+//
+// pendingDeletePaths(可选):即将被 buildPrunePlan 删除、但此刻磁盘上还
+// 存在的绝对路径集合。dry-run(没有 --apply)时组件文件还没真的被删,如果
+// 不把这些路径当成"已经死了"来算,预览结果就只反映"现在"而不是"apply
+// 之后",跟上面组件删除计划"预览即将发生的事"这层语义不一致——用户按
+// dry-run 结果确认无误、真正执行 --apply 后,才会突然发现多删了一个 module。
+// --apply 模式下调用这个函数时文件已经真删了,传不传这个集合结果一样。
+function buildManifestCleanupPlan(root, pendingDeletePaths = new Set()) {
+  const manifestPath = path.join(root, 'manifests', 'install-modules.json');
+  if (!fs.existsSync(manifestPath)) {
+    return [];
+  }
+
+  const manifest = readJson(manifestPath, 'install-modules.json');
+  if (!Array.isArray(manifest.modules)) {
+    return [];
+  }
+
+  const plan = [];
+  for (const module of manifest.modules) {
+    if (!Array.isArray(module.paths) || module.paths.length === 0) {
+      continue;
+    }
+
+    const deadPaths = module.paths.filter(relPath => {
+      const absPath = path.resolve(root, relPath);
+      return !fs.existsSync(absPath) || pendingDeletePaths.has(absPath);
+    });
+    if (deadPaths.length === 0) {
+      continue;
+    }
+
+    if (deadPaths.length === module.paths.length) {
+      plan.push({ moduleId: module.id, action: 'delete-module', deadPaths });
+    } else {
+      plan.push({
+        moduleId: module.id,
+        action: 'report-only',
+        deadPaths,
+        aliveCount: module.paths.length - deadPaths.length,
+      });
+    }
+  }
+
+  return plan;
+}
+
+function applyManifestCleanupPlan(plan, root) {
+  const moduleIdsToDelete = new Set(
+    plan.filter(item => item.action === 'delete-module').map(item => item.moduleId)
+  );
+  if (moduleIdsToDelete.size === 0) {
+    return;
+  }
+
+  const manifestPath = path.join(root, 'manifests', 'install-modules.json');
+  const manifest = readJson(manifestPath, 'install-modules.json');
+  manifest.modules = manifest.modules.filter(module => !moduleIdsToDelete.has(module.id));
+  fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+}
+
 function cmdPrune(ledger, graph, rest, { stdout, root }) {
   const flags = parseFlags(rest);
   const plan = buildPrunePlan(ledger, graph, root);
@@ -237,23 +318,54 @@ function cmdPrune(ledger, graph, rest, { stdout, root }) {
     applyPrunePlan(plan, root);
   }
 
+  // --apply 模式下上面已经真删了,这里传的路径全都已经不存在,是无害的
+  // no-op;dry-run 模式下文件还没被删,靠这个集合模拟"apply 之后"的状态,
+  // 让 manifestPlan 能预告出"这次 apply 会不会让某个 module 变成全死",
+  // 跟上面 plan 那部分"预览即将发生的事"保持同一种语义。
+  const pendingDeletePaths = new Set(
+    plan.filter(item => item.action === 'delete').map(item => path.resolve(root, item.path))
+  );
+  const manifestPlan = buildManifestCleanupPlan(root, pendingDeletePaths);
+
+  if (flags.apply) {
+    applyManifestCleanupPlan(manifestPlan, root);
+  }
+
   if (flags.json) {
-    stdout.write(`${JSON.stringify({ applied: flags.apply, plan }, null, 2)}\n`);
+    stdout.write(`${JSON.stringify({ applied: flags.apply, plan, manifestPlan }, null, 2)}\n`);
     return;
   }
 
   stdout.write(`${flags.apply ? '已执行裁剪:' : '裁剪计划(dry-run,加 --apply 才会真正删除):'}\n\n`);
   if (!plan.length) {
     stdout.write('(没有标记为 exclude 的条目)\n');
-    return;
+  } else {
+    for (const item of plan) {
+      if (item.action === 'delete') {
+        stdout.write(`- [删除] ${item.id}  ${item.path}\n`);
+      } else if (item.action === 'manual') {
+        stdout.write(`- [需手动] ${item.id}  ${item.detail}\n`);
+      } else {
+        stdout.write(`- [跳过] ${item.id}  ${item.detail}\n`);
+      }
+    }
   }
-  for (const item of plan) {
-    if (item.action === 'delete') {
-      stdout.write(`- [删除] ${item.id}  ${item.path}\n`);
-    } else if (item.action === 'manual') {
-      stdout.write(`- [需手动] ${item.id}  ${item.detail}\n`);
-    } else {
-      stdout.write(`- [跳过] ${item.id}  ${item.detail}\n`);
+
+  if (manifestPlan.length) {
+    stdout.write('\nmanifests/install-modules.json 里发现死路径:\n');
+    for (const item of manifestPlan) {
+      if (item.action === 'delete-module') {
+        stdout.write(
+          `- [${flags.apply ? '已删除整个 module' : '将删除整个 module'}] ${item.moduleId}  (全部 ${item.deadPaths.length} 条路径都已失效)\n`
+        );
+      } else {
+        stdout.write(
+          `- [需人工判断,未自动修改] ${item.moduleId}  ${item.deadPaths.length} 条死路径 / ${item.aliveCount} 条仍存活:\n`
+        );
+        for (const deadPath of item.deadPaths) {
+          stdout.write(`    - ${deadPath}\n`);
+        }
+      }
     }
   }
 }
@@ -345,6 +457,8 @@ module.exports = {
   resolveComponentPath,
   buildPrunePlan,
   applyPrunePlan,
+  buildManifestCleanupPlan,
+  applyManifestCleanupPlan,
   cmdDiffUpstream,
   run,
 };

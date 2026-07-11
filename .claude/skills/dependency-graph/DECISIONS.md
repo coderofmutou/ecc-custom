@@ -76,6 +76,21 @@ node .claude/skills/dependency-graph/scripts/decision-ledger.js prune --apply
 node .claude/skills/dependency-graph/scripts/decision-ledger.js diff-upstream
 ```
 
+## 裁剪之后不要自作主张做的事
+
+`prune --apply` 的职责边界到此为止:组件文件本身,加上 `manifests/install-modules.json` 里"整个 module 全部路径都死了"这种安全情况(自动删整块)。**module 里只要还混着存活路径,`prune` 只会报告死路径,绝不自动改这个共享数组**——见上面"常用操作"里 `prune`/`prune --apply` 的输出,死路径清单会单独列在"manifests/install-modules.json 里发现死路径"这一节下面。
+
+裁剪完之后,**不要**因为想让 `npm test` 通过、或者想让 README.md/AGENTS.md/`.claude-plugin/plugin.json`/`.claude-plugin/marketplace.json`/`docs/COMMAND-REGISTRY.json` 里的组件计数看起来准确,就顺手跑:
+
+```bash
+node scripts/ci/catalog.js --write
+node scripts/ci/generate-command-registry.js --write
+```
+
+这两个脚本在 `scripts/ci/` 下,不属于 `dependency-graph` 技能(本技能只读复用它们导出的函数,从不执行 `--write`,见 [SKILL.md](SKILL.md) 里"两者本身都未被修改"的说明)。它们会去改一批 upstream 也在高频维护的共享文件——同一行改同一个数字/同一份命令列表——upstream 只要恰好也改到同一处,就会给未来的合并制造冲突点,而且这类改动没有任何自动化冲突消解机制兜底,出了冲突要人工判断。要不要同步这些计数、什么时候同步(比如真的要发布/给别人用这个 fork 之前),是用户自己的决定,裁剪流程不要替用户做这个决定——哪怕不跑会导致 `npm test` 失败也不例外。
+
+**但下面这一步不是"要不要做"的选择题,几乎必做**:`prune --apply` 整块删除一个 module 之后,如果 `manifests/install-components.json` 的 `components[].modules` 或 `manifests/install-profiles.json` 的 `profiles[].modules` 里还有条目引用这个刚被删掉的 module id,`scripts/ci/validate-install-manifests.js`(在 `npm test` 里跑)会报 `ERROR: Component ... references unknown module ...` / `ERROR: full profile is missing module ...`,直接导致 `npm test` 失败。`prune --apply` 目前**不会**级联清理这两个文件——单纯是为了控制这次改动的范围,没有做,需要手动去这两个文件里摘掉对应的 module id。
+
 ## 已知局限
 
 - `hook:` 类型的组件不支持 `prune --apply` 自动裁剪——hook 定义共享在 `hooks/hooks.json` 一个数组里,不是独立文件,自动删除容易误伤同文件里其他 hook 的定义。`prune` 会把它们列在"需手动"里,自己去 `hooks/hooks.json` 里删对应条目。
