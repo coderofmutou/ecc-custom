@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalRules": 107,
+  "totalRules": 82,
   "rules": [
     {
       "rule": "README.md",
@@ -87,68 +87,6 @@
       ]
     },
     {
-      "rule": "arkts/coding-style.md",
-      "path": "rules/arkts/coding-style.md",
-      "paths": [
-        "**/*.ets",
-        "**/*.ts",
-        "**/module.json5",
-        "**/oh-package.json5",
-        "**/build-profile.json5"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "arkts/hooks.md",
-      "path": "rules/arkts/hooks.md",
-      "paths": [
-        "**/*.ets",
-        "**/*.ts",
-        "**/module.json5",
-        "**/oh-package.json5"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "arkts/patterns.md",
-      "path": "rules/arkts/patterns.md",
-      "paths": [
-        "**/*.ets",
-        "**/*.ts"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "arkts/security.md",
-      "path": "rules/arkts/security.md",
-      "paths": [
-        "**/*.ets",
-        "**/*.ts",
-        "**/module.json5"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "arkts/testing.md",
-      "path": "rules/arkts/testing.md",
-      "paths": [
-        "**/*.ets",
-        "**/*.ts",
-        "**/ohosTest/**"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": []
-    },
-    {
       "rule": "common/agents.md",
       "path": "rules/common/agents.md",
       "paths": [],
@@ -170,7 +108,6 @@
         "code-reviewer",
         "go-reviewer",
         "python-reviewer",
-        "rust-reviewer",
         "security-reviewer",
         "typescript-reviewer"
       ],
@@ -250,223 +187,6 @@
       "agents": [
         "tdd-guide"
       ],
-      "skills": []
-    },
-    {
-      "rule": "cpp/coding-style.md",
-      "path": "rules/cpp/coding-style.md",
-      "paths": [
-        "**/*.cpp",
-        "**/*.hpp",
-        "**/*.cc",
-        "**/*.hh",
-        "**/*.cxx",
-        "**/*.h",
-        "**/CMakeLists.txt"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": [
-        "cpp-coding-standards"
-      ]
-    },
-    {
-      "rule": "cpp/hooks.md",
-      "path": "rules/cpp/hooks.md",
-      "paths": [
-        "**/*.cpp",
-        "**/*.hpp",
-        "**/*.cc",
-        "**/*.hh",
-        "**/*.cxx",
-        "**/*.h",
-        "**/CMakeLists.txt"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "cpp/patterns.md",
-      "path": "rules/cpp/patterns.md",
-      "paths": [
-        "**/*.cpp",
-        "**/*.hpp",
-        "**/*.cc",
-        "**/*.hh",
-        "**/*.cxx",
-        "**/*.h",
-        "**/CMakeLists.txt"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "cpp-coding-standards"
-      ]
-    },
-    {
-      "rule": "cpp/security.md",
-      "path": "rules/cpp/security.md",
-      "paths": [
-        "**/*.cpp",
-        "**/*.hpp",
-        "**/*.cc",
-        "**/*.hh",
-        "**/*.cxx",
-        "**/*.h",
-        "**/CMakeLists.txt"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "cpp-coding-standards"
-      ]
-    },
-    {
-      "rule": "cpp/testing.md",
-      "path": "rules/cpp/testing.md",
-      "paths": [
-        "**/*.cpp",
-        "**/*.hpp",
-        "**/*.cc",
-        "**/*.hh",
-        "**/*.cxx",
-        "**/*.h",
-        "**/CMakeLists.txt"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "cpp-testing"
-      ]
-    },
-    {
-      "rule": "csharp/coding-style.md",
-      "path": "rules/csharp/coding-style.md",
-      "paths": [
-        "**/*.cs",
-        "**/*.csx"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "csharp/hooks.md",
-      "path": "rules/csharp/hooks.md",
-      "paths": [
-        "**/*.cs",
-        "**/*.csx",
-        "**/*.csproj",
-        "**/*.sln",
-        "**/Directory.Build.props",
-        "**/Directory.Build.targets"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "csharp/patterns.md",
-      "path": "rules/csharp/patterns.md",
-      "paths": [
-        "**/*.cs",
-        "**/*.csx"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "csharp/security.md",
-      "path": "rules/csharp/security.md",
-      "paths": [
-        "**/*.cs",
-        "**/*.csx",
-        "**/*.csproj",
-        "**/appsettings*.json"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "security-review"
-      ]
-    },
-    {
-      "rule": "csharp/testing.md",
-      "path": "rules/csharp/testing.md",
-      "paths": [
-        "**/*.cs",
-        "**/*.csx",
-        "**/*.csproj"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "fsharp/coding-style.md",
-      "path": "rules/fsharp/coding-style.md",
-      "paths": [
-        "**/*.fs",
-        "**/*.fsx"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "fsharp/hooks.md",
-      "path": "rules/fsharp/hooks.md",
-      "paths": [
-        "**/*.fs",
-        "**/*.fsx",
-        "**/*.fsproj",
-        "**/*.sln",
-        "**/*.slnx",
-        "**/Directory.Build.props",
-        "**/Directory.Build.targets"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "fsharp/patterns.md",
-      "path": "rules/fsharp/patterns.md",
-      "paths": [
-        "**/*.fs",
-        "**/*.fsx"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "fsharp/security.md",
-      "path": "rules/fsharp/security.md",
-      "paths": [
-        "**/*.fs",
-        "**/*.fsx",
-        "**/*.fsproj",
-        "**/appsettings*.json"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "security-review"
-      ]
-    },
-    {
-      "rule": "fsharp/testing.md",
-      "path": "rules/fsharp/testing.md",
-      "paths": [
-        "**/*.fs",
-        "**/*.fsx",
-        "**/*.fsproj"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
       "skills": []
     },
     {
@@ -1152,66 +872,6 @@
       ]
     },
     {
-      "rule": "rust/coding-style.md",
-      "path": "rules/rust/coding-style.md",
-      "paths": [
-        "**/*.rs"
-      ],
-      "extends": "common/coding-style.md",
-      "agents": [],
-      "skills": [
-        "rust-patterns"
-      ]
-    },
-    {
-      "rule": "rust/hooks.md",
-      "path": "rules/rust/hooks.md",
-      "paths": [
-        "**/*.rs",
-        "**/Cargo.toml"
-      ],
-      "extends": "common/hooks.md",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "rule": "rust/patterns.md",
-      "path": "rules/rust/patterns.md",
-      "paths": [
-        "**/*.rs"
-      ],
-      "extends": "common/patterns.md",
-      "agents": [],
-      "skills": [
-        "rust-patterns"
-      ]
-    },
-    {
-      "rule": "rust/security.md",
-      "path": "rules/rust/security.md",
-      "paths": [
-        "**/*.rs"
-      ],
-      "extends": "common/security.md",
-      "agents": [],
-      "skills": [
-        "rust-patterns",
-        "security-review"
-      ]
-    },
-    {
-      "rule": "rust/testing.md",
-      "path": "rules/rust/testing.md",
-      "paths": [
-        "**/*.rs"
-      ],
-      "extends": "common/testing.md",
-      "agents": [],
-      "skills": [
-        "rust-testing"
-      ]
-    },
-    {
       "rule": "typescript/coding-style.md",
       "path": "rules/typescript/coding-style.md",
       "paths": [
@@ -1463,10 +1123,6 @@
     "extendedBy": {
       "common/coding-style.md": [
         "angular/coding-style.md",
-        "arkts/coding-style.md",
-        "cpp/coding-style.md",
-        "csharp/coding-style.md",
-        "fsharp/coding-style.md",
         "golang/coding-style.md",
         "java/coding-style.md",
         "nuxt/coding-style.md",
@@ -1475,7 +1131,6 @@
         "python/coding-style.md",
         "react-native/coding-style.md",
         "ruby/coding-style.md",
-        "rust/coding-style.md",
         "typescript/coding-style.md",
         "vue/coding-style.md",
         "web/coding-style.md"
@@ -1485,10 +1140,6 @@
       ],
       "common/hooks.md": [
         "angular/hooks.md",
-        "arkts/hooks.md",
-        "cpp/hooks.md",
-        "csharp/hooks.md",
-        "fsharp/hooks.md",
         "golang/hooks.md",
         "java/hooks.md",
         "nuxt/hooks.md",
@@ -1497,17 +1148,12 @@
         "python/hooks.md",
         "react-native/hooks.md",
         "ruby/hooks.md",
-        "rust/hooks.md",
         "typescript/hooks.md",
         "vue/hooks.md",
         "web/hooks.md"
       ],
       "common/patterns.md": [
         "angular/patterns.md",
-        "arkts/patterns.md",
-        "cpp/patterns.md",
-        "csharp/patterns.md",
-        "fsharp/patterns.md",
         "golang/patterns.md",
         "java/patterns.md",
         "nuxt/patterns.md",
@@ -1516,7 +1162,6 @@
         "python/patterns.md",
         "react-native/patterns.md",
         "ruby/patterns.md",
-        "rust/patterns.md",
         "typescript/patterns.md",
         "vue/patterns.md",
         "web/design-quality.md",
@@ -1528,10 +1173,6 @@
       ],
       "common/security.md": [
         "angular/security.md",
-        "arkts/security.md",
-        "cpp/security.md",
-        "csharp/security.md",
-        "fsharp/security.md",
         "golang/security.md",
         "java/security.md",
         "nuxt/security.md",
@@ -1540,17 +1181,12 @@
         "python/security.md",
         "react-native/security.md",
         "ruby/security.md",
-        "rust/security.md",
         "typescript/security.md",
         "vue/security.md",
         "web/security.md"
       ],
       "common/testing.md": [
         "angular/testing.md",
-        "arkts/testing.md",
-        "cpp/testing.md",
-        "csharp/testing.md",
-        "fsharp/testing.md",
         "golang/testing.md",
         "java/testing.md",
         "nuxt/testing.md",
@@ -1559,7 +1195,6 @@
         "python/testing.md",
         "react-native/testing.md",
         "ruby/testing.md",
-        "rust/testing.md",
         "typescript/testing.md",
         "vue/testing.md",
         "web/testing.md"

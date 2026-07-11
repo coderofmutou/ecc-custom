@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalSkills": 262,
+  "totalSkills": 255,
   "skills": [
     {
       "skill": "accessibility",
@@ -417,30 +417,9 @@
       "skills": []
     },
     {
-      "skill": "cpp-coding-standards",
-      "path": "skills/cpp-coding-standards/SKILL.md",
-      "description": "C++ coding standards based on the C++ Core Guidelines (isocpp.github.io). Use when writing, reviewing, or refactoring C++ code to enforce modern, safe, and idiomatic practices.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "cpp-testing",
-      "path": "skills/cpp-testing/SKILL.md",
-      "description": "Use only when writing/updating/fixing C++ tests, configuring GoogleTest/CTest, diagnosing failing or flaky tests, or adding coverage/sanitizers.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "crosspost",
       "path": "skills/crosspost/SKILL.md",
       "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "csharp-testing",
-      "path": "skills/csharp-testing/SKILL.md",
-      "description": "C# and .NET testing patterns with xUnit, FluentAssertions, mocking, integration tests, and test organization best practices.",
       "agents": [],
       "skills": []
     },
@@ -574,13 +553,6 @@
       "skill": "documentation-lookup",
       "path": "skills/documentation-lookup/SKILL.md",
       "description": "Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API references, code examples, or when the user names a framework (e.g. React, Next.js, Prisma).",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "dotnet-patterns",
-      "path": "skills/dotnet-patterns/SKILL.md",
-      "description": "Idiomatic C# and .NET patterns, conventions, dependency injection, async/await, and best practices for building robust, maintainable .NET applications.",
       "agents": [],
       "skills": []
     },
@@ -725,13 +697,6 @@
       "skill": "frontend-slides",
       "path": "skills/frontend-slides/SKILL.md",
       "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "fsharp-testing",
-      "path": "skills/fsharp-testing/SKILL.md",
-      "description": "F# testing patterns with xUnit, FsUnit, Unquote, FsCheck property-based testing, integration tests, and test organization best practices.",
       "agents": [],
       "skills": []
     },
@@ -1657,20 +1622,6 @@
       "skill": "rules-distill",
       "path": "skills/rules-distill/SKILL.md",
       "description": "Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "rust-patterns",
-      "path": "skills/rust-patterns/SKILL.md",
-      "description": "Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "rust-testing",
-      "path": "skills/rust-testing/SKILL.md",
-      "description": "Rust testing patterns including unit tests, integration tests, async testing, property-based testing, mocking, and coverage. Follows TDD methodology.",
       "agents": [],
       "skills": []
     },

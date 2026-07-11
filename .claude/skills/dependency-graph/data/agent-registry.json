@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalAgents": 61,
+  "totalAgents": 54,
   "agents": [
     {
       "agent": "a11y-architect",
@@ -95,37 +95,6 @@
       "skills": []
     },
     {
-      "agent": "cpp-build-resolver",
-      "path": "agents/cpp-build-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": [
-        "cpp-coding-standards"
-      ]
-    },
-    {
-      "agent": "cpp-reviewer",
-      "path": "agents/cpp-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": [
-        "cpp-coding-standards"
-      ]
-    },
-    {
-      "agent": "csharp-reviewer",
-      "path": "agents/csharp-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": [
-        "csharp-testing",
-        "dotnet-patterns"
-      ]
-    },
-    {
       "agent": "database-reviewer",
       "path": "agents/database-reviewer.md",
       "model": "sonnet",
@@ -191,17 +160,6 @@
       "skills": []
     },
     {
-      "agent": "fsharp-reviewer",
-      "path": "agents/fsharp-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": [
-        "dotnet-patterns",
-        "fsharp-testing"
-      ]
-    },
-    {
       "agent": "gan-evaluator",
       "path": "agents/gan-evaluator.md",
       "model": "sonnet",
@@ -246,14 +204,6 @@
       "skills": [
         "golang-patterns"
       ]
-    },
-    {
-      "agent": "harmonyos-app-resolver",
-      "path": "agents/harmonyos-app-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": []
     },
     {
       "agent": "harness-optimizer",
@@ -461,26 +411,6 @@
       "skills": []
     },
     {
-      "agent": "rust-build-resolver",
-      "path": "agents/rust-build-resolver.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": [
-        "rust-patterns"
-      ]
-    },
-    {
-      "agent": "rust-reviewer",
-      "path": "agents/rust-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
-      "agents": [],
-      "skills": [
-        "rust-patterns"
-      ]
-    },
-    {
       "agent": "security-reviewer",
       "path": "agents/security-reviewer.md",
       "model": "sonnet",
@@ -559,15 +489,11 @@
     "skillUsage": {
       "accessibility": 1,
       "agent-self-evaluation": 1,
-      "cpp-coding-standards": 2,
-      "csharp-testing": 1,
       "django-patterns": 2,
       "django-security": 2,
       "django-tdd": 1,
-      "dotnet-patterns": 2,
       "e2e-testing": 1,
       "frontend-patterns": 1,
-      "fsharp-testing": 1,
       "golang-patterns": 2,
       "marketing-campaign": 1,
       "mle-workflow": 1,
@@ -575,7 +501,6 @@
       "quarkus-patterns": 2,
       "react-patterns": 2,
       "react-testing": 1,
-      "rust-patterns": 2,
       "security-review": 1,
       "seo": 1,
       "springboot-patterns": 2,

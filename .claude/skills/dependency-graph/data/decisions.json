@@ -45,24 +45,30 @@
     },
     {
       "id": "command:cpp-build",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "C++ 构建工具与 Java 后端开发无关，用户不需要此功能"
+      "suggestedReason": "C++ 构建工具与 Java 后端开发无关，用户不需要此功能",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:cpp-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "C++ 代码审查与 Java 后端开发无关，用户不需要此功能"
+      "suggestedReason": "C++ 代码审查与 Java 后端开发无关，用户不需要此功能",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:cpp-test",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "C++ TDD 工作流与 Java 后端开发无关，用户不需要此功能"
+      "suggestedReason": "C++ TDD 工作流与 Java 后端开发无关，用户不需要此功能",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:ecc-guide",
@@ -563,24 +569,30 @@
     },
     {
       "id": "command:rust-build",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户技术栈为 Java/Spring Boot/MyBatis，无 Rust 项目"
+      "suggestedReason": "用户技术栈为 Java/Spring Boot/MyBatis，无 Rust 项目",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:rust-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户技术栈为 Java/Spring Boot，Rust 开发不相关"
+      "suggestedReason": "用户技术栈为 Java/Spring Boot，Rust 开发不相关",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:rust-test",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户不进行 Rust 开发，此工具无适用场景"
+      "suggestedReason": "用户不进行 Rust 开发，此工具无适用场景",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "command:santa-loop",
@@ -1064,17 +1076,21 @@
     },
     {
       "id": "skill:cpp-coding-standards",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "C++编码规范，用户是Java后端工程师，且对应的cpp-build/cpp-review command已被标记排除，保持一致"
+      "suggestedReason": "C++编码规范，用户是Java后端工程师，且对应的cpp-build/cpp-review command已被标记排除，保持一致",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:cpp-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "C++测试规范，与用户技术栈无关，逻辑同cpp-coding-standards"
+      "suggestedReason": "C++测试规范，与用户技术栈无关，逻辑同cpp-coding-standards",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:crosspost",
@@ -1085,10 +1101,12 @@
     },
     {
       "id": "skill:csharp-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "C#/.NET测试模式，用户技术栈是Java，不涉及.NET开发"
+      "suggestedReason": "C#/.NET测试模式，用户技术栈是Java，不涉及.NET开发",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:customer-billing-ops",
@@ -1234,10 +1252,12 @@
     },
     {
       "id": "skill:dotnet-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": ".NET/C#/F#开发模式，用户技术栈是Java，不涉及.NET开发"
+      "suggestedReason": ".NET/C#/F#开发模式，用户技术栈是Java，不涉及.NET开发",
+      "reason": "csharp+fsharp 两个 .NET 分类都裁剪后，dotnet-patterns 无对应语言可服务，随之一并裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:dynamic-workflow-mode",
@@ -1399,10 +1419,12 @@
     },
     {
       "id": "skill:fsharp-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户的技术栈中不包含 F#，不涉及函数式语言开发"
+      "suggestedReason": "用户的技术栈中不包含 F#，不涉及函数式语言开发",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:gan-style-harness",
@@ -2288,17 +2310,21 @@
     },
     {
       "id": "skill:rust-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要使用 Java/Spring Boot，不做 Rust 开发"
+      "suggestedReason": "用户主要使用 Java/Spring Boot，不做 Rust 开发",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:rust-testing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户主要使用 Java/Spring Boot，不做 Rust 测试"
+      "suggestedReason": "用户主要使用 Java/Spring Boot，不做 Rust 测试",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
     },
     {
       "id": "skill:safety-guard",
@@ -2754,6 +2780,198 @@
       "id": "agent:kotlin-build-resolver",
       "decision": "exclude",
       "reason": "与 Java Spring Boot WMS 后端画像无关的原生移动开发（iOS/Flutter/Android/KMP）技术栈；dependency-graph dependents 核查为零依赖，可安全裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:cpp/coding-style.md",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:cpp/hooks.md",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:cpp/patterns.md",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:cpp/security.md",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:cpp/testing.md",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:cpp-reviewer",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:cpp-build-resolver",
+      "decision": "exclude",
+      "reason": "C++ 系统级语言，与 Java Spring Boot 后端 + WMS/apollo 定制开发画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:rust/coding-style.md",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:rust/hooks.md",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:rust/patterns.md",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:rust/security.md",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:rust/testing.md",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:rust-reviewer",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:rust-build-resolver",
+      "decision": "exclude",
+      "reason": "Rust 系统级语言，与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:arkts/coding-style.md",
+      "decision": "exclude",
+      "reason": "HarmonyOS/ArkTS 原生移动开发，延续此前 swift/dart/kotlin 移动端裁剪逻辑，与 Java 后端画像无关，零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:arkts/hooks.md",
+      "decision": "exclude",
+      "reason": "HarmonyOS/ArkTS 原生移动开发，延续此前 swift/dart/kotlin 移动端裁剪逻辑，与 Java 后端画像无关，零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:arkts/patterns.md",
+      "decision": "exclude",
+      "reason": "HarmonyOS/ArkTS 原生移动开发，延续此前 swift/dart/kotlin 移动端裁剪逻辑，与 Java 后端画像无关，零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:arkts/security.md",
+      "decision": "exclude",
+      "reason": "HarmonyOS/ArkTS 原生移动开发，延续此前 swift/dart/kotlin 移动端裁剪逻辑，与 Java 后端画像无关，零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:arkts/testing.md",
+      "decision": "exclude",
+      "reason": "HarmonyOS/ArkTS 原生移动开发，延续此前 swift/dart/kotlin 移动端裁剪逻辑，与 Java 后端画像无关，零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:harmonyos-app-resolver",
+      "decision": "exclude",
+      "reason": "HarmonyOS/ArkTS 原生移动开发，延续此前 swift/dart/kotlin 移动端裁剪逻辑，与 Java 后端画像无关，零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:csharp/coding-style.md",
+      "decision": "exclude",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:csharp/hooks.md",
+      "decision": "exclude",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:csharp/patterns.md",
+      "decision": "exclude",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:csharp/security.md",
+      "decision": "exclude",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:csharp/testing.md",
+      "decision": "exclude",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:csharp-reviewer",
+      "decision": "exclude",
+      "reason": "C#/.NET 与 Java 后端画像无关，dependents 查询为零依赖",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:fsharp/coding-style.md",
+      "decision": "exclude",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:fsharp/hooks.md",
+      "decision": "exclude",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:fsharp/patterns.md",
+      "decision": "exclude",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:fsharp/security.md",
+      "decision": "exclude",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:fsharp/testing.md",
+      "decision": "exclude",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
+      "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "agent:fsharp-reviewer",
+      "decision": "exclude",
+      "reason": "F#/.NET 与 Java 后端画像无关，dependents 查询为零依赖，随 csharp 一并裁剪",
       "decidedAt": "2026-07-11"
     }
   ]

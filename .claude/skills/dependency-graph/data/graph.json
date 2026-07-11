@@ -86,73 +86,6 @@
       }
     },
     {
-      "id": "rule:arkts/coding-style.md",
-      "type": "rule",
-      "name": "arkts/coding-style.md",
-      "path": "rules/arkts/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.ets",
-          "**/*.ts",
-          "**/module.json5",
-          "**/oh-package.json5",
-          "**/build-profile.json5"
-        ]
-      }
-    },
-    {
-      "id": "rule:arkts/hooks.md",
-      "type": "rule",
-      "name": "arkts/hooks.md",
-      "path": "rules/arkts/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.ets",
-          "**/*.ts",
-          "**/module.json5",
-          "**/oh-package.json5"
-        ]
-      }
-    },
-    {
-      "id": "rule:arkts/patterns.md",
-      "type": "rule",
-      "name": "arkts/patterns.md",
-      "path": "rules/arkts/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.ets",
-          "**/*.ts"
-        ]
-      }
-    },
-    {
-      "id": "rule:arkts/security.md",
-      "type": "rule",
-      "name": "arkts/security.md",
-      "path": "rules/arkts/security.md",
-      "meta": {
-        "paths": [
-          "**/*.ets",
-          "**/*.ts",
-          "**/module.json5"
-        ]
-      }
-    },
-    {
-      "id": "rule:arkts/testing.md",
-      "type": "rule",
-      "name": "arkts/testing.md",
-      "path": "rules/arkts/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.ets",
-          "**/*.ts",
-          "**/ohosTest/**"
-        ]
-      }
-    },
-    {
       "id": "rule:common/agents.md",
       "type": "rule",
       "name": "common/agents.md",
@@ -240,226 +173,6 @@
       "path": "rules/common/testing.md",
       "meta": {
         "paths": []
-      }
-    },
-    {
-      "id": "rule:cpp/coding-style.md",
-      "type": "rule",
-      "name": "cpp/coding-style.md",
-      "path": "rules/cpp/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.cpp",
-          "**/*.hpp",
-          "**/*.cc",
-          "**/*.hh",
-          "**/*.cxx",
-          "**/*.h",
-          "**/CMakeLists.txt"
-        ]
-      }
-    },
-    {
-      "id": "rule:cpp/hooks.md",
-      "type": "rule",
-      "name": "cpp/hooks.md",
-      "path": "rules/cpp/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.cpp",
-          "**/*.hpp",
-          "**/*.cc",
-          "**/*.hh",
-          "**/*.cxx",
-          "**/*.h",
-          "**/CMakeLists.txt"
-        ]
-      }
-    },
-    {
-      "id": "rule:cpp/patterns.md",
-      "type": "rule",
-      "name": "cpp/patterns.md",
-      "path": "rules/cpp/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.cpp",
-          "**/*.hpp",
-          "**/*.cc",
-          "**/*.hh",
-          "**/*.cxx",
-          "**/*.h",
-          "**/CMakeLists.txt"
-        ]
-      }
-    },
-    {
-      "id": "rule:cpp/security.md",
-      "type": "rule",
-      "name": "cpp/security.md",
-      "path": "rules/cpp/security.md",
-      "meta": {
-        "paths": [
-          "**/*.cpp",
-          "**/*.hpp",
-          "**/*.cc",
-          "**/*.hh",
-          "**/*.cxx",
-          "**/*.h",
-          "**/CMakeLists.txt"
-        ]
-      }
-    },
-    {
-      "id": "rule:cpp/testing.md",
-      "type": "rule",
-      "name": "cpp/testing.md",
-      "path": "rules/cpp/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.cpp",
-          "**/*.hpp",
-          "**/*.cc",
-          "**/*.hh",
-          "**/*.cxx",
-          "**/*.h",
-          "**/CMakeLists.txt"
-        ]
-      }
-    },
-    {
-      "id": "rule:csharp/coding-style.md",
-      "type": "rule",
-      "name": "csharp/coding-style.md",
-      "path": "rules/csharp/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.cs",
-          "**/*.csx"
-        ]
-      }
-    },
-    {
-      "id": "rule:csharp/hooks.md",
-      "type": "rule",
-      "name": "csharp/hooks.md",
-      "path": "rules/csharp/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.cs",
-          "**/*.csx",
-          "**/*.csproj",
-          "**/*.sln",
-          "**/Directory.Build.props",
-          "**/Directory.Build.targets"
-        ]
-      }
-    },
-    {
-      "id": "rule:csharp/patterns.md",
-      "type": "rule",
-      "name": "csharp/patterns.md",
-      "path": "rules/csharp/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.cs",
-          "**/*.csx"
-        ]
-      }
-    },
-    {
-      "id": "rule:csharp/security.md",
-      "type": "rule",
-      "name": "csharp/security.md",
-      "path": "rules/csharp/security.md",
-      "meta": {
-        "paths": [
-          "**/*.cs",
-          "**/*.csx",
-          "**/*.csproj",
-          "**/appsettings*.json"
-        ]
-      }
-    },
-    {
-      "id": "rule:csharp/testing.md",
-      "type": "rule",
-      "name": "csharp/testing.md",
-      "path": "rules/csharp/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.cs",
-          "**/*.csx",
-          "**/*.csproj"
-        ]
-      }
-    },
-    {
-      "id": "rule:fsharp/coding-style.md",
-      "type": "rule",
-      "name": "fsharp/coding-style.md",
-      "path": "rules/fsharp/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.fs",
-          "**/*.fsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:fsharp/hooks.md",
-      "type": "rule",
-      "name": "fsharp/hooks.md",
-      "path": "rules/fsharp/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.fs",
-          "**/*.fsx",
-          "**/*.fsproj",
-          "**/*.sln",
-          "**/*.slnx",
-          "**/Directory.Build.props",
-          "**/Directory.Build.targets"
-        ]
-      }
-    },
-    {
-      "id": "rule:fsharp/patterns.md",
-      "type": "rule",
-      "name": "fsharp/patterns.md",
-      "path": "rules/fsharp/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.fs",
-          "**/*.fsx"
-        ]
-      }
-    },
-    {
-      "id": "rule:fsharp/security.md",
-      "type": "rule",
-      "name": "fsharp/security.md",
-      "path": "rules/fsharp/security.md",
-      "meta": {
-        "paths": [
-          "**/*.fs",
-          "**/*.fsx",
-          "**/*.fsproj",
-          "**/appsettings*.json"
-        ]
-      }
-    },
-    {
-      "id": "rule:fsharp/testing.md",
-      "type": "rule",
-      "name": "fsharp/testing.md",
-      "path": "rules/fsharp/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.fs",
-          "**/*.fsx",
-          "**/*.fsproj"
-        ]
       }
     },
     {
@@ -1122,62 +835,6 @@
           "**/test/**/*.rb",
           "**/spec/**/*.rb",
           "**/config/routes.rb"
-        ]
-      }
-    },
-    {
-      "id": "rule:rust/coding-style.md",
-      "type": "rule",
-      "name": "rust/coding-style.md",
-      "path": "rules/rust/coding-style.md",
-      "meta": {
-        "paths": [
-          "**/*.rs"
-        ]
-      }
-    },
-    {
-      "id": "rule:rust/hooks.md",
-      "type": "rule",
-      "name": "rust/hooks.md",
-      "path": "rules/rust/hooks.md",
-      "meta": {
-        "paths": [
-          "**/*.rs",
-          "**/Cargo.toml"
-        ]
-      }
-    },
-    {
-      "id": "rule:rust/patterns.md",
-      "type": "rule",
-      "name": "rust/patterns.md",
-      "path": "rules/rust/patterns.md",
-      "meta": {
-        "paths": [
-          "**/*.rs"
-        ]
-      }
-    },
-    {
-      "id": "rule:rust/security.md",
-      "type": "rule",
-      "name": "rust/security.md",
-      "path": "rules/rust/security.md",
-      "meta": {
-        "paths": [
-          "**/*.rs"
-        ]
-      }
-    },
-    {
-      "id": "rule:rust/testing.md",
-      "type": "rule",
-      "name": "rust/testing.md",
-      "path": "rules/rust/testing.md",
-      "meta": {
-        "paths": [
-          "**/*.rs"
         ]
       }
     },
@@ -1937,39 +1594,12 @@
       }
     },
     {
-      "id": "skill:cpp-coding-standards",
-      "type": "skill",
-      "name": "cpp-coding-standards",
-      "path": "skills/cpp-coding-standards/SKILL.md",
-      "meta": {
-        "description": "C++ coding standards based on the C++ Core Guidelines (isocpp.github.io). Use when writing, reviewing, or refactoring C++ code to enforce modern, safe, and idiomatic practices."
-      }
-    },
-    {
-      "id": "skill:cpp-testing",
-      "type": "skill",
-      "name": "cpp-testing",
-      "path": "skills/cpp-testing/SKILL.md",
-      "meta": {
-        "description": "Use only when writing/updating/fixing C++ tests, configuring GoogleTest/CTest, diagnosing failing or flaky tests, or adding coverage/sanitizers."
-      }
-    },
-    {
       "id": "skill:crosspost",
       "type": "skill",
       "name": "crosspost",
       "path": "skills/crosspost/SKILL.md",
       "meta": {
         "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms."
-      }
-    },
-    {
-      "id": "skill:csharp-testing",
-      "type": "skill",
-      "name": "csharp-testing",
-      "path": "skills/csharp-testing/SKILL.md",
-      "meta": {
-        "description": "C# and .NET testing patterns with xUnit, FluentAssertions, mocking, integration tests, and test organization best practices."
       }
     },
     {
@@ -2141,15 +1771,6 @@
       "path": "skills/documentation-lookup/SKILL.md",
       "meta": {
         "description": "Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API references, code examples, or when the user names a framework (e.g. React, Next.js, Prisma)."
-      }
-    },
-    {
-      "id": "skill:dotnet-patterns",
-      "type": "skill",
-      "name": "dotnet-patterns",
-      "path": "skills/dotnet-patterns/SKILL.md",
-      "meta": {
-        "description": "Idiomatic C# and .NET patterns, conventions, dependency injection, async/await, and best practices for building robust, maintainable .NET applications."
       }
     },
     {
@@ -2330,15 +1951,6 @@
       "path": "skills/frontend-slides/SKILL.md",
       "meta": {
         "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices."
-      }
-    },
-    {
-      "id": "skill:fsharp-testing",
-      "type": "skill",
-      "name": "fsharp-testing",
-      "path": "skills/fsharp-testing/SKILL.md",
-      "meta": {
-        "description": "F# testing patterns with xUnit, FsUnit, Unquote, FsCheck property-based testing, integration tests, and test organization best practices."
       }
     },
     {
@@ -3404,24 +3016,6 @@
       }
     },
     {
-      "id": "skill:rust-patterns",
-      "type": "skill",
-      "name": "rust-patterns",
-      "path": "skills/rust-patterns/SKILL.md",
-      "meta": {
-        "description": "Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications."
-      }
-    },
-    {
-      "id": "skill:rust-testing",
-      "type": "skill",
-      "name": "rust-testing",
-      "path": "skills/rust-testing/SKILL.md",
-      "meta": {
-        "description": "Rust testing patterns including unit tests, integration tests, async testing, property-based testing, mocking, and coverage. Follows TDD methodology."
-      }
-    },
-    {
       "id": "skill:safety-guard",
       "type": "skill",
       "name": "safety-guard",
@@ -3910,36 +3504,6 @@
       }
     },
     {
-      "id": "agent:cpp-build-resolver",
-      "type": "agent",
-      "name": "cpp-build-resolver",
-      "path": "agents/cpp-build-resolver.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
-      }
-    },
-    {
-      "id": "agent:cpp-reviewer",
-      "type": "agent",
-      "name": "cpp-reviewer",
-      "path": "agents/cpp-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
-      "id": "agent:csharp-reviewer",
-      "type": "agent",
-      "name": "csharp-reviewer",
-      "path": "agents/csharp-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
       "id": "agent:database-reviewer",
       "type": "agent",
       "name": "database-reviewer",
@@ -4010,16 +3574,6 @@
       }
     },
     {
-      "id": "agent:fsharp-reviewer",
-      "type": "agent",
-      "name": "fsharp-reviewer",
-      "path": "agents/fsharp-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
       "id": "agent:gan-evaluator",
       "type": "agent",
       "name": "gan-evaluator",
@@ -4067,16 +3621,6 @@
       "meta": {
         "model": "sonnet",
         "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
-      "id": "agent:harmonyos-app-resolver",
-      "type": "agent",
-      "name": "harmonyos-app-resolver",
-      "path": "agents/harmonyos-app-resolver.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
       }
     },
     {
@@ -4310,26 +3854,6 @@
       }
     },
     {
-      "id": "agent:rust-build-resolver",
-      "type": "agent",
-      "name": "rust-build-resolver",
-      "path": "agents/rust-build-resolver.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
-      }
-    },
-    {
-      "id": "agent:rust-reviewer",
-      "type": "agent",
-      "name": "rust-reviewer",
-      "path": "agents/rust-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
       "id": "agent:security-reviewer",
       "type": "agent",
       "name": "security-reviewer",
@@ -4466,36 +3990,6 @@
       "path": "commands/cost-report.md",
       "meta": {
         "description": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:cpp-build",
-      "type": "command",
-      "name": "cpp-build",
-      "path": "commands/cpp-build.md",
-      "meta": {
-        "description": "Fix C++ build errors, CMake issues, and linker problems incrementally. Invokes the cpp-build-resolver agent for minimal, surgical fixes.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:cpp-review",
-      "type": "command",
-      "name": "cpp-review",
-      "path": "commands/cpp-review.md",
-      "meta": {
-        "description": "Comprehensive C++ code review for memory safety, modern C++ idioms, concurrency, and security. Invokes the cpp-reviewer agent.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:cpp-test",
-      "type": "command",
-      "name": "cpp-test",
-      "path": "commands/cpp-test.md",
-      "meta": {
-        "description": "Enforce TDD workflow for C++. Write GoogleTest tests first, then implement. Verify coverage with gcov/lcov.",
         "commandType": "testing"
       }
     },
@@ -5136,36 +4630,6 @@
       "path": "commands/review-pr.md",
       "meta": {
         "description": "Comprehensive PR review using specialized agents",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:rust-build",
-      "type": "command",
-      "name": "rust-build",
-      "path": "commands/rust-build.md",
-      "meta": {
-        "description": "Fix Rust build errors, borrow checker issues, and dependency problems incrementally. Invokes the rust-build-resolver agent for minimal, surgical fixes.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:rust-review",
-      "type": "command",
-      "name": "rust-review",
-      "path": "commands/rust-review.md",
-      "meta": {
-        "description": "Comprehensive Rust code review for ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Invokes the rust-reviewer agent.",
-        "commandType": "testing"
-      }
-    },
-    {
-      "id": "command:rust-test",
-      "type": "command",
-      "name": "rust-test",
-      "path": "commands/rust-test.md",
-      "meta": {
-        "description": "Enforce TDD workflow for Rust. Write tests first, then implement. Verify 80%+ coverage with cargo-llvm-cov.",
         "commandType": "testing"
       }
     },
@@ -6158,31 +5622,6 @@
       "type": "references_skill"
     },
     {
-      "from": "rule:arkts/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:arkts/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:arkts/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:arkts/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:arkts/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
       "from": "rule:common/agents.md",
       "to": "agent:architect",
       "type": "references_agent"
@@ -6215,11 +5654,6 @@
     {
       "from": "rule:common/code-review.md",
       "to": "agent:python-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "rule:common/code-review.md",
-      "to": "agent:rust-reviewer",
       "type": "references_agent"
     },
     {
@@ -6271,111 +5705,6 @@
       "from": "rule:common/testing.md",
       "to": "agent:tdd-guide",
       "type": "references_agent"
-    },
-    {
-      "from": "rule:cpp/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:cpp/coding-style.md",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:cpp/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:cpp/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:cpp/patterns.md",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:cpp/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:cpp/security.md",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:cpp/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:cpp/testing.md",
-      "to": "skill:cpp-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:csharp/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:csharp/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:csharp/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:csharp/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:csharp/security.md",
-      "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:csharp/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:fsharp/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:fsharp/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:fsharp/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:fsharp/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:fsharp/security.md",
-      "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:fsharp/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
     },
     {
       "from": "rule:golang/coding-style.md",
@@ -6800,56 +6129,6 @@
     {
       "from": "rule:ruby/testing.md",
       "to": "skill:tdd-workflow",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:rust/coding-style.md",
-      "to": "rule:common/coding-style.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:rust/coding-style.md",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:rust/hooks.md",
-      "to": "rule:common/hooks.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:rust/patterns.md",
-      "to": "rule:common/patterns.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:rust/patterns.md",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:rust/security.md",
-      "to": "rule:common/security.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:rust/security.md",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:rust/security.md",
-      "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "rule:rust/testing.md",
-      "to": "rule:common/testing.md",
-      "type": "extends"
-    },
-    {
-      "from": "rule:rust/testing.md",
-      "to": "skill:rust-testing",
       "type": "references_skill"
     },
     {
@@ -7398,26 +6677,6 @@
       "type": "references_agent"
     },
     {
-      "from": "agent:cpp-build-resolver",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:cpp-reviewer",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:csharp-reviewer",
-      "to": "skill:csharp-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:csharp-reviewer",
-      "to": "skill:dotnet-patterns",
-      "type": "references_skill"
-    },
-    {
       "from": "agent:django-build-resolver",
       "to": "skill:django-patterns",
       "type": "references_skill"
@@ -7445,16 +6704,6 @@
     {
       "from": "agent:e2e-runner",
       "to": "skill:e2e-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:fsharp-reviewer",
-      "to": "skill:dotnet-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:fsharp-reviewer",
-      "to": "skill:fsharp-testing",
       "type": "references_skill"
     },
     {
@@ -7538,16 +6787,6 @@
       "type": "references_skill"
     },
     {
-      "from": "agent:rust-build-resolver",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:rust-reviewer",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
       "from": "agent:security-reviewer",
       "to": "skill:security-review",
       "type": "references_skill"
@@ -7570,41 +6809,6 @@
     {
       "from": "agent:vue-reviewer",
       "to": "skill:vue-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:cpp-build",
-      "to": "agent:cpp-build-resolver",
-      "type": "references_agent"
-    },
-    {
-      "from": "command:cpp-build",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:cpp-review",
-      "to": "agent:cpp-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "command:cpp-review",
-      "to": "skill:cpp-coding-standards",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:cpp-review",
-      "to": "skill:cpp-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:cpp-test",
-      "to": "skill:cpp-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:cpp-test",
-      "to": "skill:tdd-workflow",
       "type": "references_skill"
     },
     {
@@ -7855,41 +7059,6 @@
     {
       "from": "command:react-test",
       "to": "skill:tdd-workflow",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:rust-build",
-      "to": "agent:rust-build-resolver",
-      "type": "references_agent"
-    },
-    {
-      "from": "command:rust-build",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:rust-review",
-      "to": "agent:rust-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "command:rust-review",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:rust-review",
-      "to": "skill:rust-testing",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:rust-test",
-      "to": "skill:rust-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:rust-test",
-      "to": "skill:rust-testing",
       "type": "references_skill"
     },
     {
@@ -8294,26 +7463,6 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:csharp-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:fsharp-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:cpp-coding-standards",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:cpp-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
       "to": "skill:django-patterns",
       "type": "installs_skill"
     },
@@ -8325,11 +7474,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:django-verification",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:dotnet-patterns",
       "type": "installs_skill"
     },
     {
@@ -8455,16 +7599,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:react-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:rust-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:rust-testing",
       "type": "installs_skill"
     },
     {
