@@ -39,7 +39,7 @@
     {
       "agent": "chief-of-staff",
       "path": "agents/chief-of-staff.md",
-      "model": "opus",
+      "model": "sonnet",
       "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\", \"Write\"]",
       "agents": [],
       "skills": []
@@ -81,7 +81,7 @@
     {
       "agent": "comment-analyzer",
       "path": "agents/comment-analyzer.md",
-      "model": "sonnet",
+      "model": "haiku",
       "tools": "[Read, Grep, Glob]",
       "agents": [],
       "skills": []
@@ -89,7 +89,7 @@
     {
       "agent": "conversation-analyzer",
       "path": "agents/conversation-analyzer.md",
-      "model": "sonnet",
+      "model": "haiku",
       "tools": "[Read, Grep]",
       "agents": [],
       "skills": []
@@ -139,7 +139,7 @@
       "agent": "database-reviewer",
       "path": "agents/database-reviewer.md",
       "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
       "agents": [],
       "skills": []
     },
@@ -177,7 +177,7 @@
     {
       "agent": "docs-lookup",
       "path": "agents/docs-lookup.md",
-      "model": "sonnet",
+      "model": "haiku",
       "tools": "[\"Read\", \"Grep\", \"mcp__context7__resolve-library-id\", \"mcp__context7__query-docs\"]",
       "agents": [],
       "skills": []
@@ -222,7 +222,7 @@
     {
       "agent": "gan-evaluator",
       "path": "agents/gan-evaluator.md",
-      "model": "opus",
+      "model": "sonnet",
       "tools": "[\"Read\", \"Write\", \"Bash\", \"Grep\", \"Glob\"]",
       "agents": [],
       "skills": []
@@ -230,7 +230,7 @@
     {
       "agent": "gan-generator",
       "path": "agents/gan-generator.md",
-      "model": "opus",
+      "model": "sonnet",
       "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
       "agents": [],
       "skills": []
@@ -238,7 +238,7 @@
     {
       "agent": "gan-planner",
       "path": "agents/gan-planner.md",
-      "model": "opus",
+      "model": "sonnet",
       "tools": "[\"Read\", \"Write\", \"Grep\", \"Glob\"]",
       "agents": [
         "planner"
@@ -392,7 +392,7 @@
     {
       "agent": "opensource-forker",
       "path": "agents/opensource-forker.md",
-      "model": "sonnet",
+      "model": "haiku",
       "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
       "agents": [],
       "skills": []
@@ -400,7 +400,7 @@
     {
       "agent": "opensource-packager",
       "path": "agents/opensource-packager.md",
-      "model": "sonnet",
+      "model": "haiku",
       "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
       "agents": [],
       "skills": []
@@ -520,7 +520,7 @@
       "agent": "security-reviewer",
       "path": "agents/security-reviewer.md",
       "model": "sonnet",
-      "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
+      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]",
       "agents": [],
       "skills": [
         "security-review"

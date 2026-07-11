@@ -1,0 +1,2588 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "command:aside",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔会手动调用 /aside 处理快速问题，但不需要菜单入口"
+    },
+    {
+      "id": "command:auto-update",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态建设，会主动使用此命令更新 ECC 并重新生成上下文"
+    },
+    {
+      "id": "command:build-fix",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "对应的 skill 已存在，Claude 可自动触发；用户偶尔手动调用不需要菜单入口"
+    },
+    {
+      "id": "command:checkpoint",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在复杂工作流中偶尔手动调用，不需要菜单入口"
+    },
+    {
+      "id": "command:code-review",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户重点关注代码质量，会频繁使用代码审查工具，应常驻菜单以快速访问"
+    },
+    {
+      "id": "command:cost-report",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户需要追踪 Claude Code 使用成本，特别是在插件开发维护中会主动查看消费数据"
+    },
+    {
+      "id": "command:cpp-build",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "C++ 构建工具与 Java 后端开发无关，用户不需要此功能"
+    },
+    {
+      "id": "command:cpp-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "C++ 代码审查与 Java 后端开发无关，用户不需要此功能"
+    },
+    {
+      "id": "command:cpp-test",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "C++ TDD 工作流与 Java 后端开发无关，用户不需要此功能"
+    },
+    {
+      "id": "command:ecc-guide",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户的插件生态建设工作相关，偶尔会手动查询 ECC 功能模块，但无需占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:epic-claim",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub issue 协调工作流，与用户的 Java 后端及插件生态维护画像无关"
+    },
+    {
+      "id": "command:epic-decompose",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub epic 任务拆解命令，用户不涉及此工作流"
+    },
+    {
+      "id": "command:epic-publish",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub issue 发布命令，与用户画像无关"
+    },
+    {
+      "id": "command:epic-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub issue 审查流程，用户不需要此工作流"
+    },
+    {
+      "id": "command:epic-sync",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub issue 同步命令，与用户画像无关"
+    },
+    {
+      "id": "command:epic-unblock",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub issue 依赖管理命令，用户不使用此协调工作流"
+    },
+    {
+      "id": "command:epic-validate",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "GitHub issue 验证命令，与用户画像无关"
+    },
+    {
+      "id": "command:evolve",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在知识积累阶段偶尔手动调用分析和进化结构，不需要菜单入口"
+    },
+    {
+      "id": "command:fastapi-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 FastAPI/Python 后端开发，与用户主要的 Java/Spring Boot 技术栈无关"
+    },
+    {
+      "id": "command:feature-dev",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户的代码质量和功能开发工作相关，偶尔会手动调用以获得工作流指导"
+    },
+    {
+      "id": "command:flutter-build",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 Flutter/Dart 移动开发，与用户主要的后端开发工作无关"
+    },
+    {
+      "id": "command:flutter-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 Flutter/Dart 代码审查，与用户主要技术栈无关"
+    },
+    {
+      "id": "command:flutter-test",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 Flutter/Dart 测试，与用户主要技术栈无关"
+    },
+    {
+      "id": "command:gan-build",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户会主动使用此命令来运行迭代式功能实现工作流，是功能开发的核心工具"
+    },
+    {
+      "id": "command:gan-design",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发，会在设计工作中偶尔手动调用，但不需要菜单入口"
+    },
+    {
+      "id": "command:go-build",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 Go 语言构建，与用户主要的 Java 技术栈无关"
+    },
+    {
+      "id": "command:go-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 Go 代码审查，与用户主要技术栈无关"
+    },
+    {
+      "id": "command:go-test",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "针对 Go 的 TDD 工作流，与用户主要技术栈无关"
+    },
+    {
+      "id": "command:gradle-build",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要使用 Maven/Spring Boot，Gradle 偶尔涉及；用户需要时可手动调用"
+    },
+    {
+      "id": "command:harness-audit",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态建设，会主动使用此命令审计系统配置和获得优先级改进建议"
+    },
+    {
+      "id": "command:hookify",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude Code 生态建设的核心工具，用户频繁创建和管理 hook 规则，应占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:hookify-configure",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户负责的钩子管理工作相关，偶尔会手动调用来配置自动化规则，但不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:hookify-help",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude Code 生态管理工具，用户会偶尔手动查看 hookify 文档，不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:hookify-list",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔手动调用查看已配置的 hook 规则，但不是常用菜单项(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:instinct-export",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude Code 学习系统工具，用户偶尔导出 instincts 分享或迁移，不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:instinct-import",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔导入共享或存档的 instincts，不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:instinct-status",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔查看当前学到的 instincts 统计，不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:jira",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Java 后端工程师常用工作流工具，用户会手动调用但不需要菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:kotlin-build",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin，与画像弱相关"
+    },
+    {
+      "id": "command:kotlin-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin，与画像弱相关"
+    },
+    {
+      "id": "command:kotlin-test",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要技术栈是 Java/Spring Boot，不主要使用 Kotlin TDD 工作流，与画像弱相关"
+    },
+    {
+      "id": "command:learn",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "对应的 skill continuous-learning 或 continuous-learning-v2 已存在，command 是多余入口"
+    },
+    {
+      "id": "command:learn-eval",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在复杂问题解决后偶尔手动调用提取知识，不需要菜单入口"
+    },
+    {
+      "id": "command:loop-start",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户会偶尔启动自主循环工作流，不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:loop-status",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户会在启动循环后偶尔检查状态，不需要占菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:marketing-campaign",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户是 Java 后端工程师，市场营销工具与画像完全无关，不需要保留上下文占用"
+    },
+    {
+      "id": "command:model-route",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "内部模型选择逻辑，用户无需手动调用，Claude 应自动判断"
+    },
+    {
+      "id": "command:multi-backend",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前置依赖 ccg-workflow 未在用户环境安装，启用会导致失败"
+    },
+    {
+      "id": "command:multi-execute",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前置依赖 ccg-workflow 未安装，且与用户主要工作流关联弱"
+    },
+    {
+      "id": "command:multi-frontend",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前置依赖 ccg-workflow 未安装，前端为用户偶尔工作，非主要场景"
+    },
+    {
+      "id": "command:multi-plan",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前置依赖 ccg-workflow 未安装，标准规划工具已足够"
+    },
+    {
+      "id": "command:multi-workflow",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前置依赖 ccg-workflow 未安装，标准编排工作流已可用"
+    },
+    {
+      "id": "command:orch-add-feature",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "符合用户工作流（规划→TDD→审查→提交），用户会主动调用此端到端工作流来开发新特性(原 catalog.json 标记为 disable,但 reason 本身描述的是正面/应保留语义,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:orch-build-mvp",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户可能手动调用启动新项目，但不需要常规菜单入口"
+    },
+    {
+      "id": "command:orch-change-feature",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户经常修改现有特性行为，此编排流程提供测试优先的质量保证，是常用工作流(原 catalog.json 标记为 disable,但 reason 本身描述的是正面/应保留语义,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:orch-fix-defect",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Bug 修复是后端工程师的日常工作，TDD 工作流（红→绿→审查）完全符合用户的代码质量导向，高频使用(原 catalog.json 标记为 disable,但 reason 本身描述的是正面/应保留语义,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:orch-refine-code",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户重点关注代码质量，代码重构与死代码清理是常见任务，此编排提供测试安全网的结构化重构流程(原 catalog.json 标记为 disable,但 reason 本身描述的是正面/应保留语义,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:plan",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "功能被 planning-with-files:plan 完全覆盖，后者为 Manus 风格文件规划、功能更完整、支持会话恢复"
+    },
+    {
+      "id": "command:plan-prd",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "PRD 编写不是后端工程师的常见任务；/plan 已能直接接受需求输入，此工具为补充选项"
+    },
+    {
+      "id": "command:pm2",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "本地开发工具，用户可能偶尔手动调用但不需菜单入口"
+    },
+    {
+      "id": "command:pr",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "便利工具但非核心工作流，用户通常用 gh CLI 或 GitHub UI；偶尔手动调用时 /pr 有用"
+    },
+    {
+      "id": "command:project-init",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "项目初始化的重要入口，用户会主动从菜单调用"
+    },
+    {
+      "id": "command:projects",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "项目统计查询工具，维护者偶尔手动调用"
+    },
+    {
+      "id": "command:promote",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "instinct 维护工具，用户偶尔手动调用提升项目级别规则到全局"
+    },
+    {
+      "id": "command:prp-commit",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户代码质量意识强，会使用自然语言提交工具简化提交流程"
+    },
+    {
+      "id": "command:prp-implement",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "计划执行工具，用户有计划时可能手动调用但非常规菜单项"
+    },
+    {
+      "id": "command:prp-plan",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户计划策略高度相关，支持 PRD 导入和迭代继续，作为手动入口保留(原 catalog.json 标记为 disable,但 reason 本身描述的是正面/应保留语义,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:prp-pr",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "通用 git 工作流工具，开发中可能手动调用，无需菜单显示(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:prp-prd",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "产品规范生成非工程师典型工作，与用户画像关联弱"
+    },
+    {
+      "id": "command:prune",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "系统维护工具，插件维护者偶尔手动调用清理过期数据"
+    },
+    {
+      "id": "command:python-review",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Python 非用户主要编程语言，虽然偶尔写脚本但不是核心开发语言，使用频率很低"
+    },
+    {
+      "id": "command:quality-gate",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "通常由 PostToolUse hook 自动触发，用户可能偶尔手动进行单文件检查"
+    },
+    {
+      "id": "command:react-build",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发时需要，但不是日常工作，手动调用无需菜单(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:react-review",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发时需要，手动调用即可，无需菜单显示(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:react-test",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发时可能需要，手动调用无需菜单显示(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:refactor-clean",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户关注代码质量但死代码清理不是频繁操作，且需要专项审查，一般不主动调用"
+    },
+    {
+      "id": "command:resume-session",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "会话恢复工具，用户可能偶尔手动调用但不需菜单入口"
+    },
+    {
+      "id": "command:review-pr",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "代码质量是用户核心关注，PR 审查是日常工作流入口"
+    },
+    {
+      "id": "command:rust-build",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户技术栈为 Java/Spring Boot/MyBatis，无 Rust 项目"
+    },
+    {
+      "id": "command:rust-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户技术栈为 Java/Spring Boot，Rust 开发不相关"
+    },
+    {
+      "id": "command:rust-test",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户不进行 Rust 开发，此工具无适用场景"
+    },
+    {
+      "id": "command:santa-loop",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "对抗性代码审查与用户的代码质量关注完全一致，会主动使用"
+    },
+    {
+      "id": "command:save-session",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "会话保存工具，用户可能偶尔手动调用但不需菜单入口"
+    },
+    {
+      "id": "command:security-scan",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "代码质量相关但通常由 security-reviewer 代理自动触发"
+    },
+    {
+      "id": "command:sessions",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "会话管理工具，用户可能偶尔手动调用但不需菜单入口"
+    },
+    {
+      "id": "command:setup-pm",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "配置工具非开发工作流常规部分，project-init 已覆盖此功能"
+    },
+    {
+      "id": "command:skill-create",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户的 Claude Code 插件生态建设角色直接相关，会主动使用"
+    },
+    {
+      "id": "command:skill-health",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "插件维护工具，用户偶尔检查但无需菜单位置(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:test-coverage",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "测试覆盖分析由 tdd-guide 代理主导，此 command 作为手动入口无需占菜单(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,导入时已纠正为 include)"
+    },
+    {
+      "id": "command:update-codemaps",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "文档生成工具，用户不会频繁手动调用"
+    },
+    {
+      "id": "command:update-docs",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "文档同步工具，用户不会频繁手动调用"
+    },
+    {
+      "id": "command:vue-review",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔需要 Vue 代码审查，但不需要菜单常驻入口"
+    },
+    {
+      "id": "skill:accessibility",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔前端，Claude 应在 UI 设计和可访问性审计时自动触发"
+    },
+    {
+      "id": "skill:agent-architecture-audit",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态建设，构建 agent/skill 系统时需要架构审计能力"
+    },
+    {
+      "id": "skill:agent-eval",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用于 coding agent 工具对比选型，用户不涉及 agent 工具的选择决策"
+    },
+    {
+      "id": "skill:agent-harness-construction",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户构建 agent/skill 系统时可能手动调用来优化工具定义和 action space"
+    },
+    {
+      "id": "skill:agent-introspection-debugging",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Agent 自调试工具，非用户主动调用的技能，用户不会主动要求使用"
+    },
+    {
+      "id": "skill:agent-payment-x402",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "支付系统和 Web3 区块链技能，与 Java 后端及插件生态维护的用户画像完全无关"
+    },
+    {
+      "id": "skill:agent-self-evaluation",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude 可在完成多步工作流后自动建议，用户偶尔也会手动调用，但作为内部评估工具不需占菜单位置"
+    },
+    {
+      "id": "skill:agent-sort",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "直接对应\"给ECC分类裁剪安装清单\"这类工作，用户会手动调用但不需要常驻菜单"
+    },
+    {
+      "id": "skill:agentic-engineering",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "eval-first执行、任务拆解、成本感知模型路由的方法论，插件生态维护者会参考，不需要菜单入口"
+    },
+    {
+      "id": "skill:agentic-os",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "在Claude Code上构建持久化多agent系统，与用户搭建ECC插件生态的工作直接相关，手动调用即可"
+    },
+    {
+      "id": "skill:ai-first-engineering",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "面向团队级AI工程运营模式的框架，用户更接近个人贡献者场景，非日常需要"
+    },
+    {
+      "id": "skill:ai-regression-testing",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "AI辅助开发的回归测试策略与AI盲点排查，契合用户对代码质量的关注，Claude可在相关场景自动触发"
+    },
+    {
+      "id": "skill:android-clean-architecture",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Android/KMP移动端架构模式，用户是Java后端+偶尔Web前端，不涉及移动开发"
+    },
+    {
+      "id": "skill:angular-developer",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Angular框架专用技能，项目CLAUDE.md显示用户前端栈是React而非Angular"
+    },
+    {
+      "id": "skill:api-connector-builder",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "按现有集成模式搭建新API连接器，WMS调度模块的设备通信(WCS/ARM/GSS/HOD)可能用到，手动调用"
+    },
+    {
+      "id": "skill:api-design",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "后端工程师核心能力，review 应确定为 show"
+    },
+    {
+      "id": "skill:architecture-decision-records",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "为Claude Code会话中的架构决策生成结构化ADR，维护复杂fork时有用，不占菜单位置"
+    },
+    {
+      "id": "skill:article-writing",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "用户此前已实际用它审查过新增skill的文档措辞，有真实使用证据"
+    },
+    {
+      "id": "skill:automation-audit-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "面向运营/客服角色的自动化盘点审计工具，与软件工程师日常工作无关"
+    },
+    {
+      "id": "skill:autonomous-agent-harness",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "多agent架构与工具定义优化模式，插件生态建设相关，手动参考"
+    },
+    {
+      "id": "skill:autonomous-loops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "自主循环架构模式集合，插件生态建设中设计自动化工作流时可能参考"
+    },
+    {
+      "id": "skill:backend-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户是后端工程师，后端架构模式是核心，review 应确定为 show"
+    },
+    {
+      "id": "skill:benchmark",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在关心性能测试时可能会手动调用，但 Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:benchmark-methodology",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "市场分析工具，与 Java 后端工程师和插件维护者的日常工作无关"
+    },
+    {
+      "id": "skill:benchmark-optimization-loop",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在性能优化时可能会手动调用，但不是日常工作，Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:blender-motion-state-inspection",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像完全无关。用户是 Java 后端工程师，不涉及 3D 建模和动画工作。"
+    },
+    {
+      "id": "skill:blueprint",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude 在规划大型复杂任务时应自动触发，或用户偶尔会手动调用。"
+    },
+    {
+      "id": "skill:brand-discovery",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户不涉及品牌战略，hide+disable 应统一为 disable（单值）"
+    },
+    {
+      "id": "skill:brand-voice",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户不做品牌建设，hide+disable 应统一为 disable（单值）"
+    },
+    {
+      "id": "skill:browser-qa",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发时可能会手动调用，但 Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:bun-runtime",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在选择 JavaScript 运行时时可能会手动调用，但不是日常工作，Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:canary-watch",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在关键发布时可能会手动调用验证部署结果，但 Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:carrier-relationship-management",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户不涉及运输物流，hide+disable 应统一为 disable（单值）"
+    },
+    {
+      "id": "skill:cisco-ios-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像关系不大。用户是应用级开发工程师，不是网络工程师，这不是日常工作。"
+    },
+    {
+      "id": "skill:ck",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责 Claude Code 插件生态建设，这个 skill 涉及插件的核心内存管理机制，是学习和维护的重点工具。用户会主动从菜单选用。"
+    },
+    {
+      "id": "skill:claude-devfleet",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在学习或执行高级多代理任务时可能会手动调用，但这是系统级工具，Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:click-path-audit",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在前端 bug 调查时可能会手动调用，但主要是后端工程师，Claude 不需要自动触发。"
+    },
+    {
+      "id": "skill:clickhouse-io",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要使用 MySQL，不是 OLAP 分析型数据库。这个 skill 与其技术栈关系不大。"
+    },
+    {
+      "id": "skill:code-tour",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在创建代码库教学资源时可能会手动调用，这与插件生态建设的文档工作相关。"
+    },
+    {
+      "id": "skill:codebase-onboarding",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户加入新项目相关，Claude 可在首次接触陌生仓库时自动建议，用户也偶尔会手动调用"
+    },
+    {
+      "id": "skill:codehealth-mcp",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "代码质量审查场景应自动触发，用户作为代码质量关注者会偶尔手动调用"
+    },
+    {
+      "id": "skill:coding-standards",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "基础编码规范应被 Claude 在代码审查、新项目启动时自动引用，同时用户也可能手动查阅"
+    },
+    {
+      "id": "skill:competitive-platform-analysis",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "竞争市场研究工具，不涉及后端开发或插件生态维护"
+    },
+    {
+      "id": "skill:competitive-report-structure",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "竞争分析报告工具，与技术开发和插件维护无关"
+    },
+    {
+      "id": "skill:compose-multiplatform-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "KMP/Android UI 开发与 Java 后端工程师主要工作关系弱，且用户的前端开发指 Web 前端而非移动"
+    },
+    {
+      "id": "skill:config-gc",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户作为插件生态维护者会频繁需要优化 Claude Code 配置，安装 skills 包后尤其需要清理重复项"
+    },
+    {
+      "id": "skill:configure-ecc",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责 Claude Code 插件生态建设，会主动从菜单选用此工具进行 ECC 配置和安装"
+    },
+    {
+      "id": "skill:connections-optimizer",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "社交网络优化与技术工程师主要工作关系弱，用户不会主动使用"
+    },
+    {
+      "id": "skill:content-engine",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "内容创作工具与技术工程师主要工作关系弱，不在用户的日常工作范围内"
+    },
+    {
+      "id": "skill:content-hash-cache-pattern",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "专项缓存模式应用场景有限，不是用户日常工作核心，不需占用上下文 token"
+    },
+    {
+      "id": "skill:context-budget",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户作为插件生态建设者需要优化 Claude Code 上下文消耗，会主动从菜单选用"
+    },
+    {
+      "id": "skill:continuous-agent-loop",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "自主代理循环是高级编排功能，与 Java 后端工程师的日常工作关系弱"
+    },
+    {
+      "id": "skill:continuous-learning",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "已弃用的 v1 版本，应禁用以避免混淆和 token 浪费，用户应使用 continuous-learning-v2"
+    },
+    {
+      "id": "skill:continuous-learning-v2",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户作为插件维护者会关注自动学习机制，Claude 可在会话结束时自动观察，用户也可能手动调用"
+    },
+    {
+      "id": "skill:cost-aware-llm-pipeline",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "LLM API 成本优化是高级应用开发功能，与 Java 后端工程师主要工作关系弱"
+    },
+    {
+      "id": "skill:cost-tracking",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户作为插件维护者会偶尔查询 Claude Code 成本消耗，是手动调用场景"
+    },
+    {
+      "id": "skill:council",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "通用决策辅助工具，Claude 在有多个可行方案时可自动建议，用户也可能手动调用进行多角度评估"
+    },
+    {
+      "id": "skill:cpp-coding-standards",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "C++编码规范，用户是Java后端工程师，且对应的cpp-build/cpp-review command已被标记排除，保持一致"
+    },
+    {
+      "id": "skill:cpp-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "C++测试规范，与用户技术栈无关，逻辑同cpp-coding-standards"
+    },
+    {
+      "id": "skill:crosspost",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "多平台社交媒体分发工具，与后端开发和插件维护工作无关"
+    },
+    {
+      "id": "skill:csharp-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "C#/.NET测试模式，用户技术栈是Java，不涉及.NET开发"
+    },
+    {
+      "id": "skill:customer-billing-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "客户计费运营工作流，属于客服/运营角色场景，与软件工程师画像不符"
+    },
+    {
+      "id": "skill:customs-trade-compliance",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "海关贸易合规专业知识，与后端开发工作完全无关"
+    },
+    {
+      "id": "skill:dart-flutter-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Dart/Flutter移动开发模式，用户不涉及移动端，逻辑同已排除的flutter-dart-code-review"
+    },
+    {
+      "id": "skill:dashboard-builder",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "面向运营角色的监控面板搭建工具，与用户的后端开发/插件维护工作关系弱"
+    },
+    {
+      "id": "skill:data-scraper-agent",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "构建定时数据采集agent（职位/价格/新闻等），与WMS后端开发和插件维护工作无关"
+    },
+    {
+      "id": "skill:data-throughput-accelerator",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "大规模数据摄取/回填/ETL加速模式，WMS类系统常见的数据吞吐需求，手动调用"
+    },
+    {
+      "id": "skill:database-migrations",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "MySQL 用户的常见需求，应 show 而非 review"
+    },
+    {
+      "id": "skill:deep-research",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "多源深度研究工作流（Exa/Firecrawl），直接对应CLAUDE.md里要求的Exa搜索规范，Claude应能自动触发"
+    },
+    {
+      "id": "skill:defi-amm-security",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Solidity AMM合约安全清单，与Java后端开发完全无关"
+    },
+    {
+      "id": "skill:delivery-gate",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "关注代码质量的用户可能会配置此 Stop hook；需要时可手动了解，但不占菜单主位"
+    },
+    {
+      "id": "skill:deployment-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "部署工作流与CI/CD模式，用户的WMS项目有WAR打包+nginx部署流程，直接对应"
+    },
+    {
+      "id": "skill:design-system",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "设计系统生成与审计，契合用户全局规则里对前端反模板化/设计质量的要求"
+    },
+    {
+      "id": "skill:django-celery",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Django+Celery异步任务模式，用户主线是Java，Python仅偶尔写脚本，不到框架级使用"
+    },
+    {
+      "id": "skill:django-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Django架构模式，逻辑同已排除的fastapi-patterns，用户不用Python Web框架开发"
+    },
+    {
+      "id": "skill:django-security",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Django安全实践，与用户技术栈无关"
+    },
+    {
+      "id": "skill:django-tdd",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Django测试策略，与用户技术栈无关"
+    },
+    {
+      "id": "skill:django-verification",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Django项目验证循环，与用户技术栈无关"
+    },
+    {
+      "id": "skill:dmux-workflows",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "基于tmux的多agent编排模式，用户环境是Windows，tmux不可用"
+    },
+    {
+      "id": "skill:docker-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Docker/Compose本地开发与容器模式，后端部署常见配套工具，手动参考"
+    },
+    {
+      "id": "skill:documentation-lookup",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "通过Context7获取最新库文档，直接对应用户已配置使用的Context7 MCP工作流"
+    },
+    {
+      "id": "skill:dotnet-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": ".NET/C#/F#开发模式，用户技术栈是Java，不涉及.NET开发"
+    },
+    {
+      "id": "skill:dynamic-workflow-mode",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "任务本地harness与eval gate设计，插件生态建设中设计自适应agent harness时参考"
+    },
+    {
+      "id": "skill:e2e-testing",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Playwright E2E测试模式，契合用户\"偶尔前端+重视代码质量\"的画像，Claude可在E2E场景自动触发"
+    },
+    {
+      "id": "skill:ecc-guide",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "ECC自身的agent/skill/command/hook导航入口，用户作为插件生态维护者高频查询，建议保留菜单位置"
+    },
+    {
+      "id": "skill:ecc-recipes",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "作为插件维护者需要理解 ECC 工作流，用户会手动输入 /ecc-recipes 查询，但菜单位置不必要"
+    },
+    {
+      "id": "skill:ecc-tools-cost-audit",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "针对\"ECC Tools\" GitHub App后台的账单/成本审计，用户未运行该GH App后端，场景不适用"
+    },
+    {
+      "id": "skill:email-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "邮箱分类/起草/发送验证工作流，属于个人助理/运营场景，与软件工程师日常工作无关"
+    },
+    {
+      "id": "skill:energy-procurement",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户不涉及能源采购，hide+disable 应统一为 disable（单值）"
+    },
+    {
+      "id": "skill:enterprise-agent-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师的日常工作无关，不涉及企业级长期 agent 系统运维"
+    },
+    {
+      "id": "skill:error-handling",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "TypeScript/Python/Go 的通用错误处理模式，用户编写跨语言代码时会用到，Claude 应在代码审查时自动触发"
+    },
+    {
+      "id": "skill:eval-harness",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户作为插件生态建设者可能会用到 Eval-Driven Development 框架来评估任务质量，Claude 在评估阶段应自动触发"
+    },
+    {
+      "id": "skill:evm-token-decimals",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "完全与后端工程师的工作无关，不涉及区块链/DeFi 技术栈"
+    },
+    {
+      "id": "skill:exa-search",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户已在 CLAUDE.md 中明确优先使用 Exa MCP；此 skill 对 MCP 功能的补充说明有参考价值，用户偶尔会手动调用"
+    },
+    {
+      "id": "skill:fal-ai-media",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "媒体生成不是后端工程师的常规工作，用户日常不会主动使用此功能"
+    },
+    {
+      "id": "skill:fastapi-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要是 Java 后端，Python 主要用于脚本语言而非 FastAPI 框架开发"
+    },
+    {
+      "id": "skill:finance-billing-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "工程师不涉及财务/计费运维和决策工作"
+    },
+    {
+      "id": "skill:flox-environments",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在项目初始化或多工具环境配置时可能会用到，Claude 在讨论开发环境问题时应能自动识别并触发"
+    },
+    {
+      "id": "skill:flutter-dart-code-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户的技术栈中不包含 Flutter/Dart，不涉及移动端开发"
+    },
+    {
+      "id": "skill:foundation-models-on-device",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "iOS 特定框架，用户工作领域无关"
+    },
+    {
+      "id": "skill:frontend-a11y",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发且关注代码质量；Claude 在前端代码改动时应自动触发可访问性审查"
+    },
+    {
+      "id": "skill:frontend-design-direction",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔做前端工作时可能需要品牌导向和设计指导，但不是日常工作"
+    },
+    {
+      "id": "skill:frontend-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔前端开发时会用到核心模式；Claude 在前端任务中应自动触发以提升代码质量"
+    },
+    {
+      "id": "skill:frontend-slides",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "工程师不常做演示文稿生成工作，日常使用场景极少"
+    },
+    {
+      "id": "skill:fsharp-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户的技术栈中不包含 F#，不涉及函数式语言开发"
+    },
+    {
+      "id": "skill:gan-style-harness",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户的 Claude Code 插件生态建设相关，涉及多 Agent 工作流架构设计，Claude 应在讨论架构时自动触发"
+    },
+    {
+      "id": "skill:gateguard",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Hook 配置工具而非 Skill 调用入口，用户通过 settings.json 启用而非直接调用，彻底不需要在上下文中保留"
+    },
+    {
+      "id": "skill:generating-python-installer",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在写 Python 脚本时偶尔需要打包工具，但不是常规使用场景"
+    },
+    {
+      "id": "skill:git-workflow",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户日常 Git 工作流相关，Claude 应在处理版本控制问题时自动触发，用户也可能偶尔手动咨询最佳实践"
+    },
+    {
+      "id": "skill:github-ops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态维护，频繁处理 GitHub PR/Issue 管理，这是核心高频工作流入口，会主动从菜单选用"
+    },
+    {
+      "id": "skill:golang-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要使用 Java/Spring Boot，Go 不是核心技术栈，Claude 无需自动触发，用户很少调用"
+    },
+    {
+      "id": "skill:golang-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Go 技术栈不是用户核心关注，与用户主要的 Java/Spring Boot 开发工作无关，无需保留上下文"
+    },
+    {
+      "id": "skill:google-workspace-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户的核心编码工作关系不大，Claude 不需自动触发，用户很少手动调用文档工具"
+    },
+    {
+      "id": "skill:growth-log",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户习惯持续迭代 CLAUDE.md 提升效率，涉及学习总结；Claude 可建议，用户也会手动调用，但不占菜单主位"
+    },
+    {
+      "id": "skill:healthcare-cdss-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+    },
+    {
+      "id": "skill:healthcare-emr-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+    },
+    {
+      "id": "skill:healthcare-eval-harness",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+    },
+    {
+      "id": "skill:healthcare-phi-compliance",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+    },
+    {
+      "id": "skill:hermes-imports",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户的插件生态建设工作相关，涉及将重复工作流转换为可公开的 Skill，用户可能偶尔手动调用"
+    },
+    {
+      "id": "skill:hexagonal-architecture",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户关注的代码质量和架构设计相关，Claude 应在讨论服务架构时自动触发，用户可能手动调用学习应用"
+    },
+    {
+      "id": "skill:hipaa-compliance",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "医疗合规工具，用户的后端开发工作不涉及医疗或 HIPAA 合规需求"
+    },
+    {
+      "id": "skill:homelab-network-readiness",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "个人网络运维工具，与用户的代码开发和插件维护工作无关"
+    },
+    {
+      "id": "skill:homelab-network-setup",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "家庭网络工具，与后端工程师用户画像无关"
+    },
+    {
+      "id": "skill:homelab-pihole-dns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "DNS 家庭网络工具，不是后端开发相关技能"
+    },
+    {
+      "id": "skill:homelab-vlan-segmentation",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "家庭网络隔离方案，与用户的服务端工作无关"
+    },
+    {
+      "id": "skill:homelab-wireguard-vpn",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "家庭网络 VPN 工具，不属于后端开发范畴"
+    },
+    {
+      "id": "skill:hookify-rules",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责管理钩子规则，偶尔需要创建新规则，不需要菜单入口(原 catalog.json 标记为 disable,但 reason 描述的是 hide 语义——仍相关只是不占菜单位置,不是真的不需要,导入时已纠正为 include)"
+    },
+    {
+      "id": "skill:inherit-legacy-style",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "遗留代码风格维护可能偶尔需要，但不需菜单入口"
+    },
+    {
+      "id": "skill:intent-driven-development",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "通用的需求澄清方法论，Claude 在面对复杂/模糊需求时应自动触发或用户手动调用(原 catalog.json 标记为 disable,但 reason 本身描述的是正面/应保留语义,导入时已纠正为 include)"
+    },
+    {
+      "id": "skill:inventory-demand-planning",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "供应链/零售需求规划，与后端开发工作完全无关"
+    },
+    {
+      "id": "skill:investor-materials",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "融资文档工具，非后端工程师的日常需求"
+    },
+    {
+      "id": "skill:investor-outreach",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "融资沟通工具，与技术工作无关"
+    },
+    {
+      "id": "skill:ios-icon-gen",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "iOS 特定工具，用户仅偶尔参与前端且主要是后端"
+    },
+    {
+      "id": "skill:iterative-retrieval",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "多代理工作流优化模式，用户负责插件生态建设时可能参考但不需菜单"
+    },
+    {
+      "id": "skill:ito-basket-compare",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "预测市场工具，与后端开发工作无关"
+    },
+    {
+      "id": "skill:ito-data-atlas-agent",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "预测市场代理设计工具，非后端工程师的使用场景"
+    },
+    {
+      "id": "skill:ito-market-intelligence",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "预测市场情报研究，与技术工作无关"
+    },
+    {
+      "id": "skill:ito-trade-planner",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "预测市场交易规划工具，不属于技术范畴"
+    },
+    {
+      "id": "skill:java-coding-standards",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户是 Java 工程师，编码标准是基础必备，应 show 而非 hide"
+    },
+    {
+      "id": "skill:jira-integration",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户工作流相关，偶尔手动调用以检索票或添加注释，但不需要自动触发"
+    },
+    {
+      "id": "skill:jpa-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Spring Boot + MySQL 开发常用 ORM 模式，应 show 而非 hide"
+    },
+    {
+      "id": "skill:knowledge-ops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态建设，偶尔手动调用以保存和组织知识，无需自动触发"
+    },
+    {
+      "id": "skill:kotlin-coroutines-flows",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Kotlin 不在用户主要技术栈中，超出核心开发范围"
+    },
+    {
+      "id": "skill:kotlin-exposed-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Kotlin ORM，与用户的 Java/MyBatis 技术栈完全无关"
+    },
+    {
+      "id": "skill:kotlin-ktor-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Kotlin 框架，用户主要使用 Spring Boot，完全无关"
+    },
+    {
+      "id": "skill:kotlin-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Kotlin 开发模式，用户主要使用 Java，超出技术栈"
+    },
+    {
+      "id": "skill:kotlin-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Kotlin 测试模式，用户关注代码质量但主要使用 Java/JUnit，不需要"
+    },
+    {
+      "id": "skill:kubernetes-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Java 后端工程师偶尔需要设计 K8s 清单或调试容器，支持手动调用"
+    },
+    {
+      "id": "skill:laravel-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "PHP/Laravel 框架，用户是 Java 后端工程师，完全无关"
+    },
+    {
+      "id": "skill:laravel-plugin-discovery",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Laravel 包发现，用户不开发 PHP/Laravel 应用"
+    },
+    {
+      "id": "skill:laravel-security",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Laravel 安全最佳实践，用户不使用 PHP/Laravel 技术栈"
+    },
+    {
+      "id": "skill:laravel-tdd",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Laravel/PHP 测试模式，超出用户主要技术栈"
+    },
+    {
+      "id": "skill:laravel-verification",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Laravel 验证循环，用户不做 PHP/Laravel 开发"
+    },
+    {
+      "id": "skill:latency-critical-systems",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "超低延迟系统设计针对 HFT/流系统，超出用户典型 Spring Boot 工作场景"
+    },
+    {
+      "id": "skill:lead-intelligence",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "销售线索情报与外联工具，与技术开发工作完全无关"
+    },
+    {
+      "id": "skill:liquid-glass-design",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "iOS 26 特定设计系统，用户前端开发主要是 Web，不涉及 iOS 应用开发"
+    },
+    {
+      "id": "skill:llm-trading-agent-security",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "自主交易agent的安全模式（钱包/交易授权），与Java后端开发工作无关"
+    },
+    {
+      "id": "skill:logistics-exception-management",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "物流异常处理专业知识，与后端开发工作无关"
+    },
+    {
+      "id": "skill:loop-design-check",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "作为插件维护者可能需要审查代理循环设计；需要时会手动调用，不占菜单主位"
+    },
+    {
+      "id": "skill:mailtrap-email-integration",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Java 后端开发中可能涉及邮件功能；Claude 可在实现邮件时自动建议，用户也可手动调用，不占菜单主位"
+    },
+    {
+      "id": "skill:make-interfaces-feel-better",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "界面打磨细节（间距/圆角/motion等），契合用户全局规则里的前端设计质量/反模板化要求"
+    },
+    {
+      "id": "skill:manim-video",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Manim技术动画视频制作，与后端开发/插件维护工作无关"
+    },
+    {
+      "id": "skill:market-research",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "市场研究与竞品分析工具，与技术开发工作无关"
+    },
+    {
+      "id": "skill:marketing-campaign",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "端到端营销活动策划工具，逻辑同已排除的command:marketing-campaign，与用户画像完全无关"
+    },
+    {
+      "id": "skill:mcp-server-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "构建MCP server本身的模式，用户目前是消费现有MCP工具而非自建MCP server"
+    },
+    {
+      "id": "skill:messages-ops",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "短信/DM等即时消息运维工作流，与软件工程师日常工作无关"
+    },
+    {
+      "id": "skill:ml-adoption-playbook",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Java 项目中偶尔涉及 ML 集成；需要时可手动调用，不占菜单位置"
+    },
+    {
+      "id": "skill:mle-workflow",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "生产级机器学习工程工作流(数据契约/可复现训练/模型监控)，比已保留的ml-adoption-playbook更深入专精，超出\"偶尔ML集成\"的需求"
+    },
+    {
+      "id": "skill:motion-advanced",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "高级前端动画超出用户'偶尔参与前端'的需求范围"
+    },
+    {
+      "id": "skill:motion-foundations",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前端动画基础与用户主要关注的代码质量方向不符"
+    },
+    {
+      "id": "skill:motion-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "常见 UI 动画模式与用户偶尔参与前端的使用频率和业务需求不符"
+    },
+    {
+      "id": "skill:motion-ui",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "前端动画UI系统，逻辑同已排除的motion-advanced/motion-foundations/motion-patterns，保持一致"
+    },
+    {
+      "id": "skill:mysql-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户技术栈 MySQL 为主，此为核心，review 应确定为 show"
+    },
+    {
+      "id": "skill:nanoclaw-repl",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "ECC自带的会话感知REPL工具，插件生态维护直接相关"
+    },
+    {
+      "id": "skill:nestjs-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "NestJS Node.js后端框架模式，与用户Java技术栈无关，且无Node后端开发证据"
+    },
+    {
+      "id": "skill:netmiko-ssh-automation",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "网络设备SSH自动化，用户是应用工程师非网络工程师，逻辑同已排除的cisco-ios-patterns等"
+    },
+    {
+      "id": "skill:network-bgp-diagnostics",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像完全无关，Java 后端工程师不需要 BGP 网络诊断能力"
+    },
+    {
+      "id": "skill:network-config-validation",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "网络配置验证与 Java 开发和插件生态建设无相关性"
+    },
+    {
+      "id": "skill:network-interface-health",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "网络接口诊断是网络工程师专属工具，与后端开发无关"
+    },
+    {
+      "id": "skill:nextjs-turbopack",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发，可能需要 Next.js 相关知识，保留手动调用入口"
+    },
+    {
+      "id": "skill:nodejs-keccak256",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Ethereum 专属加密问题，与用户的 Java/JavaScript 主线开发无关"
+    },
+    {
+      "id": "skill:nutrient-document-processing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "第三方商业文档处理 API，与编程开发和插件生态建设无关"
+    },
+    {
+      "id": "skill:nuxt4-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔前端开发，可能用到 Vue/Nuxt 框架，保留手动调用入口"
+    },
+    {
+      "id": "skill:openclaw-persona-forge",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户维护插件生态时可能需要创建 Agent 角色，但非高频操作；保留手动调用入口"
+    },
+    {
+      "id": "skill:opensource-pipeline",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户维护插件时可能需要开源工作流，但不是自动触发场景；用户偶尔手动调用"
+    },
+    {
+      "id": "skill:orch-add-feature",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户日常开发中会主动使用此工作流来指导新功能从零构建的完整过程"
+    },
+    {
+      "id": "skill:orch-build-mvp",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户可能参与项目规划和启动，会主动从设计文档快速构建可工作的 MVP"
+    },
+    {
+      "id": "skill:orch-change-feature",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户日常开发中会主动使用此工作流来修改现有功能的行为或接口"
+    },
+    {
+      "id": "skill:orch-fix-defect",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户重点关注代码质量，会主动从菜单选用此工作流来系统化地修复 Bug"
+    },
+    {
+      "id": "skill:orch-pipeline",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "这是编排类 skills 的内部引擎，用户通过 orch-* skills 间接使用，无需直接调用"
+    },
+    {
+      "id": "skill:orch-refine-code",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户关注代码质量，会主动使用此工作流来改进代码结构和消除重复"
+    },
+    {
+      "id": "skill:parallel-execution-optimizer",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "并行执行与后端工程师的复杂任务场景相关，Claude 应自动触发以优化效率，用户也可能手动调用。"
+    },
+    {
+      "id": "skill:perl-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户技术栈以 Java/Spring Boot 为主，不涉及 Perl 开发。"
+    },
+    {
+      "id": "skill:perl-security",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Perl 安全工具与用户的 Java 技术栈无关。"
+    },
+    {
+      "id": "skill:perl-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Perl 测试模式与用户的技术栈不符。"
+    },
+    {
+      "id": "skill:plan-orchestrate",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责任务规划和插件生态，规划编排与多步任务协调直接相关，Claude 应自动触发。"
+    },
+    {
+      "id": "skill:plankton-code-quality",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户重点关注代码质量，写时质量检查工具是核心关注点，会从菜单主动选用。"
+    },
+    {
+      "id": "skill:postgres-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要用 MySQL，PostgreSQL 不是主要技术栈。"
+    },
+    {
+      "id": "skill:prediction-market-oracle-research",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "预测市场研究与后端开发和代码质量完全无关。"
+    },
+    {
+      "id": "skill:prediction-market-risk-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "预测市场风险审查与用户画像完全无关。"
+    },
+    {
+      "id": "skill:prisma-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Prisma 是 TypeScript ORM，用户是 Java/MyBatis 后端开发者。"
+    },
+    {
+      "id": "skill:product-capability",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户管理插件生态，产品意图到工程约束的转化需求相关，Claude 应自动触发。"
+    },
+    {
+      "id": "skill:product-lens",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "产品诊断工具面向产品经理，不符合后端工程师的角色。"
+    },
+    {
+      "id": "skill:production-audit",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "生产环境审查与后端工程师的代码质量关注直接相关，Claude 应自动触发。"
+    },
+    {
+      "id": "skill:production-scheduling",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户不涉及制造业调度，hide+disable 应统一为 disable（单值）"
+    },
+    {
+      "id": "skill:project-flow-ops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态建设，GitHub/Linear 工作流协调是核心运维需求，Claude 应自动触发。"
+    },
+    {
+      "id": "skill:prompt-optimizer",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "分析并优化prompt以匹配ECC组件，插件生态维护者优化自身工具调用时直接受益"
+    },
+    {
+      "id": "skill:python-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户使用 Python 编写脚本和插件工具，review 应确定为 show"
+    },
+    {
+      "id": "skill:python-testing",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户用 Python 脚本且关注代码质量，review 应确定为 show"
+    },
+    {
+      "id": "skill:pytorch-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "PyTorch深度学习训练管线模式，比已保留的ml-adoption-playbook更深入专精，超出需求"
+    },
+    {
+      "id": "skill:quality-nonconformance",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "制造业质量不合格品管理专业知识，与后端开发工作无关"
+    },
+    {
+      "id": "skill:quarkus-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Quarkus框架模式，用户技术栈是Spring Boot非Quarkus；该skill被agent:java-reviewer/agent:java-build-resolver引用做双栈探测，后续若裁剪源文件建议给这两个agent的决策补充hardDependents备注"
+    },
+    {
+      "id": "skill:quarkus-security",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Quarkus安全实践，与用户Spring Boot技术栈无关"
+    },
+    {
+      "id": "skill:quarkus-tdd",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Quarkus测试驱动开发，与用户Spring Boot技术栈无关"
+    },
+    {
+      "id": "skill:quarkus-verification",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "Quarkus项目验证循环，与用户Spring Boot技术栈无关"
+    },
+    {
+      "id": "skill:ralphinho-rfc-pipeline",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "RFC驱动的多agent DAG编排模式，同属插件/agent生态建设范畴，手动参考"
+    },
+    {
+      "id": "skill:react-native-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发但主要是 Web；涉及 React Native 项目时可手动调用"
+    },
+    {
+      "id": "skill:react-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户仅偶尔参与前端，review 应明确为 hide 而非 show，避免菜单噪声"
+    },
+    {
+      "id": "skill:react-performance",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户仅偶尔参与前端，review 应明确为 hide"
+    },
+    {
+      "id": "skill:react-testing",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户仅偶尔参与前端，review 应明确为 hide"
+    },
+    {
+      "id": "skill:recsys-pipeline-architect",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "推荐系统排序管线设计，超出用户\"偶尔ML集成\"的需求范围，与已保留的ml-adoption-playbook相比过于专精"
+    },
+    {
+      "id": "skill:recursive-decision-ledger",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-11",
+      "suggestedReason": "抽象的递归决策/随机优化模式，比用户实际在用的decision-ledger更抽象，缺乏具体使用场景"
+    },
+    {
+      "id": "skill:redis-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "技能描述明确针对 Java/Spring Boot 后端工程师；后端常用缓存方案，应 show 而非 hide"
+    },
+    {
+      "id": "skill:regex-vs-llm-structured-text",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师日常工作无关，用户不会主动调用"
+    },
+    {
+      "id": "skill:remotion-video-creation",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "视频创作与用户 Java 后端开发工作无关，不在主要技术栈内"
+    },
+    {
+      "id": "skill:repo-scan",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户作为系统维护者会主动从菜单使用此代码库审计工具"
+    },
+    {
+      "id": "skill:research-ops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在插件生态建设中可能需要进行研究工作，会主动从菜单调用"
+    },
+    {
+      "id": "skill:returns-reverse-logistics",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像（后端工程师）完全无关"
+    },
+    {
+      "id": "skill:rules-distill",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责插件生态建设和 CLAUDE.md 维护，会主动使用此工具规范化规则"
+    },
+    {
+      "id": "skill:rust-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要使用 Java/Spring Boot，不做 Rust 开发"
+    },
+    {
+      "id": "skill:rust-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户主要使用 Java/Spring Boot，不做 Rust 测试"
+    },
+    {
+      "id": "skill:safety-guard",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户在做自动化脚本和插件维护时可能需要此保护功能，会主动启用"
+    },
+    {
+      "id": "skill:santa-method",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "功能已被 santa-loop command 完全覆盖——都是多代理对抗性验证框架，santa-loop 提供了具体的代码审查实现"
+    },
+    {
+      "id": "skill:scientific-db-pubmed-database",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师工作无关，完全不需要"
+    },
+    {
+      "id": "skill:scientific-db-uspto-database",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师工作无关，完全不需要"
+    },
+    {
+      "id": "skill:scientific-pkg-gget",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师工作无关，完全不需要"
+    },
+    {
+      "id": "skill:scientific-thinking-literature-review",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师日常工作无关，不是核心业务"
+    },
+    {
+      "id": "skill:scientific-thinking-scholar-evaluation",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与后端工程师日常工作无关，不是核心业务"
+    },
+    {
+      "id": "skill:search-first",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude 应在用户要实现新功能时自动建议搜索现成方案；用户不需要菜单入口。"
+    },
+    {
+      "id": "skill:security-bounty-hunter",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "专业安全研究工具，与后端工程师工作无关，用户不会主动要求使用。"
+    },
+    {
+      "id": "skill:security-review",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Claude 应在用户处理认证、API 端点、secrets 等敏感代码时自动触发；用户也会手动调用。"
+    },
+    {
+      "id": "skill:security-scan",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责 Claude Code 插件生态建设，会修改 CLAUDE.md、settings.json，需快速访问此扫描工具验证配置安全。"
+    },
+    {
+      "id": "skill:seo",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发；Claude 可在站点优化时自动提示，用户也可手动调用。"
+    },
+    {
+      "id": "skill:skill-comply",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户开发和维护 skills，会主动使用此工具验证 skill 质量和合规性。"
+    },
+    {
+      "id": "skill:skill-scout",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户是 skill 开发者，在创建新 skill 前会主动使用此工具搜索现成方案。"
+    },
+    {
+      "id": "skill:skill-stocktake",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责 skill 和 command 维护，会定期运行此工具进行质量审计。"
+    },
+    {
+      "id": "skill:social-graph-ranker",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与工程师工作无关，人脉管理和营销工具，用户完全不需要。"
+    },
+    {
+      "id": "skill:social-publisher",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "社交媒体发布工具，与后端工程师工作无关，彻底不需要。"
+    },
+    {
+      "id": "skill:springboot-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户是 Java 后端工程师 Spring Boot 为主，此为核心技能应 show 而非 hide"
+    },
+    {
+      "id": "skill:springboot-security",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户关注代码质量，Spring Security 是后端安全关键，应 show 而非 hide"
+    },
+    {
+      "id": "skill:springboot-tdd",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户强调代码质量和持续迭代，TDD 是核心方法论，应 show 而非 hide"
+    },
+    {
+      "id": "skill:springboot-verification",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "后端质量验证关键，应 show 而非 hide"
+    },
+    {
+      "id": "skill:strategic-compact",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户可能需要手动调用来管理上下文；不是频繁操作，无需占菜单位置。"
+    },
+    {
+      "id": "skill:swift-actor-persistence",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Swift/iOS 开发与 Java 后端工程师画像无关，用户不会使用"
+    },
+    {
+      "id": "skill:swift-concurrency-6-2",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像无关（不做 Swift/iOS 开发），Claude 不需要自动触发"
+    },
+    {
+      "id": "skill:swift-protocol-di-testing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Swift 测试模式针对 iOS 开发，用户主要技术栈为 Spring Boot/MyBatis/MySQL"
+    },
+    {
+      "id": "skill:swiftui-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像无关（不做 iOS/macOS UI 开发），Claude 不需要自动触发"
+    },
+    {
+      "id": "skill:taste",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "音乐视频艺术指导工具，与 Java 后端工程师和插件维护者的工作完全无关"
+    },
+    {
+      "id": "skill:tdd-workflow",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "代码质量核心工具，Claude 在新功能/Bug 修复/重构场景应自动触发，用户也会手动调用"
+    },
+    {
+      "id": "skill:team-agent-orchestration",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与插件生态建设相关，管理多代理协作时有用，用户会偶尔手动调用"
+    },
+    {
+      "id": "skill:team-builder",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "多代理编排场景较少，用户日常开发中不会频繁使用，且 team-agent-orchestration 已覆盖此场景"
+    },
+    {
+      "id": "skill:terminal-ops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "Git/CI 操作是日常开发工作，用户会偶尔手动调用或 Claude 在适当场景自动触发"
+    },
+    {
+      "id": "skill:tinystruct-patterns",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "特定框架工具，用户主要技术栈是 Spring Boot 而非 tinystruct，不在常用框架中"
+    },
+    {
+      "id": "skill:token-budget-advisor",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "通用工具但非必需，用户不会主动要求，Claude 不需要自动触发，禁用可简化菜单"
+    },
+    {
+      "id": "skill:ui-demo",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前端演示工具，用户偶尔参与前端开发时会用到，可手动调用但无需菜单占位"
+    },
+    {
+      "id": "skill:ui-to-vue",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "前端设计转代码工具，偶尔前端工作有需要时会使用，支持手动调用"
+    },
+    {
+      "id": "skill:uncloud",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "运维部署工具，用户是后端工程师而非运维工程师，与日常开发流程无关"
+    },
+    {
+      "id": "skill:unified-notifications-ops",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与插件生态建设管理相关，在处理多渠道通知时偶尔会手动调用"
+    },
+    {
+      "id": "skill:verification-loop",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "代码质量验证的核心工具，高度相关于用户的质量关注点，Claude 应在完成代码后自动触发或用户手动调用"
+    },
+    {
+      "id": "skill:video-editing",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "视频编辑工具针对视频工程师，代码工程师完全用不到，彻底移除上下文占用"
+    },
+    {
+      "id": "skill:videodb",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "视频/音频感知工具与后端开发无关，用户不会主动要求，彻底移除上下文占用"
+    },
+    {
+      "id": "skill:visa-doc-translate",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "签证文档翻译与软件开发工作无关，用户不会使用此功能"
+    },
+    {
+      "id": "skill:vite-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔参与前端开发，Claude 应在编辑 vite.config.ts 时自动触发，用户不需要菜单入口"
+    },
+    {
+      "id": "skill:vue-patterns",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户偶尔前端开发，Claude 应在编辑 .vue 文件和涉及 Vue 项目时自动触发"
+    },
+    {
+      "id": "skill:windows-desktop-e2e",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像完全无关，用户是 Java 后端工程师，不开发 Windows 桌面应用"
+    },
+    {
+      "id": "skill:workspace-surface-audit",
+      "decision": "pending",
+      "suggestedDecision": "include",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "用户负责 Claude Code 插件生态建设，会主动使用此技能审计工作区配置和推荐高价值工作流"
+    },
+    {
+      "id": "skill:x-api",
+      "decision": "pending",
+      "suggestedDecision": "exclude",
+      "suggestedAt": "2026-07-10",
+      "suggestedReason": "与用户画像无关，用户无社交媒体集成需求"
+    }
+  ]
+}

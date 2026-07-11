@@ -2,12 +2,12 @@
 name: dependency-graph
 description: >
   在本仓库(rules/agents/skills/commands/hooks)之间构建并查询依赖关系图——删除、重命名、合并或拆分任何 ECC 组件之前,务必先查清楚有谁依赖它,避免留下死引用;也可以按类别浏览仓库里的 skill/command/hook/rule。
-  当用户想清理不再用的 rule/skill/agent/command/hook、问"这个还有谁在用"/"删了这个有影响吗"、要重命名或拆分某个组件、要求刷新/巡检依赖图、想在改动后检查是否有孤儿/失效引用、或者想按类别(比如安装模块、command 类型、hook 触发事件、rule 所属语言/主题)浏览仓库组件时,主动使用这个技能。
+  当用户想清理不再用的 rule/skill/agent/command/hook、问"这个还有谁在用"/"删了这个有影响吗"、要重命名或拆分某个组件、要求刷新/巡检依赖图、想在改动后检查是否有孤儿/失效引用、或者想按类别(比如安装模块、command 类型、hook 触发事件、rule 所属语言/主题、功能主题/使用场景)浏览仓库组件时,主动使用这个技能。维护精简 fork 时,想决定"某个组件的源文件要不要留在仓库里"、记录排除/保留决策、批量裁剪已排除的组件、或者上游同步后要核对有没有新组件遗漏分类,也用这个技能(决策台账功能)。
 ---
 
 # 依赖关系图(dependency-graph)
 
-追踪本仓库 `rules/`、`agents/`、`skills/`、`commands/`、`hooks/` 之间的交叉引用,删除或重命名组件前先确认没有遗留死引用;同时按 `manifests/install-modules.json` 的安装模块给 skill 打分类标签,支持"按类别浏览"。完全自包含在 `.claude/skills/dependency-graph/` 内(项目本地 skill,只在打开此仓库时加载),不修改仓库其他文件;只读引用两处外部数据:`scripts/ci/generate-command-registry.js` 已导出的函数,以及 `manifests/install-modules.json`(两者本身都未被修改)。完整设计说明见 [README.md](README.md)。
+追踪本仓库 `rules/`、`agents/`、`skills/`、`commands/`、`hooks/` 之间的交叉引用,删除或重命名组件前先确认没有遗留死引用;同时按 `manifests/install-modules.json` 的安装模块给 skill 打分类标签,支持"按类别浏览";另外维护一份**决策台账**(`decision-ledger.js` + `data/decisions.json`,见 [DECISIONS.md](DECISIONS.md)),记录"某个组件的源文件该不该留在仓库里"的决策,并能据此真正裁剪仓库。工具本身完全自包含在 `.claude/skills/dependency-graph/` 内(项目本地 skill,只在打开此仓库时加载),对仓库其他文件默认只做只读访问——扫描 `rules/`、`agents/`、`skills/`、`hooks/` 本来就是它的核心工作,除此之外唯二额外读取的外部数据是:`scripts/ci/generate-command-registry.js` 已导出的函数,以及 `manifests/install-modules.json`(两者本身都未被修改)——**唯一的例外是 `decision-ledger.js prune --apply`**,它会按你自己记录的决策真实删除仓库里对应的组件文件/目录,这是它有意为之的核心功能,不是意外的副作用。完整设计说明见 [README.md](README.md)。
 
 ## 怎么用
 
@@ -61,11 +61,19 @@ description: >
 
 ## 按类别浏览
 
-`DEPENDENCY-GRAPH.md` 里有一节"按类别浏览":skill 按 install module 分组(数据来源 `manifests/install-modules.json`,覆盖率约 198/278,不是权威分类)、command 按类型分组、hook 按触发事件分组、rule 按语言/主题目录分组。agent 目前没有分类数据源,只能靠 `dependents`/`uses` 查关系。想看某个 module 具体装了哪些 skill:
+`DEPENDENCY-GRAPH.md` 里有一节"按类别浏览":skill 按 install module 分组(数据来源 `manifests/install-modules.json`,覆盖率约 277/278,不是权威分类)、command 按类型分组、hook 按触发事件分组、rule 按语言/主题目录分组。agent 目前没有分类数据源,只能靠 `dependents`/`uses` 查关系。想看某个 module 具体装了哪些 skill:
 
 ```bash
 node .claude/skills/dependency-graph/scripts/relationship-query.js uses module:framework-language
 ```
+
+如果想按**功能主题/使用场景**(而不是按 install module)浏览 agent/command/skill/rule,看 [CATEGORIES.md](CATEGORIES.md)——它覆盖 `DEPENDENCY-GRAPH.md` 分类做不到的部分(agent、command、rule 的功能分类),是纯人工参考文档,不被任何脚本读取,不驱动裁剪决策。
+
+## 决策台账:要不要把某个组件留在 fork 里
+
+如果你在维护一个精简过的 fork,想决定"哪些组件的源文件不该留在仓库里",看 [DECISIONS.md](DECISIONS.md)——`scripts/decision-ledger.js` 提供 `record`/`list`/`prune`/`diff-upstream` 子命令,记录决策并驱动真实裁剪。**这是决定权在人的工具**:`decisions.json` 里可能有从外部数据源批量导入的 `suggestedDecision`(建议),但只有你自己显式 `record` 过的 `decision` 才会被 `prune` 执行,不会替你做决定。
+
+和上游仓库同步、处理"已裁剪组件在上游被改动"产生的合并冲突,看 [upstream-sync 技能](../upstream-sync/SKILL.md)——它只读引用本技能导出的函数,不修改本目录任何文件。
 
 ## 示例
 

@@ -85,8 +85,8 @@ function renderTopTable(entries, label) {
   return lines.join('\n');
 }
 
-// 给排名前几的枢纽节点各画一张 depth=1 的局部关系图,而不是给全仓库 616 个节点、
-// 479 条边画一张图——后者不管怎么画都是一团理不清的线(见 renderExtendsSummary
+// 给排名前几的枢纽节点各画一张 depth=1 的局部关系图,而不是给全仓库 651 个节点、
+// 758 条边画一张图——后者不管怎么画都是一团理不清的线(见 renderExtendsSummary
 // 上面的说明),局部子图通常只有几条到十几条边,才是真正看得懂、能在 GitHub 上
 // 直接渲染出来的"关系图"。复用 relationship-query.js 里已经写好并测过的
 // collectSubgraph/renderMermaid,不重新实现一遍。

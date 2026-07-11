@@ -2218,7 +2218,7 @@
       "name": "data-scraper-agent",
       "path": "skills/data-scraper-agent/SKILL.md",
       "meta": {
-        "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Scrapes on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically."
+        "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Runs on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically."
       }
     },
     {
@@ -3383,6 +3383,15 @@
       }
     },
     {
+      "id": "skill:plan-canvas",
+      "type": "skill",
+      "name": "plan-canvas",
+      "path": "skills/plan-canvas/SKILL.md",
+      "meta": {
+        "description": "Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests changes without leaving the page. Use when presenting a plan for review, or when feedback like \"move this, change that\" is easier pointed at than typed."
+      }
+    },
+    {
       "id": "skill:plan-orchestrate",
       "type": "skill",
       "name": "plan-orchestrate",
@@ -4166,7 +4175,7 @@
       "name": "chief-of-staff",
       "path": "agents/chief-of-staff.md",
       "meta": {
-        "model": "opus",
+        "model": "sonnet",
         "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\", \"Write\"]"
       }
     },
@@ -4216,7 +4225,7 @@
       "name": "comment-analyzer",
       "path": "agents/comment-analyzer.md",
       "meta": {
-        "model": "sonnet",
+        "model": "haiku",
         "tools": "[Read, Grep, Glob]"
       }
     },
@@ -4226,7 +4235,7 @@
       "name": "conversation-analyzer",
       "path": "agents/conversation-analyzer.md",
       "meta": {
-        "model": "sonnet",
+        "model": "haiku",
         "tools": "[Read, Grep]"
       }
     },
@@ -4277,7 +4286,7 @@
       "path": "agents/database-reviewer.md",
       "meta": {
         "model": "sonnet",
-        "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
+        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
       }
     },
     {
@@ -4316,7 +4325,7 @@
       "name": "docs-lookup",
       "path": "agents/docs-lookup.md",
       "meta": {
-        "model": "sonnet",
+        "model": "haiku",
         "tools": "[\"Read\", \"Grep\", \"mcp__context7__resolve-library-id\", \"mcp__context7__query-docs\"]"
       }
     },
@@ -4366,7 +4375,7 @@
       "name": "gan-evaluator",
       "path": "agents/gan-evaluator.md",
       "meta": {
-        "model": "opus",
+        "model": "sonnet",
         "tools": "[\"Read\", \"Write\", \"Bash\", \"Grep\", \"Glob\"]"
       }
     },
@@ -4376,7 +4385,7 @@
       "name": "gan-generator",
       "path": "agents/gan-generator.md",
       "meta": {
-        "model": "opus",
+        "model": "sonnet",
         "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
       }
     },
@@ -4386,7 +4395,7 @@
       "name": "gan-planner",
       "path": "agents/gan-planner.md",
       "meta": {
-        "model": "opus",
+        "model": "sonnet",
         "tools": "[\"Read\", \"Write\", \"Grep\", \"Glob\"]"
       }
     },
@@ -4556,7 +4565,7 @@
       "name": "opensource-forker",
       "path": "agents/opensource-forker.md",
       "meta": {
-        "model": "sonnet",
+        "model": "haiku",
         "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
       }
     },
@@ -4566,7 +4575,7 @@
       "name": "opensource-packager",
       "path": "agents/opensource-packager.md",
       "meta": {
-        "model": "sonnet",
+        "model": "haiku",
         "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
       }
     },
@@ -4697,7 +4706,7 @@
       "path": "agents/security-reviewer.md",
       "meta": {
         "model": "sonnet",
-        "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]"
+        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
       }
     },
     {
@@ -5371,6 +5380,16 @@
       }
     },
     {
+      "id": "command:plan-canvas",
+      "type": "command",
+      "name": "plan-canvas",
+      "path": "commands/plan-canvas.md",
+      "meta": {
+        "description": "Open a plan or HTML artifact in the browser Plan Canvas for annotate-and-approve review",
+        "commandType": "review"
+      }
+    },
+    {
       "id": "command:plan-prd",
       "type": "command",
       "name": "plan-prd",
@@ -5912,6 +5931,24 @@
       "type": "script",
       "name": "scripts/hooks/session-start-bootstrap.js",
       "path": "scripts/hooks/session-start-bootstrap.js",
+      "meta": {}
+    },
+    {
+      "id": "hook:session-start:plan-canvas-sessions",
+      "type": "hook",
+      "name": "session-start:plan-canvas-sessions",
+      "path": "hooks/hooks.json",
+      "meta": {
+        "event": "SessionStart",
+        "matcher": "*",
+        "description": "Surface open Plan Canvas review sessions so a fresh session can resume the loop"
+      }
+    },
+    {
+      "id": "script:scripts/hooks/plan-canvas-sessions.js",
+      "type": "script",
+      "name": "scripts/hooks/plan-canvas-sessions.js",
+      "path": "scripts/hooks/plan-canvas-sessions.js",
       "meta": {}
     },
     {
@@ -8431,9 +8468,19 @@
       "type": "references_skill"
     },
     {
+      "from": "command:plan-canvas",
+      "to": "skill:plan-canvas",
+      "type": "references_skill"
+    },
+    {
       "from": "command:plan",
       "to": "agent:planner",
       "type": "references_agent"
+    },
+    {
+      "from": "command:plan",
+      "to": "skill:plan-canvas",
+      "type": "references_skill"
     },
     {
       "from": "command:project-init",
@@ -8728,6 +8775,21 @@
     {
       "from": "hook:session:start",
       "to": "script:scripts/hooks/session-start-bootstrap.js",
+      "type": "hook_script"
+    },
+    {
+      "from": "hook:session-start:plan-canvas-sessions",
+      "to": "script:scripts/hooks/plugin-hook-bootstrap.js",
+      "type": "hook_script"
+    },
+    {
+      "from": "hook:session-start:plan-canvas-sessions",
+      "to": "script:scripts/hooks/run-with-flags.js",
+      "type": "hook_script"
+    },
+    {
+      "from": "hook:session-start:plan-canvas-sessions",
+      "to": "script:scripts/hooks/plan-canvas-sessions.js",
       "type": "hook_script"
     },
     {
@@ -9191,6 +9253,86 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:framework-language",
+      "to": "skill:accessibility",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:bun-runtime",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:design-system",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:django-celery",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:flutter-dart-code-review",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:frontend-a11y",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:generating-python-installer",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:hexagonal-architecture",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:motion-advanced",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:motion-foundations",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:motion-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:nextjs-turbopack",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:nuxt4-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:react-native-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:tinystruct-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:framework-language",
+      "to": "skill:vite-patterns",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:database",
       "to": "skill:clickhouse-io",
       "type": "installs_skill"
@@ -9218,6 +9360,11 @@
     {
       "from": "module:database",
       "to": "skill:prisma-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:database",
+      "to": "skill:redis-patterns",
       "type": "installs_skill"
     },
     {
@@ -9287,6 +9434,11 @@
     },
     {
       "from": "module:workflow-quality",
+      "to": "skill:plan-canvas",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
       "to": "skill:plankton-code-quality",
       "type": "installs_skill"
     },
@@ -9326,6 +9478,111 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:workflow-quality",
+      "to": "skill:agent-self-evaluation",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:architecture-decision-records",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:browser-qa",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:ck",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:click-path-audit",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:codebase-onboarding",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:codehealth-mcp",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:config-gc",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:context-budget",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:delivery-gate",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:ecc-guide",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:ecc-recipes",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:growth-log",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:inherit-legacy-style",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:intent-driven-development",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:loop-design-check",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:product-lens",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:repo-scan",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:rules-distill",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:santa-method",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:workflow-quality",
+      "to": "skill:git-workflow",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:optimization-workflows",
       "to": "skill:benchmark-optimization-loop",
       "type": "installs_skill"
@@ -9348,6 +9605,21 @@
     {
       "from": "module:optimization-workflows",
       "to": "skill:recursive-decision-ledger",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:optimization-workflows",
+      "to": "skill:agent-eval",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:optimization-workflows",
+      "to": "skill:benchmark",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:optimization-workflows",
+      "to": "skill:benchmark-methodology",
       "type": "installs_skill"
     },
     {
@@ -9421,6 +9693,31 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:security",
+      "to": "skill:gateguard",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:security",
+      "to": "skill:healthcare-cdss-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:security",
+      "to": "skill:healthcare-emr-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:security",
+      "to": "skill:healthcare-eval-harness",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:security",
+      "to": "skill:safety-guard",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:research-apis",
       "to": "skill:deep-research",
       "type": "installs_skill"
@@ -9458,6 +9755,11 @@
     {
       "from": "module:research-apis",
       "to": "skill:scientific-thinking-scholar-evaluation",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:research-apis",
+      "to": "skill:documentation-lookup",
       "type": "installs_skill"
     },
     {
@@ -9508,6 +9810,26 @@
     {
       "from": "module:business-content",
       "to": "skill:market-research",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:business-content",
+      "to": "skill:brand-discovery",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:business-content",
+      "to": "skill:competitive-platform-analysis",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:business-content",
+      "to": "skill:competitive-report-structure",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:business-content",
+      "to": "skill:marketing-campaign",
       "type": "installs_skill"
     },
     {
@@ -9601,6 +9923,11 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:operator-workflows",
+      "to": "skill:mailtrap-email-integration",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:prediction-market-skills",
       "to": "skill:ito-basket-compare",
       "type": "installs_skill"
@@ -9641,6 +9968,11 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:social-distribution",
+      "to": "skill:social-publisher",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:media-generation",
       "to": "skill:blender-motion-state-inspection",
       "type": "installs_skill"
@@ -9676,6 +10008,11 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:media-generation",
+      "to": "skill:taste",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:orchestration",
       "to": "skill:dmux-workflows",
       "type": "installs_skill"
@@ -9708,6 +10045,11 @@
     {
       "from": "module:swift-apple",
       "to": "skill:swiftui-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:swift-apple",
+      "to": "skill:ios-icon-gen",
       "type": "installs_skill"
     },
     {
@@ -9821,6 +10163,71 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:agentic-patterns",
+      "to": "skill:agent-payment-x402",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:autonomous-agent-harness",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:gan-style-harness",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:hermes-imports",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:openclaw-persona-forge",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:opensource-pipeline",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:orch-add-feature",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:orch-build-mvp",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:orch-change-feature",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:orch-fix-defect",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:orch-pipeline",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:orch-refine-code",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:agentic-patterns",
+      "to": "skill:plan-orchestrate",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:devops-infra",
       "to": "skill:cisco-ios-patterns",
       "type": "installs_skill"
@@ -9866,8 +10273,58 @@
       "type": "installs_skill"
     },
     {
+      "from": "module:devops-infra",
+      "to": "skill:canary-watch",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:devops-infra",
+      "to": "skill:flox-environments",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:devops-infra",
+      "to": "skill:homelab-pihole-dns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:devops-infra",
+      "to": "skill:homelab-vlan-segmentation",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:devops-infra",
+      "to": "skill:homelab-wireguard-vpn",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:devops-infra",
+      "to": "skill:kubernetes-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:devops-infra",
+      "to": "skill:uncloud",
+      "type": "installs_skill"
+    },
+    {
       "from": "module:machine-learning",
       "to": "skill:mle-workflow",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:machine-learning",
+      "to": "skill:ml-adoption-playbook",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:machine-learning",
+      "to": "skill:pytorch-patterns",
+      "type": "installs_skill"
+    },
+    {
+      "from": "module:machine-learning",
+      "to": "skill:recsys-pipeline-architect",
       "type": "installs_skill"
     },
     {

@@ -12,13 +12,13 @@
 | 类型 | 数量 | 说明 |
 |---|---|---|
 | rule | 122 | rules/**/*.md |
-| skill | 277 | skills/*/SKILL.md |
+| skill | 278 | skills/*/SKILL.md |
 | agent | 67 | agents/*.md |
-| command | 93 | commands/*.md |
-| hook | 29 | hooks/hooks.json + hooks/*/hooks.json |
-| script | 27 | 被某个 hook 引用、且文件确实存在的脚本 |
+| command | 94 | commands/*.md |
+| hook | 30 | hooks/hooks.json + hooks/*/hooks.json |
+| script | 28 | 被某个 hook 引用、且文件确实存在的脚本 |
 | module | 32 | manifests/install-modules.json 里的安装模块 |
-| **边总数** | **674** | 上述节点之间的全部引用关系 |
+| **边总数** | **758** | 上述节点之间的全部引用关系 |
 
 ## 按类别浏览
 
@@ -28,25 +28,25 @@
 
 | module | 技能数 | 说明 |
 |---|---|---|
-| `module:framework-language` | 52 | Core framework, language, and application-engineering skills. |
-| `module:agentic-patterns` | 22 | Agentic engineering, autonomous loops, agent harness construction, and LLM pipeline optimization skills. |
-| `module:workflow-quality` | 21 | Evaluation, TDD, verification, compaction, and learning skills, including the legacy continuous-learning v1 path. |
-| `module:operator-workflows` | 18 | Connected-app operator workflows for setup audits, billing operations, program tracking, Google Workspace, and network optimization. |
-| `module:security` | 14 | Security review and security-focused framework guidance. |
-| `module:business-content` | 10 | Business, writing, market, and investor communication skills. |
-| `module:devops-infra` | 9 | Deployment workflows, Docker patterns, and infrastructure skills. |
-| `module:research-apis` | 8 | Research and API integration skills for deep investigations and model integrations. |
+| `module:framework-language` | 68 | Core framework, language, and application-engineering skills. |
+| `module:workflow-quality` | 43 | Evaluation, TDD, verification, compaction, and learning skills, including the legacy continuous-learning v1 path. |
+| `module:agentic-patterns` | 35 | Agentic engineering, autonomous loops, agent harness construction, and LLM pipeline optimization skills. |
+| `module:operator-workflows` | 19 | Connected-app operator workflows for setup audits, billing operations, program tracking, Google Workspace, and network optimization. |
+| `module:security` | 19 | Security review and security-focused framework guidance. |
+| `module:devops-infra` | 16 | Deployment workflows, Docker patterns, and infrastructure skills. |
+| `module:business-content` | 14 | Business, writing, market, and investor communication skills. |
+| `module:research-apis` | 9 | Research and API integration skills for deep investigations and model integrations. |
+| `module:media-generation` | 8 | Media generation, technical explainers, and AI-assisted editing skills. |
+| `module:optimization-workflows` | 8 | Parallel execution, benchmarking, data-throughput, latency, and recursive decision-ledger skills for faster evidence-backed work. |
 | `module:supply-chain-domain` | 8 | Supply chain, logistics, procurement, and manufacturing domain skills. |
-| `module:media-generation` | 7 | Media generation, technical explainers, and AI-assisted editing skills. |
-| `module:database` | 6 | Database and persistence-focused skills. |
+| `module:database` | 7 | Database and persistence-focused skills. |
+| `module:swift-apple` | 7 | Swift, SwiftUI, and Apple platform skills including concurrency, persistence, and design patterns. |
 | `module:prediction-market-skills` | 6 | Public, non-advisory prediction-market and Itô basket research workflows with gated Itô API access. |
-| `module:swift-apple` | 6 | Swift, SwiftUI, and Apple platform skills including concurrency, persistence, and design patterns. |
-| `module:optimization-workflows` | 5 | Parallel execution, benchmarking, data-throughput, latency, and recursive decision-ledger skills for faster evidence-backed work. |
+| `module:machine-learning` | 4 | Production machine-learning engineering workflows for data contracts, reproducible training, evaluation, deployment, monitoring, and rollback. |
+| `module:social-distribution` | 3 | Social publishing and distribution skills. |
 | `module:document-processing` | 2 | Document processing, conversion, and translation skills. |
-| `module:social-distribution` | 2 | Social publishing and distribution skills. |
-| `module:machine-learning` | 1 | Production machine-learning engineering workflows for data contracts, reproducible training, evaluation, deployment, monitoring, and rollback. |
 | `module:orchestration` | 1 | Worktree/tmux orchestration runtime and workflow docs. |
-| _(未归类)_ | 79 | 存在于 `skills/`,但没被任何 install module 收录 |
+| _(未归类)_ | 1 | 存在于 `skills/`,但没被任何 install module 收录 |
 
 想看某个 module 具体装了哪些 skill:`node .claude/skills/dependency-graph/scripts/relationship-query.js uses module:<id>`。
 
@@ -59,7 +59,7 @@
 - **orchestration**(11 个):`command:gan-build`、`command:multi-backend`、`command:multi-execute`、`command:multi-frontend`、`command:multi-plan`、`command:multi-workflow`、`command:orch-add-feature`、`command:orch-build-mvp`、`command:orch-change-feature`、`command:orch-fix-defect`、`command:orch-refine-code`
 - **planning**(2 个):`command:gan-design`、`command:update-codemaps`
 - **refactoring**(1 个):`command:build-fix`
-- **review**(14 个):`command:ecc-guide`、`command:epic-claim`、`command:epic-decompose`、`command:epic-review`、`command:epic-validate`、`command:instinct-status`、`command:learn`、`command:model-route`、`command:orch-review`、`command:promote`、`command:prune`、`command:santa-loop`、`command:security-scan`、`command:skill-health`
+- **review**(15 个):`command:ecc-guide`、`command:epic-claim`、`command:epic-decompose`、`command:epic-review`、`command:epic-validate`、`command:instinct-status`、`command:learn`、`command:model-route`、`command:orch-review`、`command:plan-canvas`、`command:promote`、`command:prune`、`command:santa-loop`、`command:security-scan`、`command:skill-health`
 - **testing**(53 个):`command:aside`、`command:auto-update`、`command:checkpoint`、`command:code-review`、`command:cost-report`、`command:cpp-build`、`command:cpp-review`、`command:cpp-test`、`command:evolve`、`command:fastapi-review`、`command:feature-dev`、`command:flutter-build`、`command:flutter-review`、`command:flutter-test`、`command:go-build`、`command:go-review`、`command:go-test`、`command:harness-audit`、`command:hookify-help`、`command:instinct-export`、`command:instinct-import`、`command:jira`、`command:kotlin-build`、`command:kotlin-review`、`command:kotlin-test`、`command:learn-eval`、`command:loop-start`、`command:marketing-campaign`、`command:plan`、`command:plan-prd`、`command:pr`、`command:project-init`、`command:prp-commit`、`command:prp-implement`、`command:prp-plan`、`command:prp-pr`、`command:prp-prd`、`command:python-review`、`command:quality-gate`、`command:react-build`、`command:react-review`、`command:react-test`、`command:refactor-clean`、`command:resume-session`、`command:review-pr`、`command:rust-build`、`command:rust-review`、`command:rust-test`、`command:save-session`、`command:skill-create`、`command:test-coverage`、`command:update-docs`、`command:vue-review`
 
 ### hook
@@ -71,7 +71,7 @@
 - **PreCompact**(1 个):`hook:pre:compact`
 - **PreToolUse**(8 个):`hook:pre:bash:dispatcher`、`hook:pre:config-protection`、`hook:pre:edit-write:gateguard-fact-force`、`hook:pre:edit-write:suggest-compact`、`hook:pre:governance-capture`、`hook:pre:mcp-health-check`、`hook:pre:observe:continuous-learning`、`hook:pre:write:doc-file-warning`
 - **SessionEnd**(2 个):`hook:session:end`、`hook:session:end:marker`
-- **SessionStart**(1 个):`hook:session:start`
+- **SessionStart**(2 个):`hook:session-start:plan-canvas-sessions`、`hook:session:start`
 - **Stop**(6 个):`hook:stop:check-console-log`、`hook:stop:cost-tracker`、`hook:stop:desktop-notify`、`hook:stop:evaluate-session`、`hook:stop:format-typecheck`、`hook:stop:session-end`
 
 ### rule
@@ -237,7 +237,7 @@
 
 被依赖次数最高的 5 个 skill,各自的局部关系图(depth 1,能看出具体是谁在依赖它):
 
-**`skill:accessibility`**(被依赖 11 次)
+**`skill:accessibility`**(被依赖 12 次)
 
 ```mermaid
 graph TD
@@ -252,6 +252,7 @@ graph TD
   command_multi_plan["command:multi-plan"] -->|references_skill| skill_accessibility["skill:accessibility"]
   command_react_review["command:react-review"] -->|references_skill| skill_accessibility["skill:accessibility"]
   command_react_test["command:react-test"] -->|references_skill| skill_accessibility["skill:accessibility"]
+  module_framework_language["module:framework-language"] -->|installs_skill| skill_accessibility["skill:accessibility"]
 ```
 
 **`skill:security-review`**(被依赖 10 次)
@@ -324,11 +325,11 @@ graph TD
 | `skill:backend-patterns` | 7 |
 | `skill:continuous-learning-v2` | 7 |
 | `skill:e2e-testing` | 7 |
+| `skill:flutter-dart-code-review` | 7 |
 | `skill:golang-patterns` | 7 |
 | `skill:network-config-validation` | 7 |
 | `skill:network-interface-health` | 7 |
 | `skill:react-testing` | 7 |
-| `skill:flutter-dart-code-review` | 6 |
 | `skill:frontend-patterns` | 6 |
 
 ## 被引用最多的 agent

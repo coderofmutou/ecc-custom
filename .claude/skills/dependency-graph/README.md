@@ -1,8 +1,8 @@
 # Dependency-Graph Skill 工具文档
 
-本目录 `.claude/skills/dependency-graph/` 提供一套**完全自包含**的静态扫描工具，用于在 ECC(Everything Claude Code)仓库的 `rules/`、`agents/`、`skills/`、`commands/`、`hooks/` 之间构建并查询依赖关系图，同时按 `manifests/install-modules.json` 的安装模块给 skill 打分类标签，支持"按类别浏览"。它的核心目标是：在删除、重命名或拆分某个组件之前，能先确定有谁依赖它，避免悄无声息地破坏引用。
+本目录 `.claude/skills/dependency-graph/` 提供一套**完全自包含**的工具集，核心是在 ECC(Everything Claude Code)仓库的 `rules/`、`agents/`、`skills/`、`commands/`、`hooks/` 之间构建并查询依赖关系图，同时按 `manifests/install-modules.json` 的安装模块给 skill 打分类标签，支持"按类别浏览"；此外还维护一份**决策台账**（`decision-ledger.js` + `data/decisions.json`，见 [DECISIONS.md](DECISIONS.md)），记录"某个组件的源文件该不该留在仓库里"的决策，并能据此真正裁剪仓库。它的核心目标是：在删除、重命名或拆分某个组件之前，能先确定有谁依赖它，避免悄无声息地破坏引用。
 
-> **设计原则**：所有脚本对 `.claude/skills/dependency-graph/` 之外的仓库文件只做只读访问——包括只读 require `scripts/ci/generate-command-registry.js` 的导出函数、只读解析 `manifests/install-modules.json`；所有写操作都只落在本目录内。运行它不会污染或修改仓库其他文件。
+> **设计原则**：除 `decision-ledger.js prune --apply` 外，所有脚本对 `.claude/skills/dependency-graph/` 之外的仓库文件只做只读访问——包括只读 require `scripts/ci/generate-command-registry.js` 的导出函数、只读解析 `manifests/install-modules.json`；写操作只落在本目录内。**唯一的例外是 `decision-ledger.js prune --apply`**：它是这套工具里刻意设计的裁剪执行器，会按 `decisions.json` 里 `decision=exclude` 的记录，真实删除仓库里对应的组件文件/目录——这是它的核心职责，不是意外的副作用，详见[决策台账与上游同步](#决策台账与上游同步)。
 
 ---
 
@@ -13,6 +13,7 @@
 - [脚本 × 支持标志速查](#脚本--支持标志速查)
 - [npm scripts 速查](#npm-scripts-速查)
 - [工具/脚本详细说明](#工具脚本详细说明)
+- [决策台账与上游同步](#决策台账与上游同步)
 - [输出数据格式与字段含义](#输出数据格式与字段含义)
 - [overrides.json 用法](#overridesjson-抑制误报与补充遗漏)
 - [常见工作流](#常见工作流)
@@ -28,6 +29,8 @@
 .claude/skills/dependency-graph/
 ├── SKILL.md                      # 用户层面的 skill 介绍（何时用、怎么用）
 ├── README.md                     # 本文件：工具、脚本、数据格式、字段说明
+├── CATEGORIES.md                 # 561 个组件按功能主题/使用场景的分类参考（人工浏览用，脚本不读取）
+├── DECISIONS.md                  # 决策台账说明：字段含义、和 overrides.json/CATEGORIES.md 的区别
 ├── package.json                  # 本地 npm scripts，不影响仓库根目录
 ├── overrides.json                # 人工覆盖/补充依赖关系
 ├── DEPENDENCY-GRAPH.md           # 生成的人可读依赖报告（别手改，用 `npm run render` 重新生成）
@@ -36,7 +39,8 @@
 │   ├── skill-registry.json
 │   ├── agent-registry.json
 │   ├── hook-registry.json
-│   └── graph.json
+│   ├── graph.json
+│   └── decisions.json            # 决策台账数据（哪些组件的源文件该不该留在 fork 里）
 ├── scripts/                      # 工具脚本
 │   ├── generate-rule-registry.js
 │   ├── generate-skill-registry.js
@@ -45,6 +49,7 @@
 │   ├── relationship-graph.js
 │   ├── relationship-query.js
 │   ├── relationship-render.js
+│   ├── decision-ledger.js        # 决策台账 CLI：record/list/prune/diff-upstream
 │   ├── self-test.js
 │   └── lib/
 │       ├── reference-helpers.js  # 引用解析辅助函数
@@ -96,6 +101,15 @@ node .claude/skills/dependency-graph/scripts/self-test.js
 | `relationship-query.js` | ✅ | ❌ | ❌ | 用 `--json` 输出可机器消费的 JSON |
 | `relationship-render.js` | ❌ | ✅ | ✅ | 默认：输出 Markdown 到 stdout |
 | `self-test.js` | ❌ | ❌ | ❌ | 无参数，成功打印并通过，失败报错 |
+
+`decision-ledger.js` 是四个子命令而不是统一标志集，单独列一张表（用法详见[决策台账与上游同步](#决策台账与上游同步)和第 9 节）：
+
+| 子命令 | `--json` | `--apply` | 其他标志 |
+|---|---|---|---|
+| `record <id> <include\|exclude\|pending>` | ❌ | ❌ | `--reason "..."`（必需）、`--decided-at <日期>`、`--hard-dependent "<id>\|<note>"`（可重复） |
+| `list` | ✅ | ❌ | `--decision <include\|exclude\|pending>` |
+| `prune` | ✅ | ✅ | 无 |
+| `diff-upstream` | ✅ | ❌ | 无 |
 
 ---
 
@@ -255,6 +269,44 @@ node .claude/skills/dependency-graph/scripts/self-test.js
 
 成功时打印 `self-test: 全部断言通过` 并退出码为 `0`；失败会打印错误并退出码非 `0`。
 
+### 9. `decision-ledger.js`
+
+**作用**：记录"哪些组件的源文件该不该留在 fork 里"的决策，并据此裁剪仓库、对比上游变动。详细字段说明和使用场景见 [DECISIONS.md](DECISIONS.md)，这里只列命令行用法。
+
+**输出**：`data/decisions.json`
+
+**子命令**：
+
+| 子命令 | 作用 |
+|---|---|
+| `record <id> <include\|exclude\|pending> --reason "..." [--decided-at <日期>] [--hard-dependent "<id>\|<note>"]...` | 记录一条决策，`exclude` 时会自动打印 `dependents <id>` 供人工判断强依赖 |
+| `list [--decision <include\|exclude\|pending>] [--json]` | 列出台账条目，`pending` 条目会附带外部导入的 `suggestedDecision`（仅供参考） |
+| `prune [--apply] [--json]` | 默认 dry-run，列出会删除的文件/目录；`--apply` 才真正执行 `git rm`/删除 |
+| `diff-upstream [--json]` | 对比台账和当前依赖图：找出未分类的新组件、指向已消失 id 的悬空决策 |
+
+**执行方式**：
+
+```bash
+node .claude/skills/dependency-graph/scripts/decision-ledger.js record skill:xxx exclude --reason "..."
+node .claude/skills/dependency-graph/scripts/decision-ledger.js list --decision exclude
+node .claude/skills/dependency-graph/scripts/decision-ledger.js prune
+node .claude/skills/dependency-graph/scripts/decision-ledger.js prune --apply
+node .claude/skills/dependency-graph/scripts/decision-ledger.js diff-upstream
+```
+
+**已知局限**：`hook:` 类型的组件不支持 `prune --apply` 自动裁剪——hook 定义共享在 `hooks/hooks.json` 一个数组里，不是独立文件，自动删除容易误伤同文件里其他 hook 的定义，`prune` 只会把它们列在"需手动"里。
+
+---
+
+## 决策台账与上游同步
+
+如果你在维护一个精简过的 fork，想按需裁剪不需要的组件、并在上游有新变动时同步进来，这两个能力不在 `relationship-*` 系列脚本里，分别是：
+
+- **决策台账**（`decision-ledger.js` + `data/decisions.json` + [DECISIONS.md](DECISIONS.md)）：本目录自带，负责记录"要不要把某个组件留在仓库里"的决策并驱动真实裁剪。
+- **上游同步**（[upstream-sync 技能](../upstream-sync/SKILL.md)）：独立的技能目录，负责把 `upstream/main` 的变动合并进来，并利用决策台账机械化处理"已裁剪组件在上游被改动"产生的合并冲突。
+
+两者关系是单向只读引用：`upstream-sync` 读本目录导出的函数（`buildGraph`/`loadLedger`/`resolveComponentPath`/`buildPrunePlan`/`applyPrunePlan`），本目录不反过来依赖 `upstream-sync` 任何东西。
+
 ---
 
 ## npm scripts 速查
@@ -272,7 +324,12 @@ node .claude/skills/dependency-graph/scripts/self-test.js
 | `npm run render` | 重新生成 `DEPENDENCY-GRAPH.md` |
 | `npm run refresh` | `generate:all` + `render`（最常用） |
 | `npm run query:orphans` | 查询当前孤儿引用 |
+| `npm run ledger:list` | 列出决策台账全部条目 |
+| `npm run ledger:prune` | 决策台账 dry-run，列出会删除的文件/目录（不会真删） |
+| `npm run ledger:diff` | 对比台账和当前依赖图，找出未分类的新组件/悬空决策 |
 | `npm test` | 运行 `self-test.js` |
+
+> `record` 子命令没有对应的 npm script：它必须传 `<id> <include|exclude|pending> --reason "..."` 等动态参数，不适合封装成固定命令，直接用 `node scripts/decision-ledger.js record ...` 调用即可。
 
 ---
 
@@ -473,7 +530,7 @@ node .claude/skills/dependency-graph/scripts/self-test.js
 6. **孤儿引用**：目标节点不存在的边，表格列出 `from` / `to` / `type`。
 7. **使用说明**：如何查询依赖、使用局部关系图等。
 
-> 为什么不是给全仓库画一张大图：616 个节点、479 条边不管用什么工具画出来都是一团看不出结构的线，只有把范围收窄到某一个节点的局部邻域（depth 1~2）才是真的看得懂的图。所以报告里只给最重要的几个枢纽节点画图，其余仍然是表格；想看任意节点的局部图，用 `relationship-query.js graph --from <id> --depth <n>`。
+> 为什么不是给全仓库画一张大图：651 个节点、758 条边不管用什么工具画出来都是一团看不出结构的线，只有把范围收窄到某一个节点的局部邻域（depth 1~2）才是真的看得懂的图。所以报告里只给最重要的几个枢纽节点画图，其余仍然是表格；想看任意节点的局部图，用 `relationship-query.js graph --from <id> --depth <n>`。
 
 > 注意：该文件顶部有 `（自动生成，请勿手改）` 提示，应始终通过 `npm run render` 或 `node relationship-render.js --write` 重新生成。
 
@@ -556,6 +613,22 @@ node .claude/skills/dependency-graph/scripts/relationship-render.js --check
 
 任何一条 `--check` 失败，说明提交者没有重新生成产物。
 
+### 工作流 5：决定要不要把某个组件排除出仓库
+
+```bash
+# 1. 看一下有没有外部工具（比如 plugin-overlay）给的建议
+node .claude/skills/dependency-graph/scripts/decision-ledger.js list --decision pending
+
+# 2. 排除前先查依赖方，判断是不是强依赖
+node .claude/skills/dependency-graph/scripts/decision-ledger.js record skill:xxx exclude --reason "..."
+
+# 3. 先 dry-run 看会删哪些文件，确认无误后再真删
+node .claude/skills/dependency-graph/scripts/decision-ledger.js prune
+node .claude/skills/dependency-graph/scripts/decision-ledger.js prune --apply
+```
+
+`suggestedDecision` 只是参考，不会被 `prune` 读取——务必自己 `record` 确认后才会生效。详见 [DECISIONS.md](DECISIONS.md)。
+
 ---
 
 ## 已知局限
@@ -565,7 +638,7 @@ node .claude/skills/dependency-graph/scripts/relationship-render.js --check
 3. **描述性类别可能被误判。** 像 "a **reviewer-class** agent" 这种描述性短语会被识别为对 `agent:reviewer-class` 的引用，需要写进 `overrides.json` suppress。
 4. **`hook-config:<sourceFile>` 是一种伪节点。** 当 `hooks.json` 里的某个条目没有 `id` 字段时（通常是示例/参考配置），`relationship-graph.js` 会用 `hook-config:<sourceFile>` 作为来源 id，把该条目引用的不存在的脚本上报为孤儿引用。这个伪节点不会出现在 `graph.json` 的 `nodes` 里，也无法通过 `dependents`/`uses` 查询到，只在孤儿列表里可见。
 5. **--check 不自动刷新。** 它只是比较当前文件内容和重新生成后应该得到的内容是否一致，过期需要手动 `--write` 或 `npm run refresh`。
-6. **skill 分类数据覆盖率不是 100%。** `manifests/install-modules.json` 是给其他 harness（cursor/codebuddy/qwen 等）用的选择性安装清单，不是专门维护的分类表；278 个 skill 里只有 198 个被某个 module 的 `installs_skill` 边收录（其中 1 个来自 `kind` 并非 `"skills"` 的 `orchestration` module，它只是恰好也打包了 `skill:dmux-workflows`，这 1 个已经计入 198，不是额外的），剩下 80 个会在"按类别浏览"里计入"未归类"，不代表它们有问题。另外，Claude Code 插件市场安装走的是 `.claude-plugin/plugin.json`，它对 `skills/` 是整目录引用，不受这份清单的覆盖率影响。
+6. **skill 分类数据覆盖率接近但不是 100%。** `manifests/install-modules.json` 是给其他 harness（cursor/codebuddy/qwen 等）用的选择性安装清单，不是专门维护的分类表；278 个 skill 里有 277 个被某个 module 的 `installs_skill` 边收录，只有 `skill:skill-comply` 这 1 个不在任何 module 里，会在"按类别浏览"里计入"未归类"，不代表它有问题。另外，Claude Code 插件市场安装走的是 `.claude-plugin/plugin.json`，它对 `skills/` 是整目录引用，不受这份清单的覆盖率影响。
 7. **rules/agents/commands/hooks 在 `install-modules.json` 里没有逐项粒度。** 这四类都是整目录/固定文件引用（比如 `rules-core` module 的 `paths` 就是 `["rules"]`），所以只有 skill 才会通过 `installs_skill` 边体现在图里；agent 目前没有任何分类数据源。
 
 ---

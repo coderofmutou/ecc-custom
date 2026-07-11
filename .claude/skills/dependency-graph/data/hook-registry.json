@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalHooks": 29,
+  "totalHooks": 30,
   "hooks": [
     {
       "id": "pre:bash:dispatcher",
@@ -200,6 +200,27 @@
         },
         {
           "path": "scripts/hooks/session-start-bootstrap.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "session-start:plan-canvas-sessions",
+      "event": "SessionStart",
+      "matcher": "*",
+      "description": "Surface open Plan Canvas review sessions so a fresh session can resume the loop",
+      "sourceFile": "hooks/hooks.json",
+      "scripts": [
+        {
+          "path": "scripts/hooks/plugin-hook-bootstrap.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/run-with-flags.js",
+          "exists": true
+        },
+        {
+          "path": "scripts/hooks/plan-canvas-sessions.js",
           "exists": true
         }
       ]

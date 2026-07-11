@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalSkills": 277,
+  "totalSkills": 278,
   "skills": [
     {
       "skill": "accessibility",
@@ -497,7 +497,7 @@
     {
       "skill": "data-scraper-agent",
       "path": "skills/data-scraper-agent/SKILL.md",
-      "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Scrapes on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
+      "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Runs on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
       "agents": [],
       "skills": []
     },
@@ -1462,6 +1462,13 @@
       "skill": "perl-testing",
       "path": "skills/perl-testing/SKILL.md",
       "description": "Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology.",
+      "agents": [],
+      "skills": []
+    },
+    {
+      "skill": "plan-canvas",
+      "path": "skills/plan-canvas/SKILL.md",
+      "description": "Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests changes without leaving the page. Use when presenting a plan for review, or when feedback like \"move this, change that\" is easier pointed at than typed.",
       "agents": [],
       "skills": []
     },

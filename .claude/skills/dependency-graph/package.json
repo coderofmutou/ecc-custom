@@ -12,6 +12,9 @@
     "render": "node scripts/relationship-render.js --write",
     "refresh": "npm run generate:all && npm run render",
     "query:orphans": "node scripts/relationship-query.js orphans",
+    "ledger:list": "node scripts/decision-ledger.js list",
+    "ledger:prune": "node scripts/decision-ledger.js prune",
+    "ledger:diff": "node scripts/decision-ledger.js diff-upstream",
     "test": "node scripts/self-test.js"
   }
 }
