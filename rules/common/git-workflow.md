@@ -9,6 +9,8 @@
 
 Types: feat, fix, refactor, docs, test, chore, perf, ci
 
+> **Project note**: This is the default when the project has no established convention of its own. If the project's own CLAUDE.md, an active skill's instructions, or the existing `git log` history already show a different format (e.g. a required ticket-ID prefix), follow that instead.
+
 Note: To disable co-author attribution on commits, set `"includeCoAuthoredBy": false` in `~/.claude/settings.json` (Claude Code appends `Co-Authored-By` by default; ECC does not ship this setting).
 
 ## Pull Request Workflow
