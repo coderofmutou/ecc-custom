@@ -706,15 +706,6 @@
       }
     },
     {
-      "id": "skill:article-writing",
-      "type": "skill",
-      "name": "article-writing",
-      "path": "skills/article-writing/SKILL.md",
-      "meta": {
-        "description": "Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter."
-      }
-    },
-    {
       "id": "skill:automation-audit-ops",
       "type": "skill",
       "name": "automation-audit-ops",
@@ -760,15 +751,6 @@
       }
     },
     {
-      "id": "skill:benchmark-methodology",
-      "type": "skill",
-      "name": "benchmark-methodology",
-      "path": "skills/benchmark-methodology/SKILL.md",
-      "meta": {
-        "description": ">-"
-      }
-    },
-    {
       "id": "skill:benchmark-optimization-loop",
       "type": "skill",
       "name": "benchmark-optimization-loop",
@@ -778,39 +760,12 @@
       }
     },
     {
-      "id": "skill:blender-motion-state-inspection",
-      "type": "skill",
-      "name": "blender-motion-state-inspection",
-      "path": "skills/blender-motion-state-inspection/SKILL.md",
-      "meta": {
-        "description": "Use this skill when inspecting Blender characters, rigs, poses, animation retargeting, ground contact, facing direction, or model-vs-motion alignment where screenshots alone are not enough."
-      }
-    },
-    {
       "id": "skill:blueprint",
       "type": "skill",
       "name": "blueprint",
       "path": "skills/blueprint/SKILL.md",
       "meta": {
         "description": ">-"
-      }
-    },
-    {
-      "id": "skill:brand-discovery",
-      "type": "skill",
-      "name": "brand-discovery",
-      "path": "skills/brand-discovery/SKILL.md",
-      "meta": {
-        "description": ">-"
-      }
-    },
-    {
-      "id": "skill:brand-voice",
-      "type": "skill",
-      "name": "brand-voice",
-      "path": "skills/brand-voice/SKILL.md",
-      "meta": {
-        "description": "Build a source-derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile across content, outreach, and social workflows. Use when the user wants voice consistency without generic AI writing tropes."
       }
     },
     {
@@ -838,15 +793,6 @@
       "path": "skills/canary-watch/SKILL.md",
       "meta": {
         "description": "Use this skill to monitor and verify a deployed URL after releases — checks HTTP endpoints, SSE streams, static assets, console errors, and performance regressions after deploys, merges, or dependency upgrades. Smoke / canary / post-deploy verification."
-      }
-    },
-    {
-      "id": "skill:carrier-relationship-management",
-      "type": "skill",
-      "name": "carrier-relationship-management",
-      "path": "skills/carrier-relationship-management/SKILL.md",
-      "meta": {
-        "description": ">"
       }
     },
     {
@@ -922,24 +868,6 @@
       }
     },
     {
-      "id": "skill:competitive-platform-analysis",
-      "type": "skill",
-      "name": "competitive-platform-analysis",
-      "path": "skills/competitive-platform-analysis/SKILL.md",
-      "meta": {
-        "description": ">-"
-      }
-    },
-    {
-      "id": "skill:competitive-report-structure",
-      "type": "skill",
-      "name": "competitive-report-structure",
-      "path": "skills/competitive-report-structure/SKILL.md",
-      "meta": {
-        "description": ">-"
-      }
-    },
-    {
       "id": "skill:config-gc",
       "type": "skill",
       "name": "config-gc",
@@ -955,24 +883,6 @@
       "path": "skills/configure-ecc/SKILL.md",
       "meta": {
         "description": "Interactive installer for Everything Claude Code — guides users through selecting and installing skills and rules to user-level or project-level directories, verifies paths, and optionally optimizes installed files."
-      }
-    },
-    {
-      "id": "skill:connections-optimizer",
-      "type": "skill",
-      "name": "connections-optimizer",
-      "path": "skills/connections-optimizer/SKILL.md",
-      "meta": {
-        "description": "Reorganize the user's X and LinkedIn network with review-first pruning, add/follow recommendations, and channel-specific warm outreach drafted in the user's real voice. Use when the user wants to clean up following lists, grow toward current priorities, or rebalance a social graph around higher-signal relationships."
-      }
-    },
-    {
-      "id": "skill:content-engine",
-      "type": "skill",
-      "name": "content-engine",
-      "path": "skills/content-engine/SKILL.md",
-      "meta": {
-        "description": "Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns. Use when the user wants social posts, threads, scripts, content calendars, or one source asset adapted cleanly across platforms."
       }
     },
     {
@@ -1048,33 +958,6 @@
       }
     },
     {
-      "id": "skill:crosspost",
-      "type": "skill",
-      "name": "crosspost",
-      "path": "skills/crosspost/SKILL.md",
-      "meta": {
-        "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms."
-      }
-    },
-    {
-      "id": "skill:customer-billing-ops",
-      "type": "skill",
-      "name": "customer-billing-ops",
-      "path": "skills/customer-billing-ops/SKILL.md",
-      "meta": {
-        "description": "Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe. Use when the user needs to help a customer, inspect subscription state, or manage revenue-impacting billing operations."
-      }
-    },
-    {
-      "id": "skill:customs-trade-compliance",
-      "type": "skill",
-      "name": "customs-trade-compliance",
-      "path": "skills/customs-trade-compliance/SKILL.md",
-      "meta": {
-        "description": ">"
-      }
-    },
-    {
       "id": "skill:dashboard-builder",
       "type": "skill",
       "name": "dashboard-builder",
@@ -1117,15 +1000,6 @@
       "path": "skills/deep-research/SKILL.md",
       "meta": {
         "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations."
-      }
-    },
-    {
-      "id": "skill:defi-amm-security",
-      "type": "skill",
-      "name": "defi-amm-security",
-      "path": "skills/defi-amm-security/SKILL.md",
-      "meta": {
-        "description": "Security checklist for Solidity AMM contracts, liquidity pools, and swap flows. Covers reentrancy, CEI ordering, donation or inflation attacks, oracle manipulation, slippage, admin controls, and integer math."
       }
     },
     {
@@ -1273,24 +1147,6 @@
       }
     },
     {
-      "id": "skill:email-ops",
-      "type": "skill",
-      "name": "email-ops",
-      "path": "skills/email-ops/SKILL.md",
-      "meta": {
-        "description": "Evidence-first mailbox triage, drafting, send verification, and sent-mail-safe follow-up workflow for ECC. Use when the user wants to organize email, draft or send through the real mail surface, or prove what landed in Sent."
-      }
-    },
-    {
-      "id": "skill:energy-procurement",
-      "type": "skill",
-      "name": "energy-procurement",
-      "path": "skills/energy-procurement/SKILL.md",
-      "meta": {
-        "description": ">"
-      }
-    },
-    {
       "id": "skill:enterprise-agent-ops",
       "type": "skill",
       "name": "enterprise-agent-ops",
@@ -1318,15 +1174,6 @@
       }
     },
     {
-      "id": "skill:evm-token-decimals",
-      "type": "skill",
-      "name": "evm-token-decimals",
-      "path": "skills/evm-token-decimals/SKILL.md",
-      "meta": {
-        "description": "Prevent silent decimal mismatch bugs across EVM chains. Covers runtime decimal lookup, chain-aware caching, bridged-token precision drift, and safe normalization for bots, dashboards, and DeFi tools."
-      }
-    },
-    {
       "id": "skill:exa-search",
       "type": "skill",
       "name": "exa-search",
@@ -1336,30 +1183,12 @@
       }
     },
     {
-      "id": "skill:fal-ai-media",
-      "type": "skill",
-      "name": "fal-ai-media",
-      "path": "skills/fal-ai-media/SKILL.md",
-      "meta": {
-        "description": "Unified media generation via fal.ai MCP — image, video, and audio. Covers text-to-image (Nano Banana), text/image-to-video (Seedance, Kling, Veo 3), text-to-speech (CSM-1B), and video-to-audio (ThinkSound). Use when the user wants to generate images, videos, or audio with AI."
-      }
-    },
-    {
       "id": "skill:fastapi-patterns",
       "type": "skill",
       "name": "fastapi-patterns",
       "path": "skills/fastapi-patterns/SKILL.md",
       "meta": {
         "description": "FastAPI best practices covering project structure, Pydantic v2 schemas, dependency injection, async handlers, authentication, authorization, transactional service layers, and testing with httpx and pytest."
-      }
-    },
-    {
-      "id": "skill:finance-billing-ops",
-      "type": "skill",
-      "name": "finance-billing-ops",
-      "path": "skills/finance-billing-ops/SKILL.md",
-      "meta": {
-        "description": "Evidence-first revenue, pricing, refunds, team-billing, and billing-model truth workflow for ECC. Use when the user wants a sales snapshot, pricing comparison, duplicate-charge diagnosis, or code-backed billing reality instead of generic payments advice."
       }
     },
     {
@@ -1396,15 +1225,6 @@
       "path": "skills/frontend-patterns/SKILL.md",
       "meta": {
         "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices."
-      }
-    },
-    {
-      "id": "skill:frontend-slides",
-      "type": "skill",
-      "name": "frontend-slides",
-      "path": "skills/frontend-slides/SKILL.md",
-      "meta": {
-        "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices."
       }
     },
     {
@@ -1450,15 +1270,6 @@
       "path": "skills/github-ops/SKILL.md",
       "meta": {
         "description": "GitHub repository operations, automation, and management. Issue triage, PR management, CI/CD operations, release management, and security monitoring using the gh CLI. Use when the user wants to manage GitHub issues, PRs, CI status, releases, contributors, stale items, or any GitHub operational task beyond simple git commands."
-      }
-    },
-    {
-      "id": "skill:google-workspace-ops",
-      "type": "skill",
-      "name": "google-workspace-ops",
-      "path": "skills/google-workspace-ops/SKILL.md",
-      "meta": {
-        "description": "Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents. Use when the user needs to find, summarize, edit, migrate, or clean up Google Workspace assets without dropping to raw tool calls."
       }
     },
     {
@@ -1516,75 +1327,12 @@
       }
     },
     {
-      "id": "skill:inventory-demand-planning",
-      "type": "skill",
-      "name": "inventory-demand-planning",
-      "path": "skills/inventory-demand-planning/SKILL.md",
-      "meta": {
-        "description": ">"
-      }
-    },
-    {
-      "id": "skill:investor-materials",
-      "type": "skill",
-      "name": "investor-materials",
-      "path": "skills/investor-materials/SKILL.md",
-      "meta": {
-        "description": "Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials. Use when the user needs investor-facing documents, projections, use-of-funds tables, milestone plans, or materials that must stay internally consistent across multiple fundraising assets."
-      }
-    },
-    {
-      "id": "skill:investor-outreach",
-      "type": "skill",
-      "name": "investor-outreach",
-      "path": "skills/investor-outreach/SKILL.md",
-      "meta": {
-        "description": "Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user wants outreach to angels, VCs, strategic investors, or accelerators and needs concise, personalized, investor-facing messaging."
-      }
-    },
-    {
       "id": "skill:iterative-retrieval",
       "type": "skill",
       "name": "iterative-retrieval",
       "path": "skills/iterative-retrieval/SKILL.md",
       "meta": {
         "description": "Pattern for progressively refining context retrieval to solve the subagent context problem"
-      }
-    },
-    {
-      "id": "skill:ito-basket-compare",
-      "type": "skill",
-      "name": "ito-basket-compare",
-      "path": "skills/ito-basket-compare/SKILL.md",
-      "meta": {
-        "description": "Compare Itô prediction-market baskets against a user's knowledge base, portfolio notes, financial context, watchlist, or research thesis. Use for read-only basket comparison and gap analysis without investment advice or live trading."
-      }
-    },
-    {
-      "id": "skill:ito-data-atlas-agent",
-      "type": "skill",
-      "name": "ito-data-atlas-agent",
-      "path": "skills/ito-data-atlas-agent/SKILL.md",
-      "meta": {
-        "description": "Design background Data Atlas style agents for Itô basket research, market discovery, parameter drafting, and human-in-the-loop editing. Use for architecture and workflow planning, not live order execution."
-      }
-    },
-    {
-      "id": "skill:ito-market-intelligence",
-      "type": "skill",
-      "name": "ito-market-intelligence",
-      "path": "skills/ito-market-intelligence/SKILL.md",
-      "meta": {
-        "description": "Research prediction-market events, venues, underliers, liquidity, and news context for Itô basket workflows. Use for read-only market intelligence, API-gated Itô exploration, and source-grounded prediction-market briefings without investment advice or live trading."
-      }
-    },
-    {
-      "id": "skill:ito-trade-planner",
-      "type": "skill",
-      "name": "ito-trade-planner",
-      "path": "skills/ito-trade-planner/SKILL.md",
-      "meta": {
-        "description": "Build a non-advisory prediction-market trade planning worksheet for Itô or venue workflows. Use to inspect venues, underliers, constraints, order prerequisites, and manual execution steps without placing trades or recommending positions."
       }
     },
     {
@@ -1687,48 +1435,12 @@
       }
     },
     {
-      "id": "skill:lead-intelligence",
-      "type": "skill",
-      "name": "lead-intelligence",
-      "path": "skills/lead-intelligence/SKILL.md",
-      "meta": {
-        "description": "AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutual ranking, warm path discovery, source-derived voice modeling, and channel-specific outreach across email, LinkedIn, and X. Use when the user wants to find, qualify, and reach high-value contacts."
-      }
-    },
-    {
-      "id": "skill:llm-trading-agent-security",
-      "type": "skill",
-      "name": "llm-trading-agent-security",
-      "path": "skills/llm-trading-agent-security/SKILL.md",
-      "meta": {
-        "description": "Security patterns for autonomous trading agents with wallet or transaction authority. Covers prompt injection, spend limits, pre-send simulation, circuit breakers, MEV protection, and key handling."
-      }
-    },
-    {
-      "id": "skill:logistics-exception-management",
-      "type": "skill",
-      "name": "logistics-exception-management",
-      "path": "skills/logistics-exception-management/SKILL.md",
-      "meta": {
-        "description": ">"
-      }
-    },
-    {
       "id": "skill:loop-design-check",
       "type": "skill",
       "name": "loop-design-check",
       "path": "skills/loop-design-check/SKILL.md",
       "meta": {
         "description": "Design a goal-oriented agent loop, and review it for the ways loops go wrong — spinning and burning tokens, Goodhart-gaming the verifier, or running a wrong answer to completion. Two actions: (1) WRITE a loop — gate whether to build it, define a machine-decidable goal, pick the loop type, pick a skeleton; (2) REVIEW a loop — run it past five failure modes plus decidability, boundaries, fallback, judge independence, and keep-judgment-with-the-human red lines. Use when designing an autonomous agent loop, or when you already have one and worry it will spin, cheat, or run a wrong answer to the end. Complements the mechanism-layer loop skills (autonomous-loops, continuous-agent-loop) by covering the judgment layer they don't. 中文触发：写 loop、设计 loop、做一个 loop、检查 loop 对不对、loop 体检、loop 会不会跑飞、可判定目标、五个崩法、plan build judge。English triggers: design an agent loop, write a loop, check a loop, loop review, prevent a runaway loop, goal-oriented loop, decidable goal, plan/build/judge."
-      }
-    },
-    {
-      "id": "skill:mailtrap-email-integration",
-      "type": "skill",
-      "name": "mailtrap-email-integration",
-      "path": "skills/mailtrap-email-integration/SKILL.md",
-      "meta": {
-        "description": "Guides agents through integrating transactional email sending via Mailtrap's Email API, including sandbox testing, domain verification, and API authentication. Use when implementing email-sending features, debugging delivery issues, or setting up safe dev/staging email testing."
       }
     },
     {
@@ -1741,39 +1453,12 @@
       }
     },
     {
-      "id": "skill:manim-video",
-      "type": "skill",
-      "name": "manim-video",
-      "path": "skills/manim-video/SKILL.md",
-      "meta": {
-        "description": "Build reusable Manim explainers for technical concepts, graphs, system diagrams, and product walkthroughs, then hand off to the wider ECC video stack if needed. Use when the user wants a clean animated explainer rather than a generic talking-head script."
-      }
-    },
-    {
-      "id": "skill:market-research",
-      "type": "skill",
-      "name": "market-research",
-      "path": "skills/market-research/SKILL.md",
-      "meta": {
-        "description": "Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries. Use when the user wants market sizing, competitor comparisons, fund research, technology scans, or research that informs business decisions."
-      }
-    },
-    {
       "id": "skill:mcp-server-patterns",
       "type": "skill",
       "name": "mcp-server-patterns",
       "path": "skills/mcp-server-patterns/SKILL.md",
       "meta": {
         "description": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API."
-      }
-    },
-    {
-      "id": "skill:messages-ops",
-      "type": "skill",
-      "name": "messages-ops",
-      "path": "skills/messages-ops/SKILL.md",
-      "meta": {
-        "description": "Evidence-first live messaging workflow for ECC. Use when the user wants to read texts or DMs, recover a recent one-time code, inspect a thread before replying, or prove which message source was actually checked."
       }
     },
     {
@@ -1864,24 +1549,6 @@
       "path": "skills/nextjs-turbopack/SKILL.md",
       "meta": {
         "description": "Next.js 16+ and Turbopack — incremental bundling, FS caching, dev speed, and when to use Turbopack vs webpack."
-      }
-    },
-    {
-      "id": "skill:nodejs-keccak256",
-      "type": "skill",
-      "name": "nodejs-keccak256",
-      "path": "skills/nodejs-keccak256/SKILL.md",
-      "meta": {
-        "description": "Prevent Ethereum hashing bugs in JavaScript and TypeScript. Node's sha3-256 is NIST SHA3, not Ethereum Keccak-256, and silently breaks selectors, signatures, storage slots, and address derivation."
-      }
-    },
-    {
-      "id": "skill:nutrient-document-processing",
-      "type": "skill",
-      "name": "nutrient-document-processing",
-      "path": "skills/nutrient-document-processing/SKILL.md",
-      "meta": {
-        "description": "Process, convert, OCR, extract, redact, sign, and fill documents using the Nutrient DWS API. Works with PDFs, DOCX, XLSX, PPTX, HTML, and images."
       }
     },
     {
@@ -2002,24 +1669,6 @@
       }
     },
     {
-      "id": "skill:prediction-market-oracle-research",
-      "type": "skill",
-      "name": "prediction-market-oracle-research",
-      "path": "skills/prediction-market-oracle-research/SKILL.md",
-      "meta": {
-        "description": "Research prediction markets as data sources or oracle signals for products, agents, dashboards, and corporate decision intelligence. Use for source-grounded analysis of market-implied probabilities, caveats, and integration patterns without investment advice."
-      }
-    },
-    {
-      "id": "skill:prediction-market-risk-review",
-      "type": "skill",
-      "name": "prediction-market-risk-review",
-      "path": "skills/prediction-market-risk-review/SKILL.md",
-      "meta": {
-        "description": "Review prediction-market, basket, oracle, and trading-agent workflows for compliance, safety, data-quality, privacy, and execution risk. Use before any workflow handles venue auth, user portfolio data, API keys, or trade planning."
-      }
-    },
-    {
       "id": "skill:prisma-patterns",
       "type": "skill",
       "name": "prisma-patterns",
@@ -2053,15 +1702,6 @@
       "path": "skills/production-audit/SKILL.md",
       "meta": {
         "description": "Local-evidence production readiness audit for shipped apps, pre-launch reviews, post-merge checks, and \"what breaks in prod?\" questions without sending repo data to an external audit service."
-      }
-    },
-    {
-      "id": "skill:production-scheduling",
-      "type": "skill",
-      "name": "production-scheduling",
-      "path": "skills/production-scheduling/SKILL.md",
-      "meta": {
-        "description": ">"
       }
     },
     {
@@ -2107,15 +1747,6 @@
       "path": "skills/pytorch-patterns/SKILL.md",
       "meta": {
         "description": "PyTorch deep learning patterns and best practices for building robust, efficient, and reproducible training pipelines, model architectures, and data loading."
-      }
-    },
-    {
-      "id": "skill:quality-nonconformance",
-      "type": "skill",
-      "name": "quality-nonconformance",
-      "path": "skills/quality-nonconformance/SKILL.md",
-      "meta": {
-        "description": ">"
       }
     },
     {
@@ -2227,15 +1858,6 @@
       }
     },
     {
-      "id": "skill:remotion-video-creation",
-      "type": "skill",
-      "name": "remotion-video-creation",
-      "path": "skills/remotion-video-creation/SKILL.md",
-      "meta": {
-        "description": "Best practices for Remotion - Video creation in React. 29 domain-specific rules covering 3D, animations, audio, captions, charts, transitions, and more."
-      }
-    },
-    {
       "id": "skill:repo-scan",
       "type": "skill",
       "name": "repo-scan",
@@ -2251,15 +1873,6 @@
       "path": "skills/research-ops/SKILL.md",
       "meta": {
         "description": "Evidence-first current-state research workflow for ECC. Use when the user wants fresh facts, comparisons, enrichment, or a recommendation built from current public evidence and any supplied local context."
-      }
-    },
-    {
-      "id": "skill:returns-reverse-logistics",
-      "type": "skill",
-      "name": "returns-reverse-logistics",
-      "path": "skills/returns-reverse-logistics/SKILL.md",
-      "meta": {
-        "description": ">"
       }
     },
     {
@@ -2287,51 +1900,6 @@
       "path": "skills/santa-method/SKILL.md",
       "meta": {
         "description": "Multi-agent adversarial verification with convergence loop. Two independent review agents must both pass before output ships."
-      }
-    },
-    {
-      "id": "skill:scientific-db-pubmed-database",
-      "type": "skill",
-      "name": "scientific-db-pubmed-database",
-      "path": "skills/scientific-db-pubmed-database/SKILL.md",
-      "meta": {
-        "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring."
-      }
-    },
-    {
-      "id": "skill:scientific-db-uspto-database",
-      "type": "skill",
-      "name": "scientific-db-uspto-database",
-      "path": "skills/scientific-db-uspto-database/SKILL.md",
-      "meta": {
-        "description": "USPTO patent and trademark data workflow for official record lookup, PatentSearch queries, TSDR checks, assignment data, and reproducible IP research logs."
-      }
-    },
-    {
-      "id": "skill:scientific-pkg-gget",
-      "type": "skill",
-      "name": "scientific-pkg-gget",
-      "path": "skills/scientific-pkg-gget/SKILL.md",
-      "meta": {
-        "description": "gget CLI and Python workflow for quick genomic database queries, sequence lookup, BLAST-style searches, enrichment checks, and reproducible bioinformatics evidence logs."
-      }
-    },
-    {
-      "id": "skill:scientific-thinking-literature-review",
-      "type": "skill",
-      "name": "scientific-thinking-literature-review",
-      "path": "skills/scientific-thinking-literature-review/SKILL.md",
-      "meta": {
-        "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging."
-      }
-    },
-    {
-      "id": "skill:scientific-thinking-scholar-evaluation",
-      "type": "skill",
-      "name": "scientific-thinking-scholar-evaluation",
-      "path": "skills/scientific-thinking-scholar-evaluation/SKILL.md",
-      "meta": {
-        "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback."
       }
     },
     {
@@ -2398,24 +1966,6 @@
       }
     },
     {
-      "id": "skill:social-graph-ranker",
-      "type": "skill",
-      "name": "social-graph-ranker",
-      "path": "skills/social-graph-ranker/SKILL.md",
-      "meta": {
-        "description": "Weighted social-graph ranking for warm intro discovery, bridge scoring, and network gap analysis across X and LinkedIn. Use when the user wants the reusable graph-ranking engine itself, not the broader outreach or network-maintenance workflow layered on top of it."
-      }
-    },
-    {
-      "id": "skill:social-publisher",
-      "type": "skill",
-      "name": "social-publisher",
-      "path": "skills/social-publisher/SKILL.md",
-      "meta": {
-        "description": "Agent-driven scheduling and publishing of social media posts across 13 platforms via SocialClaw. Use when the user wants to publish to X, LinkedIn, Instagram, Facebook Pages, TikTok, Discord, Telegram, YouTube, Reddit, WordPress, or Pinterest — or when managing campaigns, uploading media, or monitoring post delivery status."
-      }
-    },
-    {
       "id": "skill:springboot-patterns",
       "type": "skill",
       "name": "springboot-patterns",
@@ -2458,15 +2008,6 @@
       "path": "skills/strategic-compact/SKILL.md",
       "meta": {
         "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction."
-      }
-    },
-    {
-      "id": "skill:taste",
-      "type": "skill",
-      "name": "taste",
-      "path": "skills/taste/SKILL.md",
-      "meta": {
-        "description": "A creative-direction (taste) layer for music videos and short-form edits in the angelcore / cloud-trance / hyperpop visual family. Distills a named-genre aesthetic vocabulary, a mood + color + light system, and a beat-synced editing grammar, then chains ECC's video skills (video-editing, fal-ai-media, remotion-video-creation, motion-*, content-engine) into one production pipeline. Use when the work is not just making a video function but making it feel intentional, when building a music video, a fancam/edit, a moodboard-driven reel, or when choosing a coherent visual direction for AI-generated b-roll."
       }
     },
     {
@@ -2524,15 +2065,6 @@
       }
     },
     {
-      "id": "skill:ui-demo",
-      "type": "skill",
-      "name": "ui-demo",
-      "path": "skills/ui-demo/SKILL.md",
-      "meta": {
-        "description": "Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tutorial video of a web application. Produces WebM videos with visible cursor, natural pacing, and professional feel."
-      }
-    },
-    {
       "id": "skill:ui-to-vue",
       "type": "skill",
       "name": "ui-to-vue",
@@ -2569,33 +2101,6 @@
       }
     },
     {
-      "id": "skill:video-editing",
-      "type": "skill",
-      "name": "video-editing",
-      "path": "skills/video-editing/SKILL.md",
-      "meta": {
-        "description": "AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw capture through FFmpeg, Remotion, ElevenLabs, fal.ai, and final polish in Descript or CapCut. Use when the user wants to edit video, cut footage, create vlogs, or build video content."
-      }
-    },
-    {
-      "id": "skill:videodb",
-      "type": "skill",
-      "name": "videodb",
-      "path": "skills/videodb/SKILL.md",
-      "meta": {
-        "description": "See, Understand, Act on video and audio. See- ingest from local files, URLs, RTSP/live feeds, or live record desktop; return realtime context and playable stream links. Understand- extract frames, build visual/semantic/temporal indexes, and search moments with timestamps and auto-clips. Act- transcode and normalize (codec, fps, resolution, aspect ratio), perform timeline edits (subtitles, text/image overlays, branding, audio overlays, dubbing, translation), generate media assets (image, audio, video), and create real time alerts for events from live streams or desktop capture."
-      }
-    },
-    {
-      "id": "skill:visa-doc-translate",
-      "type": "skill",
-      "name": "visa-doc-translate",
-      "path": "skills/visa-doc-translate/SKILL.md",
-      "meta": {
-        "description": "Translate visa application documents (images) to English and create a bilingual PDF with original and translation"
-      }
-    },
-    {
       "id": "skill:vite-patterns",
       "type": "skill",
       "name": "vite-patterns",
@@ -2629,15 +2134,6 @@
       "path": "skills/workspace-surface-audit/SKILL.md",
       "meta": {
         "description": "Audit the active repo, MCP servers, plugins, connectors, env surfaces, and harness setup, then recommend the highest-value ECC-native skills, hooks, agents, and operator workflows. Use when the user wants help setting up Claude Code or understanding what capabilities are actually available in their environment."
-      }
-    },
-    {
-      "id": "skill:x-api",
-      "type": "skill",
-      "name": "x-api",
-      "path": "skills/x-api/SKILL.md",
-      "meta": {
-        "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically."
       }
     },
     {
@@ -4497,36 +3993,6 @@
       }
     },
     {
-      "id": "module:prediction-market-skills",
-      "type": "module",
-      "name": "prediction-market-skills",
-      "path": "manifests/install-modules.json",
-      "meta": {
-        "kind": "skills",
-        "description": "Public, non-advisory prediction-market and Itô basket research workflows with gated Itô API access."
-      }
-    },
-    {
-      "id": "module:social-distribution",
-      "type": "module",
-      "name": "social-distribution",
-      "path": "manifests/install-modules.json",
-      "meta": {
-        "kind": "skills",
-        "description": "Social publishing and distribution skills."
-      }
-    },
-    {
-      "id": "module:media-generation",
-      "type": "module",
-      "name": "media-generation",
-      "path": "manifests/install-modules.json",
-      "meta": {
-        "kind": "skills",
-        "description": "Media generation, technical explainers, and AI-assisted editing skills."
-      }
-    },
-    {
       "id": "module:orchestration",
       "type": "module",
       "name": "orchestration",
@@ -4564,26 +4030,6 @@
       "meta": {
         "kind": "skills",
         "description": "Production machine-learning engineering workflows for data contracts, reproducible training, evaluation, deployment, monitoring, and rollback."
-      }
-    },
-    {
-      "id": "module:supply-chain-domain",
-      "type": "module",
-      "name": "supply-chain-domain",
-      "path": "manifests/install-modules.json",
-      "meta": {
-        "kind": "skills",
-        "description": "Supply chain, logistics, procurement, and manufacturing domain skills."
-      }
-    },
-    {
-      "id": "module:document-processing",
-      "type": "module",
-      "name": "document-processing",
-      "path": "manifests/install-modules.json",
-      "meta": {
-        "kind": "skills",
-        "description": "Document processing, conversion, and translation skills."
       }
     },
     {
@@ -6070,11 +5516,6 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:android-clean-architecture",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
       "to": "skill:api-design",
       "type": "installs_skill"
     },
@@ -6086,36 +5527,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:coding-standards",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:compose-multiplatform-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:csharp-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:fsharp-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:cpp-coding-standards",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:cpp-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:dart-flutter-patterns",
       "type": "installs_skill"
     },
     {
@@ -6135,11 +5546,6 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:dotnet-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
       "to": "skill:fastapi-patterns",
       "type": "installs_skill"
     },
@@ -6155,11 +5561,6 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:frontend-slides",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
       "to": "skill:make-interfaces-feel-better",
       "type": "installs_skill"
     },
@@ -6171,31 +5572,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:java-coding-standards",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:kotlin-coroutines-flows",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:kotlin-exposed-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:kotlin-ktor-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:kotlin-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:kotlin-testing",
       "type": "installs_skill"
     },
     {
@@ -6270,16 +5646,6 @@
     },
     {
       "from": "module:framework-language",
-      "to": "skill:rust-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:rust-testing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
       "to": "skill:springboot-patterns",
       "type": "installs_skill"
     },
@@ -6321,11 +5687,6 @@
     {
       "from": "module:framework-language",
       "to": "skill:django-celery",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:framework-language",
-      "to": "skill:flutter-dart-code-review",
       "type": "installs_skill"
     },
     {
@@ -6659,43 +6020,13 @@
       "type": "installs_skill"
     },
     {
-      "from": "module:optimization-workflows",
-      "to": "skill:benchmark-methodology",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:defi-amm-security",
-      "type": "installs_skill"
-    },
-    {
       "from": "module:security",
       "to": "skill:django-security",
       "type": "installs_skill"
     },
     {
       "from": "module:security",
-      "to": "skill:healthcare-phi-compliance",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:hipaa-compliance",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
       "to": "skill:laravel-security",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:llm-trading-agent-security",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:nodejs-keccak256",
       "type": "installs_skill"
     },
     {
@@ -6725,27 +6056,7 @@
     },
     {
       "from": "module:security",
-      "to": "skill:evm-token-decimals",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
       "to": "skill:gateguard",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:healthcare-cdss-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:healthcare-emr-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:security",
-      "to": "skill:healthcare-eval-harness",
       "type": "installs_skill"
     },
     {
@@ -6770,102 +6081,12 @@
     },
     {
       "from": "module:research-apis",
-      "to": "skill:scientific-db-pubmed-database",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:research-apis",
-      "to": "skill:scientific-db-uspto-database",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:research-apis",
-      "to": "skill:scientific-pkg-gget",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:research-apis",
-      "to": "skill:scientific-thinking-literature-review",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:research-apis",
-      "to": "skill:scientific-thinking-scholar-evaluation",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:research-apis",
       "to": "skill:documentation-lookup",
       "type": "installs_skill"
     },
     {
       "from": "module:business-content",
-      "to": "skill:article-writing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:brand-voice",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:content-engine",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:investor-materials",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:investor-outreach",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:lead-intelligence",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
       "to": "skill:product-capability",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:social-graph-ranker",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:seo",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:market-research",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:brand-discovery",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:competitive-platform-analysis",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:competitive-report-structure",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:business-content",
-      "to": "skill:marketing-campaign",
       "type": "installs_skill"
     },
     {
@@ -6880,17 +6101,7 @@
     },
     {
       "from": "module:operator-workflows",
-      "to": "skill:connections-optimizer",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
       "to": "skill:cost-tracking",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
-      "to": "skill:customer-billing-ops",
       "type": "installs_skill"
     },
     {
@@ -6905,22 +6116,7 @@
     },
     {
       "from": "module:operator-workflows",
-      "to": "skill:email-ops",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
-      "to": "skill:finance-billing-ops",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
       "to": "skill:github-ops",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
-      "to": "skill:google-workspace-ops",
       "type": "installs_skill"
     },
     {
@@ -6931,11 +6127,6 @@
     {
       "from": "module:operator-workflows",
       "to": "skill:knowledge-ops",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
-      "to": "skill:messages-ops",
       "type": "installs_skill"
     },
     {
@@ -6956,96 +6147,6 @@
     {
       "from": "module:operator-workflows",
       "to": "skill:workspace-surface-audit",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:operator-workflows",
-      "to": "skill:mailtrap-email-integration",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:prediction-market-skills",
-      "to": "skill:ito-basket-compare",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:prediction-market-skills",
-      "to": "skill:ito-data-atlas-agent",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:prediction-market-skills",
-      "to": "skill:ito-market-intelligence",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:prediction-market-skills",
-      "to": "skill:ito-trade-planner",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:prediction-market-skills",
-      "to": "skill:prediction-market-oracle-research",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:prediction-market-skills",
-      "to": "skill:prediction-market-risk-review",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:social-distribution",
-      "to": "skill:crosspost",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:social-distribution",
-      "to": "skill:x-api",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:social-distribution",
-      "to": "skill:social-publisher",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:blender-motion-state-inspection",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:fal-ai-media",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:manim-video",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:remotion-video-creation",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:ui-demo",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:video-editing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:videodb",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:media-generation",
-      "to": "skill:taste",
       "type": "installs_skill"
     },
     {
@@ -7230,11 +6331,6 @@
     },
     {
       "from": "module:devops-infra",
-      "to": "skill:cisco-ios-patterns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
       "to": "skill:deployment-patterns",
       "type": "installs_skill"
     },
@@ -7245,57 +6341,12 @@
     },
     {
       "from": "module:devops-infra",
-      "to": "skill:homelab-network-readiness",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:homelab-network-setup",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:netmiko-ssh-automation",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:network-bgp-diagnostics",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:network-config-validation",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:network-interface-health",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
       "to": "skill:canary-watch",
       "type": "installs_skill"
     },
     {
       "from": "module:devops-infra",
       "to": "skill:flox-environments",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:homelab-pihole-dns",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:homelab-vlan-segmentation",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:devops-infra",
-      "to": "skill:homelab-wireguard-vpn",
       "type": "installs_skill"
     },
     {
@@ -7326,56 +6377,6 @@
     {
       "from": "module:machine-learning",
       "to": "skill:recsys-pipeline-architect",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:carrier-relationship-management",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:customs-trade-compliance",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:energy-procurement",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:inventory-demand-planning",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:logistics-exception-management",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:production-scheduling",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:quality-nonconformance",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:supply-chain-domain",
-      "to": "skill:returns-reverse-logistics",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:document-processing",
-      "to": "skill:nutrient-document-processing",
-      "type": "installs_skill"
-    },
-    {
-      "from": "module:document-processing",
-      "to": "skill:visa-doc-translate",
       "type": "installs_skill"
     }
   ]

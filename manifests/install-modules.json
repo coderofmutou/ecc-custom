@@ -148,32 +148,18 @@
       "kind": "skills",
       "description": "Core framework, language, and application-engineering skills.",
       "paths": [
-        "skills/android-clean-architecture",
         "skills/api-design",
         "skills/backend-patterns",
         "skills/coding-standards",
-        "skills/compose-multiplatform-patterns",
-        "skills/csharp-testing",
-        "skills/fsharp-testing",
-        "skills/cpp-coding-standards",
-        "skills/cpp-testing",
-        "skills/dart-flutter-patterns",
         "skills/django-patterns",
         "skills/django-tdd",
         "skills/django-verification",
-        "skills/dotnet-patterns",
         "skills/fastapi-patterns",
         "skills/frontend-design-direction",
         "skills/frontend-patterns",
-        "skills/frontend-slides",
         "skills/make-interfaces-feel-better",
         "skills/motion-ui",
         "skills/java-coding-standards",
-        "skills/kotlin-coroutines-flows",
-        "skills/kotlin-exposed-patterns",
-        "skills/kotlin-ktor-patterns",
-        "skills/kotlin-patterns",
-        "skills/kotlin-testing",
         "skills/laravel-plugin-discovery",
         "skills/laravel-patterns",
         "skills/laravel-tdd",
@@ -188,8 +174,6 @@
         "skills/react-patterns",
         "skills/react-performance",
         "skills/react-testing",
-        "skills/rust-patterns",
-        "skills/rust-testing",
         "skills/springboot-patterns",
         "skills/springboot-tdd",
         "skills/springboot-verification",
@@ -199,7 +183,6 @@
         "skills/bun-runtime",
         "skills/design-system",
         "skills/django-celery",
-        "skills/flutter-dart-code-review",
         "skills/frontend-a11y",
         "skills/generating-python-installer",
         "skills/hexagonal-architecture",
@@ -346,8 +329,7 @@
         "skills/parallel-execution-optimizer",
         "skills/recursive-decision-ledger",
         "skills/agent-eval",
-        "skills/benchmark",
-        "skills/benchmark-methodology"
+        "skills/benchmark"
       ],
       "targets": [
         "claude",
@@ -374,24 +356,15 @@
       "kind": "skills",
       "description": "Security review and security-focused framework guidance.",
       "paths": [
-        "skills/defi-amm-security",
         "skills/django-security",
-        "skills/healthcare-phi-compliance",
-        "skills/hipaa-compliance",
         "skills/laravel-security",
-        "skills/llm-trading-agent-security",
-        "skills/nodejs-keccak256",
         "skills/quarkus-security",
         "skills/security-review",
         "skills/security-scan",
         "skills/security-bounty-hunter",
         "skills/springboot-security",
-        "skills/evm-token-decimals",
         "the-security-guide.md",
         "skills/gateguard",
-        "skills/healthcare-cdss-patterns",
-        "skills/healthcare-emr-patterns",
-        "skills/healthcare-eval-harness",
         "skills/safety-guard"
       ],
       "targets": [
@@ -421,11 +394,6 @@
         "skills/deep-research",
         "skills/exa-search",
         "skills/research-ops",
-        "skills/scientific-db-pubmed-database",
-        "skills/scientific-db-uspto-database",
-        "skills/scientific-pkg-gget",
-        "skills/scientific-thinking-literature-review",
-        "skills/scientific-thinking-scholar-evaluation",
         "skills/documentation-lookup"
       ],
       "targets": [
@@ -452,20 +420,7 @@
       "kind": "skills",
       "description": "Business, writing, market, and investor communication skills.",
       "paths": [
-        "skills/article-writing",
-        "skills/brand-voice",
-        "skills/content-engine",
-        "skills/investor-materials",
-        "skills/investor-outreach",
-        "skills/lead-intelligence",
-        "skills/product-capability",
-        "skills/social-graph-ranker",
-        "skills/seo",
-        "skills/market-research",
-        "skills/brand-discovery",
-        "skills/competitive-platform-analysis",
-        "skills/competitive-report-structure",
-        "skills/marketing-campaign"
+        "skills/product-capability"
       ],
       "targets": [
         "claude",
@@ -493,23 +448,16 @@
       "paths": [
         "skills/automation-audit-ops",
         "skills/api-connector-builder",
-        "skills/connections-optimizer",
         "skills/cost-tracking",
-        "skills/customer-billing-ops",
         "skills/dashboard-builder",
         "skills/ecc-tools-cost-audit",
-        "skills/email-ops",
-        "skills/finance-billing-ops",
         "skills/github-ops",
-        "skills/google-workspace-ops",
         "skills/jira-integration",
         "skills/knowledge-ops",
-        "skills/messages-ops",
         "skills/project-flow-ops",
         "skills/terminal-ops",
         "skills/unified-notifications-ops",
-        "skills/workspace-surface-audit",
-        "skills/mailtrap-email-integration"
+        "skills/workspace-surface-audit"
       ],
       "targets": [
         "claude",
@@ -528,99 +476,6 @@
       ],
       "defaultInstall": false,
       "cost": "medium",
-      "stability": "beta"
-    },
-    {
-      "id": "prediction-market-skills",
-      "kind": "skills",
-      "description": "Public, non-advisory prediction-market and Itô basket research workflows with gated Itô API access.",
-      "paths": [
-        "skills/ito-basket-compare",
-        "skills/ito-data-atlas-agent",
-        "skills/ito-market-intelligence",
-        "skills/ito-trade-planner",
-        "skills/prediction-market-oracle-research",
-        "skills/prediction-market-risk-review"
-      ],
-      "targets": [
-        "claude",
-        "claude-project",
-        "cursor",
-        "antigravity",
-        "codex",
-        "opencode",
-        "codebuddy",
-        "joycode",
-        "qwen",
-        "zed"
-      ],
-      "dependencies": [
-        "research-apis",
-        "business-content",
-        "security"
-      ],
-      "defaultInstall": false,
-      "cost": "medium",
-      "stability": "beta"
-    },
-    {
-      "id": "social-distribution",
-      "kind": "skills",
-      "description": "Social publishing and distribution skills.",
-      "paths": [
-        "skills/crosspost",
-        "skills/x-api",
-        "skills/social-publisher"
-      ],
-      "targets": [
-        "claude",
-        "claude-project",
-        "cursor",
-        "antigravity",
-        "codex",
-        "opencode",
-        "codebuddy",
-        "joycode",
-        "qwen",
-        "zed"
-      ],
-      "dependencies": [
-        "business-content"
-      ],
-      "defaultInstall": false,
-      "cost": "medium",
-      "stability": "stable"
-    },
-    {
-      "id": "media-generation",
-      "kind": "skills",
-      "description": "Media generation, technical explainers, and AI-assisted editing skills.",
-      "paths": [
-        "skills/blender-motion-state-inspection",
-        "skills/fal-ai-media",
-        "skills/manim-video",
-        "skills/remotion-video-creation",
-        "skills/ui-demo",
-        "skills/video-editing",
-        "skills/videodb",
-        "skills/taste"
-      ],
-      "targets": [
-        "claude",
-        "claude-project",
-        "cursor",
-        "codex",
-        "opencode",
-        "codebuddy",
-        "joycode",
-        "qwen",
-        "zed"
-      ],
-      "dependencies": [
-        "platform-configs"
-      ],
-      "defaultInstall": false,
-      "cost": "heavy",
       "stability": "beta"
     },
     {
@@ -715,20 +570,10 @@
       "kind": "skills",
       "description": "Deployment workflows, Docker patterns, and infrastructure skills.",
       "paths": [
-        "skills/cisco-ios-patterns",
         "skills/deployment-patterns",
         "skills/docker-patterns",
-        "skills/homelab-network-readiness",
-        "skills/homelab-network-setup",
-        "skills/netmiko-ssh-automation",
-        "skills/network-bgp-diagnostics",
-        "skills/network-config-validation",
-        "skills/network-interface-health",
         "skills/canary-watch",
         "skills/flox-environments",
-        "skills/homelab-pihole-dns",
-        "skills/homelab-vlan-segmentation",
-        "skills/homelab-wireguard-vpn",
         "skills/kubernetes-patterns",
         "skills/uncloud"
       ],
@@ -783,66 +628,6 @@
       "defaultInstall": false,
       "cost": "medium",
       "stability": "beta"
-    },
-    {
-      "id": "supply-chain-domain",
-      "kind": "skills",
-      "description": "Supply chain, logistics, procurement, and manufacturing domain skills.",
-      "paths": [
-        "skills/carrier-relationship-management",
-        "skills/customs-trade-compliance",
-        "skills/energy-procurement",
-        "skills/inventory-demand-planning",
-        "skills/logistics-exception-management",
-        "skills/production-scheduling",
-        "skills/quality-nonconformance",
-        "skills/returns-reverse-logistics"
-      ],
-      "targets": [
-        "claude",
-        "claude-project",
-        "cursor",
-        "antigravity",
-        "codex",
-        "opencode",
-        "codebuddy",
-        "joycode",
-        "qwen",
-        "zed"
-      ],
-      "dependencies": [
-        "platform-configs"
-      ],
-      "defaultInstall": false,
-      "cost": "heavy",
-      "stability": "stable"
-    },
-    {
-      "id": "document-processing",
-      "kind": "skills",
-      "description": "Document processing, conversion, and translation skills.",
-      "paths": [
-        "skills/nutrient-document-processing",
-        "skills/visa-doc-translate"
-      ],
-      "targets": [
-        "claude",
-        "claude-project",
-        "cursor",
-        "antigravity",
-        "codex",
-        "opencode",
-        "codebuddy",
-        "joycode",
-        "qwen",
-        "zed"
-      ],
-      "dependencies": [
-        "platform-configs"
-      ],
-      "defaultInstall": false,
-      "cost": "medium",
-      "stability": "stable"
     },
     {
       "id": "docs-ja-jp",

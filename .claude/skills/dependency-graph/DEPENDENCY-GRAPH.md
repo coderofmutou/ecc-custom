@@ -12,13 +12,13 @@
 | 类型 | 数量 | 说明 |
 |---|---|---|
 | rule | 44 | rules/**/*.md |
-| skill | 230 | skills/*/SKILL.md |
+| skill | 174 | skills/*/SKILL.md |
 | agent | 43 | agents/*.md |
 | command | 77 | commands/*.md |
 | hook | 30 | hooks/hooks.json + hooks/*/hooks.json |
 | script | 28 | 被某个 hook 引用、且文件确实存在的脚本 |
-| module | 31 | manifests/install-modules.json 里的安装模块 |
-| **边总数** | **540** | 上述节点之间的全部引用关系 |
+| module | 26 | manifests/install-modules.json 里的安装模块 |
+| **边总数** | **451** | 上述节点之间的全部引用关系 |
 
 ## 按类别浏览
 
@@ -28,24 +28,19 @@
 
 | module | 技能数 | 说明 |
 |---|---|---|
-| `module:framework-language` | 61 | Core framework, language, and application-engineering skills. |
+| `module:framework-language` | 44 | Core framework, language, and application-engineering skills. |
 | `module:workflow-quality` | 43 | Evaluation, TDD, verification, compaction, and learning skills, including the legacy continuous-learning v1 path. |
 | `module:agentic-patterns` | 35 | Agentic engineering, autonomous loops, agent harness construction, and LLM pipeline optimization skills. |
-| `module:operator-workflows` | 19 | Connected-app operator workflows for setup audits, billing operations, program tracking, Google Workspace, and network optimization. |
-| `module:security` | 18 | Security review and security-focused framework guidance. |
-| `module:devops-infra` | 16 | Deployment workflows, Docker patterns, and infrastructure skills. |
-| `module:business-content` | 14 | Business, writing, market, and investor communication skills. |
-| `module:research-apis` | 9 | Research and API integration skills for deep investigations and model integrations. |
-| `module:media-generation` | 8 | Media generation, technical explainers, and AI-assisted editing skills. |
-| `module:optimization-workflows` | 8 | Parallel execution, benchmarking, data-throughput, latency, and recursive decision-ledger skills for faster evidence-backed work. |
-| `module:supply-chain-domain` | 8 | Supply chain, logistics, procurement, and manufacturing domain skills. |
+| `module:operator-workflows` | 12 | Connected-app operator workflows for setup audits, billing operations, program tracking, Google Workspace, and network optimization. |
+| `module:security` | 9 | Security review and security-focused framework guidance. |
 | `module:database` | 7 | Database and persistence-focused skills. |
-| `module:prediction-market-skills` | 6 | Public, non-advisory prediction-market and Itô basket research workflows with gated Itô API access. |
+| `module:optimization-workflows` | 7 | Parallel execution, benchmarking, data-throughput, latency, and recursive decision-ledger skills for faster evidence-backed work. |
+| `module:devops-infra` | 6 | Deployment workflows, Docker patterns, and infrastructure skills. |
 | `module:machine-learning` | 4 | Production machine-learning engineering workflows for data contracts, reproducible training, evaluation, deployment, monitoring, and rollback. |
-| `module:social-distribution` | 3 | Social publishing and distribution skills. |
-| `module:document-processing` | 2 | Document processing, conversion, and translation skills. |
+| `module:research-apis` | 4 | Research and API integration skills for deep investigations and model integrations. |
+| `module:business-content` | 1 | Business, writing, market, and investor communication skills. |
 | `module:orchestration` | 1 | Worktree/tmux orchestration runtime and workflow docs. |
-| _(未归类)_ | -32 | 存在于 `skills/`,但没被任何 install module 收录 |
+| _(未归类)_ | 1 | 存在于 `skills/`,但没被任何 install module 收录 |
 
 想看某个 module 具体装了哪些 skill:`node .claude/skills/dependency-graph/scripts/relationship-query.js uses module:<id>`。
 
@@ -322,39 +317,6 @@ graph TD
 | `skill:agent-payment-x402` | `skill:okx-x402-payment` | references_skill |
 | `skill:agent-sort` | `skill:skill-library` | references_skill |
 | `skill:team-builder` | `agent:general-purpose` | references_agent |
-| `module:framework-language` | `skill:android-clean-architecture` | installs_skill |
-| `module:framework-language` | `skill:compose-multiplatform-patterns` | installs_skill |
-| `module:framework-language` | `skill:csharp-testing` | installs_skill |
-| `module:framework-language` | `skill:fsharp-testing` | installs_skill |
-| `module:framework-language` | `skill:cpp-coding-standards` | installs_skill |
-| `module:framework-language` | `skill:cpp-testing` | installs_skill |
-| `module:framework-language` | `skill:dart-flutter-patterns` | installs_skill |
-| `module:framework-language` | `skill:dotnet-patterns` | installs_skill |
-| `module:framework-language` | `skill:kotlin-coroutines-flows` | installs_skill |
-| `module:framework-language` | `skill:kotlin-exposed-patterns` | installs_skill |
-| `module:framework-language` | `skill:kotlin-ktor-patterns` | installs_skill |
-| `module:framework-language` | `skill:kotlin-patterns` | installs_skill |
-| `module:framework-language` | `skill:kotlin-testing` | installs_skill |
-| `module:framework-language` | `skill:rust-patterns` | installs_skill |
-| `module:framework-language` | `skill:rust-testing` | installs_skill |
-| `module:framework-language` | `skill:flutter-dart-code-review` | installs_skill |
-| `module:security` | `skill:healthcare-phi-compliance` | installs_skill |
-| `module:security` | `skill:hipaa-compliance` | installs_skill |
-| `module:security` | `skill:healthcare-cdss-patterns` | installs_skill |
-| `module:security` | `skill:healthcare-emr-patterns` | installs_skill |
-| `module:security` | `skill:healthcare-eval-harness` | installs_skill |
-| `module:business-content` | `skill:seo` | installs_skill |
-| `module:business-content` | `skill:marketing-campaign` | installs_skill |
-| `module:devops-infra` | `skill:cisco-ios-patterns` | installs_skill |
-| `module:devops-infra` | `skill:homelab-network-readiness` | installs_skill |
-| `module:devops-infra` | `skill:homelab-network-setup` | installs_skill |
-| `module:devops-infra` | `skill:netmiko-ssh-automation` | installs_skill |
-| `module:devops-infra` | `skill:network-bgp-diagnostics` | installs_skill |
-| `module:devops-infra` | `skill:network-config-validation` | installs_skill |
-| `module:devops-infra` | `skill:network-interface-health` | installs_skill |
-| `module:devops-infra` | `skill:homelab-pihole-dns` | installs_skill |
-| `module:devops-infra` | `skill:homelab-vlan-segmentation` | installs_skill |
-| `module:devops-infra` | `skill:homelab-wireguard-vpn` | installs_skill |
 
 ## 如何使用
 

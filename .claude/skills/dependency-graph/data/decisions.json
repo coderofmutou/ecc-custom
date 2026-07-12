@@ -804,10 +804,12 @@
     },
     {
       "id": "skill:article-writing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "用户此前已实际用它审查过新增skill的文档措辞，有真实使用证据"
+      "suggestedReason": "用户此前已实际用它审查过新增skill的文档措辞，有真实使用证据",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:automation-audit-ops",
@@ -846,10 +848,12 @@
     },
     {
       "id": "skill:benchmark-methodology",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "市场分析工具，与 Java 后端工程师和插件维护者的日常工作无关"
+      "suggestedReason": "市场分析工具，与 Java 后端工程师和插件维护者的日常工作无关",
+      "reason": "创业融资/市场调研业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:benchmark-optimization-loop",
@@ -860,10 +864,12 @@
     },
     {
       "id": "skill:blender-motion-state-inspection",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像完全无关。用户是 Java 后端工程师，不涉及 3D 建模和动画工作。"
+      "suggestedReason": "与用户画像完全无关。用户是 Java 后端工程师，不涉及 3D 建模和动画工作。",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:blueprint",
@@ -874,17 +880,21 @@
     },
     {
       "id": "skill:brand-discovery",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户不涉及品牌战略，hide+disable 应统一为 disable（单值）"
+      "suggestedReason": "用户不涉及品牌战略，hide+disable 应统一为 disable（单值）",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:brand-voice",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户不做品牌建设，hide+disable 应统一为 disable（单值）"
+      "suggestedReason": "用户不做品牌建设，hide+disable 应统一为 disable（单值）",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:browser-qa",
@@ -909,10 +919,12 @@
     },
     {
       "id": "skill:carrier-relationship-management",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户不涉及运输物流，hide+disable 应统一为 disable（单值）"
+      "suggestedReason": "用户不涉及运输物流，hide+disable 应统一为 disable（单值）",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:cisco-ios-patterns",
@@ -981,17 +993,21 @@
     },
     {
       "id": "skill:competitive-platform-analysis",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "竞争市场研究工具，不涉及后端开发或插件生态维护"
+      "suggestedReason": "竞争市场研究工具，不涉及后端开发或插件生态维护",
+      "reason": "创业融资/市场调研业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:competitive-report-structure",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "竞争分析报告工具，与技术开发和插件维护无关"
+      "suggestedReason": "竞争分析报告工具，与技术开发和插件维护无关",
+      "reason": "创业融资/市场调研业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:compose-multiplatform-patterns",
@@ -1018,17 +1034,21 @@
     },
     {
       "id": "skill:connections-optimizer",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "社交网络优化与技术工程师主要工作关系弱，用户不会主动使用"
+      "suggestedReason": "社交网络优化与技术工程师主要工作关系弱，用户不会主动使用",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:content-engine",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "内容创作工具与技术工程师主要工作关系弱，不在用户的日常工作范围内"
+      "suggestedReason": "内容创作工具与技术工程师主要工作关系弱，不在用户的日常工作范围内",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:content-hash-cache-pattern",
@@ -1106,10 +1126,12 @@
     },
     {
       "id": "skill:crosspost",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "多平台社交媒体分发工具，与后端开发和插件维护工作无关"
+      "suggestedReason": "多平台社交媒体分发工具，与后端开发和插件维护工作无关",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:csharp-testing",
@@ -1122,17 +1144,21 @@
     },
     {
       "id": "skill:customer-billing-ops",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "客户计费运营工作流，属于客服/运营角色场景，与软件工程师画像不符"
+      "suggestedReason": "客户计费运营工作流，属于客服/运营角色场景，与软件工程师画像不符",
+      "reason": "个人邮件/日程/账单等个人助理运营技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次(用户额外确认)",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:customs-trade-compliance",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "海关贸易合规专业知识，与后端开发工作完全无关"
+      "suggestedReason": "海关贸易合规专业知识，与后端开发工作完全无关",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:dart-flutter-patterns",
@@ -1180,10 +1206,12 @@
     },
     {
       "id": "skill:defi-amm-security",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Solidity AMM合约安全清单，与Java后端开发完全无关"
+      "suggestedReason": "Solidity AMM合约安全清单，与Java后端开发完全无关",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:delivery-gate",
@@ -1308,17 +1336,21 @@
     },
     {
       "id": "skill:email-ops",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "邮箱分类/起草/发送验证工作流，属于个人助理/运营场景，与软件工程师日常工作无关"
+      "suggestedReason": "邮箱分类/起草/发送验证工作流，属于个人助理/运营场景，与软件工程师日常工作无关",
+      "reason": "个人邮件/日程/账单等个人助理运营技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次(用户额外确认)",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:energy-procurement",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户不涉及能源采购，hide+disable 应统一为 disable（单值）"
+      "suggestedReason": "用户不涉及能源采购，hide+disable 应统一为 disable（单值）",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:enterprise-agent-ops",
@@ -1343,10 +1375,12 @@
     },
     {
       "id": "skill:evm-token-decimals",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "完全与后端工程师的工作无关，不涉及区块链/DeFi 技术栈"
+      "suggestedReason": "完全与后端工程师的工作无关，不涉及区块链/DeFi 技术栈",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:exa-search",
@@ -1357,10 +1391,12 @@
     },
     {
       "id": "skill:fal-ai-media",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "媒体生成不是后端工程师的常规工作，用户日常不会主动使用此功能"
+      "suggestedReason": "媒体生成不是后端工程师的常规工作，用户日常不会主动使用此功能",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:fastapi-patterns",
@@ -1371,10 +1407,12 @@
     },
     {
       "id": "skill:finance-billing-ops",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "工程师不涉及财务/计费运维和决策工作"
+      "suggestedReason": "工程师不涉及财务/计费运维和决策工作",
+      "reason": "个人邮件/日程/账单等个人助理运营技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次(用户额外确认)",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:flox-environments",
@@ -1424,10 +1462,12 @@
     },
     {
       "id": "skill:frontend-slides",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "工程师不常做演示文稿生成工作，日常使用场景极少"
+      "suggestedReason": "工程师不常做演示文稿生成工作，日常使用场景极少",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:fsharp-testing",
@@ -1493,10 +1533,12 @@
     },
     {
       "id": "skill:google-workspace-ops",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户的核心编码工作关系不大，Claude 不需自动触发，用户很少手动调用文档工具"
+      "suggestedReason": "与用户的核心编码工作关系不大，Claude 不需自动触发，用户很少手动调用文档工具",
+      "reason": "个人邮件/日程/账单等个人助理运营技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次(用户额外确认)",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:growth-log",
@@ -1632,24 +1674,30 @@
     },
     {
       "id": "skill:inventory-demand-planning",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "供应链/零售需求规划，与后端开发工作完全无关"
+      "suggestedReason": "供应链/零售需求规划，与后端开发工作完全无关",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:investor-materials",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "融资文档工具，非后端工程师的日常需求"
+      "suggestedReason": "融资文档工具，非后端工程师的日常需求",
+      "reason": "创业融资/市场调研业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:investor-outreach",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "融资沟通工具，与技术工作无关"
+      "suggestedReason": "融资沟通工具，与技术工作无关",
+      "reason": "创业融资/市场调研业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ios-icon-gen",
@@ -1669,31 +1717,39 @@
     },
     {
       "id": "skill:ito-basket-compare",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "预测市场工具，与后端开发工作无关"
+      "suggestedReason": "预测市场工具，与后端开发工作无关",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ito-data-atlas-agent",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "预测市场代理设计工具，非后端工程师的使用场景"
+      "suggestedReason": "预测市场代理设计工具，非后端工程师的使用场景",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ito-market-intelligence",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "预测市场情报研究，与技术工作无关"
+      "suggestedReason": "预测市场情报研究，与技术工作无关",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ito-trade-planner",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "预测市场交易规划工具，不属于技术范畴"
+      "suggestedReason": "预测市场交易规划工具，不属于技术范畴",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:java-coding-standards",
@@ -1819,10 +1875,12 @@
     },
     {
       "id": "skill:lead-intelligence",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "销售线索情报与外联工具，与技术开发工作完全无关"
+      "suggestedReason": "销售线索情报与外联工具，与技术开发工作完全无关",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:liquid-glass-design",
@@ -1835,17 +1893,21 @@
     },
     {
       "id": "skill:llm-trading-agent-security",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "自主交易agent的安全模式（钱包/交易授权），与Java后端开发工作无关"
+      "suggestedReason": "自主交易agent的安全模式（钱包/交易授权），与Java后端开发工作无关",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:logistics-exception-management",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "物流异常处理专业知识，与后端开发工作无关"
+      "suggestedReason": "物流异常处理专业知识，与后端开发工作无关",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:loop-design-check",
@@ -1856,10 +1918,12 @@
     },
     {
       "id": "skill:mailtrap-email-integration",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Java 后端开发中可能涉及邮件功能；Claude 可在实现邮件时自动建议，用户也可手动调用，不占菜单主位"
+      "suggestedReason": "Java 后端开发中可能涉及邮件功能；Claude 可在实现邮件时自动建议，用户也可手动调用，不占菜单主位",
+      "reason": "个人邮件/日程/账单等个人助理运营技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次(用户额外确认)",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:make-interfaces-feel-better",
@@ -1870,17 +1934,21 @@
     },
     {
       "id": "skill:manim-video",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Manim技术动画视频制作，与后端开发/插件维护工作无关"
+      "suggestedReason": "Manim技术动画视频制作，与后端开发/插件维护工作无关",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:market-research",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "市场研究与竞品分析工具，与技术开发工作无关"
+      "suggestedReason": "市场研究与竞品分析工具，与技术开发工作无关",
+      "reason": "创业融资/市场调研业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:marketing-campaign",
@@ -1900,10 +1968,12 @@
     },
     {
       "id": "skill:messages-ops",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "短信/DM等即时消息运维工作流，与软件工程师日常工作无关"
+      "suggestedReason": "短信/DM等即时消息运维工作流，与软件工程师日常工作无关",
+      "reason": "个人邮件/日程/账单等个人助理运营技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次(用户额外确认)",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ml-adoption-playbook",
@@ -2013,17 +2083,21 @@
     },
     {
       "id": "skill:nodejs-keccak256",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Ethereum 专属加密问题，与用户的 Java/JavaScript 主线开发无关"
+      "suggestedReason": "Ethereum 专属加密问题，与用户的 Java/JavaScript 主线开发无关",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:nutrient-document-processing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "第三方商业文档处理 API，与编程开发和插件生态建设无关"
+      "suggestedReason": "第三方商业文档处理 API，与编程开发和插件生态建设无关",
+      "reason": "签证文件翻译/第三方文档处理厂商技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:nuxt4-patterns",
@@ -2147,17 +2221,21 @@
     },
     {
       "id": "skill:prediction-market-oracle-research",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "预测市场研究与后端开发和代码质量完全无关。"
+      "suggestedReason": "预测市场研究与后端开发和代码质量完全无关。",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:prediction-market-risk-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "预测市场风险审查与用户画像完全无关。"
+      "suggestedReason": "预测市场风险审查与用户画像完全无关。",
+      "reason": "区块链/预测市场业务技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:prisma-patterns",
@@ -2189,10 +2267,12 @@
     },
     {
       "id": "skill:production-scheduling",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户不涉及制造业调度，hide+disable 应统一为 disable（单值）"
+      "suggestedReason": "用户不涉及制造业调度，hide+disable 应统一为 disable（单值）",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:project-flow-ops",
@@ -2231,10 +2311,12 @@
     },
     {
       "id": "skill:quality-nonconformance",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "制造业质量不合格品管理专业知识，与后端开发工作无关"
+      "suggestedReason": "制造业质量不合格品管理专业知识，与后端开发工作无关",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:quarkus-patterns",
@@ -2331,10 +2413,12 @@
     },
     {
       "id": "skill:remotion-video-creation",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "视频创作与用户 Java 后端开发工作无关，不在主要技术栈内"
+      "suggestedReason": "视频创作与用户 Java 后端开发工作无关，不在主要技术栈内",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:repo-scan",
@@ -2352,10 +2436,12 @@
     },
     {
       "id": "skill:returns-reverse-logistics",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像（后端工程师）完全无关"
+      "suggestedReason": "与用户画像（后端工程师）完全无关",
+      "reason": "供应链业务顾问技能,与 Java 后端/WMS 画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:rules-distill",
@@ -2398,38 +2484,48 @@
     },
     {
       "id": "skill:scientific-db-pubmed-database",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与后端工程师工作无关，完全不需要"
+      "suggestedReason": "与后端工程师工作无关，完全不需要",
+      "reason": "科研文献检索类技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:scientific-db-uspto-database",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与后端工程师工作无关，完全不需要"
+      "suggestedReason": "与后端工程师工作无关，完全不需要",
+      "reason": "科研文献检索类技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:scientific-pkg-gget",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与后端工程师工作无关，完全不需要"
+      "suggestedReason": "与后端工程师工作无关，完全不需要",
+      "reason": "科研文献检索类技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:scientific-thinking-literature-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与后端工程师日常工作无关，不是核心业务"
+      "suggestedReason": "与后端工程师日常工作无关，不是核心业务",
+      "reason": "科研文献检索类技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:scientific-thinking-scholar-evaluation",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与后端工程师日常工作无关，不是核心业务"
+      "suggestedReason": "与后端工程师日常工作无关，不是核心业务",
+      "reason": "科研文献检索类技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:search-first",
@@ -2491,17 +2587,21 @@
     },
     {
       "id": "skill:social-graph-ranker",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与工程师工作无关，人脉管理和营销工具，用户完全不需要。"
+      "suggestedReason": "与工程师工作无关，人脉管理和营销工具，用户完全不需要。",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:social-publisher",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "社交媒体发布工具，与后端工程师工作无关，彻底不需要。"
+      "suggestedReason": "社交媒体发布工具，与后端工程师工作无关，彻底不需要。",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:springboot-patterns",
@@ -2576,10 +2676,12 @@
     },
     {
       "id": "skill:taste",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "音乐视频艺术指导工具，与 Java 后端工程师和插件维护者的工作完全无关"
+      "suggestedReason": "音乐视频艺术指导工具，与 Java 后端工程师和插件维护者的工作完全无关",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:tdd-workflow",
@@ -2625,10 +2727,12 @@
     },
     {
       "id": "skill:ui-demo",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "前端演示工具，用户偶尔参与前端开发时会用到，可手动调用但无需菜单占位"
+      "suggestedReason": "前端演示工具，用户偶尔参与前端开发时会用到，可手动调用但无需菜单占位",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ui-to-vue",
@@ -2660,24 +2764,30 @@
     },
     {
       "id": "skill:video-editing",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "视频编辑工具针对视频工程师，代码工程师完全用不到，彻底移除上下文占用"
+      "suggestedReason": "视频编辑工具针对视频工程师，代码工程师完全用不到，彻底移除上下文占用",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:videodb",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "视频/音频感知工具与后端开发无关，用户不会主动要求，彻底移除上下文占用"
+      "suggestedReason": "视频/音频感知工具与后端开发无关，用户不会主动要求，彻底移除上下文占用",
+      "reason": "视频/媒体生产技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:visa-doc-translate",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "签证文档翻译与软件开发工作无关，用户不会使用此功能"
+      "suggestedReason": "签证文档翻译与软件开发工作无关，用户不会使用此功能",
+      "reason": "签证文件翻译/第三方文档处理厂商技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:vite-patterns",
@@ -2709,10 +2819,12 @@
     },
     {
       "id": "skill:x-api",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像无关，用户无社交媒体集成需求"
+      "suggestedReason": "与用户画像无关，用户无社交媒体集成需求",
+      "reason": "营销/社媒/内容/品牌技能,与 Java 后端画像无关,2026-07-12 业务域裁剪批次",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "rule:swift/coding-style.md",
