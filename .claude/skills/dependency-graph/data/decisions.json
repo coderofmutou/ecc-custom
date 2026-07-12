@@ -79,52 +79,66 @@
     },
     {
       "id": "command:epic-claim",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub issue 协调工作流，与用户的 Java 后端及插件生态维护画像无关"
+      "suggestedReason": "GitHub issue 协调工作流，与用户的 Java 后端及插件生态维护画像无关",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:epic-decompose",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub epic 任务拆解命令，用户不涉及此工作流"
+      "suggestedReason": "GitHub epic 任务拆解命令，用户不涉及此工作流",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:epic-publish",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub issue 发布命令，与用户画像无关"
+      "suggestedReason": "GitHub issue 发布命令，与用户画像无关",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:epic-review",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub issue 审查流程，用户不需要此工作流"
+      "suggestedReason": "GitHub issue 审查流程，用户不需要此工作流",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:epic-sync",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub issue 同步命令，与用户画像无关"
+      "suggestedReason": "GitHub issue 同步命令，与用户画像无关",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:epic-unblock",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub issue 依赖管理命令，用户不使用此协调工作流"
+      "suggestedReason": "GitHub issue 依赖管理命令，用户不使用此协调工作流",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:epic-validate",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "GitHub issue 验证命令，与用户画像无关"
+      "suggestedReason": "GitHub issue 验证命令，与用户画像无关",
+      "reason": "GitHub Epic 协调工作流,用户不使用此工作流,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:evolve",
@@ -716,10 +730,12 @@
     },
     {
       "id": "skill:agent-payment-x402",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "支付系统和 Web3 区块链技能，与 Java 后端及插件生态维护的用户画像完全无关"
+      "suggestedReason": "支付系统和 Web3 区块链技能，与 Java 后端及插件生态维护的用户画像完全无关",
+      "reason": "区块链/Web3 支付协议(x402,Base/OKX X Layer),与 Java 后端开发画像无关,属于此前几轮供应链/预测市场裁剪时漏扫的加密类目",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:agent-self-evaluation",
@@ -1833,38 +1849,48 @@
     },
     {
       "id": "skill:laravel-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "PHP/Laravel 框架，用户是 Java 后端工程师，完全无关"
+      "suggestedReason": "PHP/Laravel 框架，用户是 Java 后端工程师，完全无关",
+      "reason": "PHP 专属,PHP 的 rules 已在 a239354b 裁掉,语言完全不相关",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:laravel-plugin-discovery",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Laravel 包发现，用户不开发 PHP/Laravel 应用"
+      "suggestedReason": "Laravel 包发现，用户不开发 PHP/Laravel 应用",
+      "reason": "PHP 专属,PHP 的 rules 已在 a239354b 裁掉,语言完全不相关",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:laravel-security",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Laravel 安全最佳实践，用户不使用 PHP/Laravel 技术栈"
+      "suggestedReason": "Laravel 安全最佳实践，用户不使用 PHP/Laravel 技术栈",
+      "reason": "PHP 专属,PHP 的 rules 已在 a239354b 裁掉,语言完全不相关",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:laravel-tdd",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Laravel/PHP 测试模式，超出用户主要技术栈"
+      "suggestedReason": "Laravel/PHP 测试模式，超出用户主要技术栈",
+      "reason": "PHP 专属,PHP 的 rules 已在 a239354b 裁掉,语言完全不相关",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:laravel-verification",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "Laravel 验证循环，用户不做 PHP/Laravel 开发"
+      "suggestedReason": "Laravel 验证循环，用户不做 PHP/Laravel 开发",
+      "reason": "PHP 专属,PHP 的 rules 已在 a239354b 裁掉,语言完全不相关",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:latency-critical-systems",
@@ -2110,10 +2136,12 @@
     },
     {
       "id": "skill:openclaw-persona-forge",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户维护插件生态时可能需要创建 Agent 角色，但非高频操作；保留手动调用入口"
+      "suggestedReason": "用户维护插件生态时可能需要创建 Agent 角色，但非高频操作；保留手动调用入口",
+      "reason": "娱乐/创意向的 AI Agent 人格设计功能,与 Java Spring Boot WMS 后端开发者+插件维护者画像完全不搭",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:opensource-pipeline",
@@ -2320,31 +2348,49 @@
     },
     {
       "id": "skill:quarkus-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Quarkus框架模式，用户技术栈是Spring Boot非Quarkus；该skill被agent:java-reviewer/agent:java-build-resolver引用做双栈探测，后续若裁剪源文件建议给这两个agent的决策补充hardDependents备注"
+      "suggestedReason": "Quarkus框架模式，用户技术栈是Spring Boot非Quarkus；该skill被agent:java-reviewer/agent:java-build-resolver引用做双栈探测，后续若裁剪源文件建议给这两个agent的决策补充hardDependents备注",
+      "reason": "用户技术栈是 Spring Boot 非 Quarkus,2026-07-12 用户确认裁剪",
+      "decidedAt": "2026-07-12",
+      "hardDependents": [
+        {
+          "id": "agent:java-reviewer",
+          "note": "裁剪源文件前需先移除该 agent 里对 quarkus-patterns 的双栈探测引用"
+        },
+        {
+          "id": "agent:java-build-resolver",
+          "note": "裁剪源文件前需先移除该 agent 里对 quarkus-patterns 的双栈探测引用"
+        }
+      ]
     },
     {
       "id": "skill:quarkus-security",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Quarkus安全实践，与用户Spring Boot技术栈无关"
+      "suggestedReason": "Quarkus安全实践，与用户Spring Boot技术栈无关",
+      "reason": "与用户 Spring Boot 技术栈无关,随 quarkus-patterns 一并裁剪,2026-07-12 用户确认",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:quarkus-tdd",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Quarkus测试驱动开发，与用户Spring Boot技术栈无关"
+      "suggestedReason": "Quarkus测试驱动开发，与用户Spring Boot技术栈无关",
+      "reason": "与用户 Spring Boot 技术栈无关,随 quarkus-patterns 一并裁剪,2026-07-12 用户确认",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:quarkus-verification",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "Quarkus项目验证循环，与用户Spring Boot技术栈无关"
+      "suggestedReason": "Quarkus项目验证循环，与用户Spring Boot技术栈无关",
+      "reason": "与用户 Spring Boot 技术栈无关,随 quarkus-patterns 一并裁剪,2026-07-12 用户确认",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ralphinho-rfc-pipeline",

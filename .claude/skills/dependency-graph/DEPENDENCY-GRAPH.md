@@ -12,13 +12,13 @@
 | 类型 | 数量 | 说明 |
 |---|---|---|
 | rule | 44 | rules/**/*.md |
-| skill | 174 | skills/*/SKILL.md |
+| skill | 167 | skills/*/SKILL.md |
 | agent | 43 | agents/*.md |
 | command | 77 | commands/*.md |
 | hook | 30 | hooks/hooks.json + hooks/*/hooks.json |
 | script | 28 | 被某个 hook 引用、且文件确实存在的脚本 |
 | module | 26 | manifests/install-modules.json 里的安装模块 |
-| **边总数** | **448** | 上述节点之间的全部引用关系 |
+| **边总数** | **440** | 上述节点之间的全部引用关系 |
 
 ## 按类别浏览
 
@@ -28,11 +28,11 @@
 
 | module | 技能数 | 说明 |
 |---|---|---|
-| `module:framework-language` | 44 | Core framework, language, and application-engineering skills. |
 | `module:workflow-quality` | 43 | Evaluation, TDD, verification, compaction, and learning skills, including the legacy continuous-learning v1 path. |
-| `module:agentic-patterns` | 35 | Agentic engineering, autonomous loops, agent harness construction, and LLM pipeline optimization skills. |
+| `module:framework-language` | 40 | Core framework, language, and application-engineering skills. |
+| `module:agentic-patterns` | 33 | Agentic engineering, autonomous loops, agent harness construction, and LLM pipeline optimization skills. |
 | `module:operator-workflows` | 12 | Connected-app operator workflows for setup audits, billing operations, program tracking, Google Workspace, and network optimization. |
-| `module:security` | 9 | Security review and security-focused framework guidance. |
+| `module:security` | 8 | Security review and security-focused framework guidance. |
 | `module:database` | 7 | Database and persistence-focused skills. |
 | `module:optimization-workflows` | 7 | Parallel execution, benchmarking, data-throughput, latency, and recursive decision-ledger skills for faster evidence-backed work. |
 | `module:devops-infra` | 6 | Deployment workflows, Docker patterns, and infrastructure skills. |
