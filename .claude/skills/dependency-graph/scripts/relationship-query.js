@@ -16,7 +16,7 @@
 
 const path = require('path');
 
-const REPO_ROOT = path.join(__dirname, '..', '..', '..');
+const REPO_ROOT = path.join(__dirname, '..', '..', '..', '..');
 
 const { buildGraph, findDependents, findUses, findOrphans } = require('./relationship-graph');
 
