@@ -6,6 +6,24 @@
       "to": "agent:reviewer-class",
       "type": "references_agent",
       "note": "plan-orchestrate 文档里的 'reviewer-class agent' 是描述性类别(如 <lang>-reviewer/code-reviewer/security-reviewer/database-reviewer),不是某个具体 agent"
+    },
+    {
+      "from": "skill:agent-payment-x402",
+      "to": "skill:okx-agent-payments-protocol",
+      "type": "references_skill",
+      "note": "文档里的 `skills/okx-agent-payments-protocol/SKILL.md` 是外部仓库 okx/onchainos-skills 里的路径,不是本仓库 skills/ 下的引用"
+    },
+    {
+      "from": "skill:agent-payment-x402",
+      "to": "skill:okx-x402-payment",
+      "type": "references_skill",
+      "note": "文档里的 `skills/okx-x402-payment/SKILL.md` 同样是外部仓库 okx/onchainos-skills 里的路径,不是本仓库 skills/ 下的引用"
+    },
+    {
+      "from": "skill:agent-sort",
+      "to": "skill:skill-library",
+      "type": "references_skill",
+      "note": "文档里的 `skill-library` 是建议用户在自己项目里创建的可选产出物示例名,不是本仓库已存在的 skill"
     }
   ],
   "manual": []

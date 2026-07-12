@@ -18,7 +18,7 @@
 | hook | 30 | hooks/hooks.json + hooks/*/hooks.json |
 | script | 28 | 被某个 hook 引用、且文件确实存在的脚本 |
 | module | 26 | manifests/install-modules.json 里的安装模块 |
-| **边总数** | **451** | 上述节点之间的全部引用关系 |
+| **边总数** | **448** | 上述节点之间的全部引用关系 |
 
 ## 按类别浏览
 
@@ -313,9 +313,6 @@ graph TD
 
 | 引用来源(from) | 引用目标(to,已不存在) | 引用类型 |
 |---|---|---|
-| `skill:agent-payment-x402` | `skill:okx-agent-payments-protocol` | references_skill |
-| `skill:agent-payment-x402` | `skill:okx-x402-payment` | references_skill |
-| `skill:agent-sort` | `skill:skill-library` | references_skill |
 | `skill:team-builder` | `agent:general-purpose` | references_agent |
 
 ## 如何使用

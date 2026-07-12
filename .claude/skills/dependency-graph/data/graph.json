@@ -4475,21 +4475,6 @@
       "type": "extends"
     },
     {
-      "from": "skill:agent-payment-x402",
-      "to": "skill:okx-agent-payments-protocol",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:agent-payment-x402",
-      "to": "skill:okx-x402-payment",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:agent-sort",
-      "to": "skill:skill-library",
-      "type": "references_skill"
-    },
-    {
       "from": "skill:architecture-decision-records",
       "to": "agent:planner",
       "type": "references_agent"
