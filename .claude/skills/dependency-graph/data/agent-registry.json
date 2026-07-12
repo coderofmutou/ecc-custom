@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalAgents": 51,
+  "totalAgents": 43,
   "agents": [
     {
       "agent": "a11y-architect",
@@ -33,14 +33,6 @@
       "path": "agents/build-error-resolver.md",
       "model": "sonnet",
       "tools": "[\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "agent": "chief-of-staff",
-      "path": "agents/chief-of-staff.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\", \"Write\"]",
       "agents": [],
       "skills": []
     },
@@ -194,22 +186,6 @@
       "skills": []
     },
     {
-      "agent": "healthcare-reviewer",
-      "path": "agents/healthcare-reviewer.md",
-      "model": "opus",
-      "tools": "[\"Read\", \"Grep\", \"Glob\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "agent": "homelab-architect",
-      "path": "agents/homelab-architect.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
       "agent": "java-build-resolver",
       "path": "agents/java-build-resolver.md",
       "model": "sonnet",
@@ -240,16 +216,6 @@
       "skills": []
     },
     {
-      "agent": "marketing-agent",
-      "path": "agents/marketing-agent.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"WebSearch\", \"WebFetch\"]",
-      "agents": [],
-      "skills": [
-        "marketing-campaign"
-      ]
-    },
-    {
       "agent": "mle-reviewer",
       "path": "agents/mle-reviewer.md",
       "model": "sonnet",
@@ -258,30 +224,6 @@
       "skills": [
         "mle-workflow"
       ]
-    },
-    {
-      "agent": "network-architect",
-      "path": "agents/network-architect.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "agent": "network-config-reviewer",
-      "path": "agents/network-config-reviewer.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\"]",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "agent": "network-troubleshooter",
-      "path": "agents/network-troubleshooter.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Bash\", \"Grep\"]",
-      "agents": [],
-      "skills": []
     },
     {
       "agent": "opensource-forker",
@@ -393,16 +335,6 @@
       ]
     },
     {
-      "agent": "seo-specialist",
-      "path": "agents/seo-specialist.md",
-      "model": "sonnet",
-      "tools": "[\"Read\", \"Grep\", \"Glob\", \"WebSearch\", \"WebFetch\"]",
-      "agents": [],
-      "skills": [
-        "seo"
-      ]
-    },
-    {
       "agent": "silent-failure-hunter",
       "path": "agents/silent-failure-hunter.md",
       "model": "sonnet",
@@ -466,14 +398,12 @@
       "django-tdd": 1,
       "e2e-testing": 1,
       "frontend-patterns": 1,
-      "marketing-campaign": 1,
       "mle-workflow": 1,
       "python-patterns": 1,
       "quarkus-patterns": 2,
       "react-patterns": 2,
       "react-testing": 1,
       "security-review": 1,
-      "seo": 1,
       "springboot-patterns": 2,
       "tdd-workflow": 1,
       "vue-patterns": 1

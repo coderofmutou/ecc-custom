@@ -12,13 +12,13 @@
 | 类型 | 数量 | 说明 |
 |---|---|---|
 | rule | 44 | rules/**/*.md |
-| skill | 247 | skills/*/SKILL.md |
-| agent | 51 | agents/*.md |
-| command | 78 | commands/*.md |
+| skill | 230 | skills/*/SKILL.md |
+| agent | 43 | agents/*.md |
+| command | 77 | commands/*.md |
 | hook | 30 | hooks/hooks.json + hooks/*/hooks.json |
 | script | 28 | 被某个 hook 引用、且文件确实存在的脚本 |
 | module | 31 | manifests/install-modules.json 里的安装模块 |
-| **边总数** | **564** | 上述节点之间的全部引用关系 |
+| **边总数** | **540** | 上述节点之间的全部引用关系 |
 
 ## 按类别浏览
 
@@ -45,7 +45,7 @@
 | `module:social-distribution` | 3 | Social publishing and distribution skills. |
 | `module:document-processing` | 2 | Document processing, conversion, and translation skills. |
 | `module:orchestration` | 1 | Worktree/tmux orchestration runtime and workflow docs. |
-| _(未归类)_ | -15 | 存在于 `skills/`,但没被任何 install module 收录 |
+| _(未归类)_ | -32 | 存在于 `skills/`,但没被任何 install module 收录 |
 
 想看某个 module 具体装了哪些 skill:`node .claude/skills/dependency-graph/scripts/relationship-query.js uses module:<id>`。
 
@@ -59,7 +59,7 @@
 - **planning**(2 个):`command:gan-design`、`command:update-codemaps`
 - **refactoring**(1 个):`command:build-fix`
 - **review**(15 个):`command:ecc-guide`、`command:epic-claim`、`command:epic-decompose`、`command:epic-review`、`command:epic-validate`、`command:instinct-status`、`command:learn`、`command:model-route`、`command:orch-review`、`command:plan-canvas`、`command:promote`、`command:prune`、`command:santa-loop`、`command:security-scan`、`command:skill-health`
-- **testing**(38 个):`command:aside`、`command:auto-update`、`command:checkpoint`、`command:code-review`、`command:cost-report`、`command:evolve`、`command:fastapi-review`、`command:feature-dev`、`command:harness-audit`、`command:hookify-help`、`command:instinct-export`、`command:instinct-import`、`command:jira`、`command:learn-eval`、`command:loop-start`、`command:marketing-campaign`、`command:plan`、`command:plan-prd`、`command:pr`、`command:project-init`、`command:prp-commit`、`command:prp-implement`、`command:prp-plan`、`command:prp-pr`、`command:prp-prd`、`command:python-review`、`command:quality-gate`、`command:react-build`、`command:react-review`、`command:react-test`、`command:refactor-clean`、`command:resume-session`、`command:review-pr`、`command:save-session`、`command:skill-create`、`command:test-coverage`、`command:update-docs`、`command:vue-review`
+- **testing**(37 个):`command:aside`、`command:auto-update`、`command:checkpoint`、`command:code-review`、`command:cost-report`、`command:evolve`、`command:fastapi-review`、`command:feature-dev`、`command:harness-audit`、`command:hookify-help`、`command:instinct-export`、`command:instinct-import`、`command:jira`、`command:learn-eval`、`command:loop-start`、`command:plan`、`command:plan-prd`、`command:pr`、`command:project-init`、`command:prp-commit`、`command:prp-implement`、`command:prp-plan`、`command:prp-pr`、`command:prp-prd`、`command:python-review`、`command:quality-gate`、`command:react-build`、`command:react-review`、`command:react-test`、`command:refactor-clean`、`command:resume-session`、`command:review-pr`、`command:save-session`、`command:skill-create`、`command:test-coverage`、`command:update-docs`、`command:vue-review`
 
 ### hook
 
@@ -90,7 +90,7 @@
 
 ### agent
 
-暂无分类数据源——仓库里没有任何地方给这 51 个 agent 做过主题分组。想了解某个 agent 的关系,直接查它的依赖:`node .claude/skills/dependency-graph/scripts/relationship-query.js dependents/uses <id>`。
+暂无分类数据源——仓库里没有任何地方给这 43 个 agent 做过主题分组。想了解某个 agent 的关系,直接查它的依赖:`node .claude/skills/dependency-graph/scripts/relationship-query.js dependents/uses <id>`。
 
 ## rules/ 的 extends 继承关系
 
@@ -193,36 +193,33 @@ graph TD
   module_workflow_quality["module:workflow-quality"] -->|installs_skill| skill_continuous_learning_v2["skill:continuous-learning-v2"]
 ```
 
-**`skill:network-config-validation`**(被依赖 7 次)
+**`skill:react-testing`**(被依赖 7 次)
 
 ```mermaid
 graph TD
-  skill_cisco_ios_patterns["skill:cisco-ios-patterns"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  skill_homelab_network_readiness["skill:homelab-network-readiness"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  skill_homelab_network_setup["skill:homelab-network-setup"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  skill_netmiko_ssh_automation["skill:netmiko-ssh-automation"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  skill_network_bgp_diagnostics["skill:network-bgp-diagnostics"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  skill_network_config_validation["skill:network-config-validation"] -->|references_agent| agent_network_config_reviewer["agent:network-config-reviewer"]
-  skill_network_config_validation["skill:network-config-validation"] -->|references_agent| agent_network_troubleshooter["agent:network-troubleshooter"]
-  skill_network_config_validation["skill:network-config-validation"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_network_interface_health["skill:network-interface-health"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  module_devops_infra["module:devops-infra"] -->|installs_skill| skill_network_config_validation["skill:network-config-validation"]
+  rule_react_testing_md["rule:react/testing.md"] -->|references_skill| skill_react_testing["skill:react-testing"]
+  skill_react_patterns["skill:react-patterns"] -->|references_skill| skill_react_testing["skill:react-testing"]
+  skill_react_performance["skill:react-performance"] -->|references_skill| skill_react_testing["skill:react-testing"]
+  skill_react_testing["skill:react-testing"] -->|references_skill| skill_accessibility["skill:accessibility"]
+  skill_react_testing["skill:react-testing"] -->|references_skill| skill_e2e_testing["skill:e2e-testing"]
+  skill_react_testing["skill:react-testing"] -->|references_skill| skill_react_patterns["skill:react-patterns"]
+  skill_react_testing["skill:react-testing"] -->|references_skill| skill_tdd_workflow["skill:tdd-workflow"]
+  agent_react_reviewer["agent:react-reviewer"] -->|references_skill| skill_react_testing["skill:react-testing"]
+  command_react_review["command:react-review"] -->|references_skill| skill_react_testing["skill:react-testing"]
+  command_react_test["command:react-test"] -->|references_skill| skill_react_testing["skill:react-testing"]
+  module_framework_language["module:framework-language"] -->|installs_skill| skill_react_testing["skill:react-testing"]
 ```
 
-**`skill:network-interface-health`**(被依赖 7 次)
+**`skill:e2e-testing`**(被依赖 6 次)
 
 ```mermaid
 graph TD
-  skill_cisco_ios_patterns["skill:cisco-ios-patterns"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_homelab_network_readiness["skill:homelab-network-readiness"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_homelab_network_setup["skill:homelab-network-setup"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_netmiko_ssh_automation["skill:netmiko-ssh-automation"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_network_bgp_diagnostics["skill:network-bgp-diagnostics"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_network_config_validation["skill:network-config-validation"] -->|references_skill| skill_network_interface_health["skill:network-interface-health"]
-  skill_network_interface_health["skill:network-interface-health"] -->|references_agent| agent_network_troubleshooter["agent:network-troubleshooter"]
-  skill_network_interface_health["skill:network-interface-health"] -->|references_skill| skill_homelab_network_setup["skill:homelab-network-setup"]
-  skill_network_interface_health["skill:network-interface-health"] -->|references_skill| skill_network_config_validation["skill:network-config-validation"]
-  module_devops_infra["module:devops-infra"] -->|installs_skill| skill_network_interface_health["skill:network-interface-health"]
+  rule_react_testing_md["rule:react/testing.md"] -->|references_skill| skill_e2e_testing["skill:e2e-testing"]
+  skill_production_audit["skill:production-audit"] -->|references_skill| skill_e2e_testing["skill:e2e-testing"]
+  skill_react_testing["skill:react-testing"] -->|references_skill| skill_e2e_testing["skill:e2e-testing"]
+  agent_e2e_runner["agent:e2e-runner"] -->|references_skill| skill_e2e_testing["skill:e2e-testing"]
+  command_react_test["command:react-test"] -->|references_skill| skill_e2e_testing["skill:e2e-testing"]
+  module_workflow_quality["module:workflow-quality"] -->|installs_skill| skill_e2e_testing["skill:e2e-testing"]
 ```
 
 
@@ -230,8 +227,6 @@ graph TD
 
 | skill | 被依赖次数 |
 |---|---|
-| `skill:react-testing` | 7 |
-| `skill:e2e-testing` | 6 |
 | `skill:frontend-patterns` | 6 |
 | `skill:orch-pipeline` | 6 |
 | `skill:python-patterns` | 6 |
@@ -240,6 +235,8 @@ graph TD
 | `skill:security-review` | 5 |
 | `skill:tdd-workflow` | 5 |
 | `skill:backend-patterns` | 4 |
+| `skill:browser-qa` | 4 |
+| `skill:canary-watch` | 4 |
 
 ## 被引用最多的 agent
 
@@ -303,16 +300,15 @@ graph TD
 
 | agent | 被依赖次数 |
 |---|---|
-| `agent:network-troubleshooter` | 3 |
 | `agent:react-reviewer` | 3 |
 | `agent:tdd-guide` | 3 |
 | `agent:typescript-reviewer` | 3 |
-| `agent:network-config-reviewer` | 2 |
 | `agent:python-reviewer` | 2 |
 | `agent:build-error-resolver` | 1 |
 | `agent:e2e-runner` | 1 |
 | `agent:mle-reviewer` | 1 |
 | `agent:react-build-resolver` | 1 |
+| `agent:vue-reviewer` | 1 |
 
 ## 孤儿引用(引用目标已不存在)
 
@@ -342,6 +338,23 @@ graph TD
 | `module:framework-language` | `skill:rust-patterns` | installs_skill |
 | `module:framework-language` | `skill:rust-testing` | installs_skill |
 | `module:framework-language` | `skill:flutter-dart-code-review` | installs_skill |
+| `module:security` | `skill:healthcare-phi-compliance` | installs_skill |
+| `module:security` | `skill:hipaa-compliance` | installs_skill |
+| `module:security` | `skill:healthcare-cdss-patterns` | installs_skill |
+| `module:security` | `skill:healthcare-emr-patterns` | installs_skill |
+| `module:security` | `skill:healthcare-eval-harness` | installs_skill |
+| `module:business-content` | `skill:seo` | installs_skill |
+| `module:business-content` | `skill:marketing-campaign` | installs_skill |
+| `module:devops-infra` | `skill:cisco-ios-patterns` | installs_skill |
+| `module:devops-infra` | `skill:homelab-network-readiness` | installs_skill |
+| `module:devops-infra` | `skill:homelab-network-setup` | installs_skill |
+| `module:devops-infra` | `skill:netmiko-ssh-automation` | installs_skill |
+| `module:devops-infra` | `skill:network-bgp-diagnostics` | installs_skill |
+| `module:devops-infra` | `skill:network-config-validation` | installs_skill |
+| `module:devops-infra` | `skill:network-interface-health` | installs_skill |
+| `module:devops-infra` | `skill:homelab-pihole-dns` | installs_skill |
+| `module:devops-infra` | `skill:homelab-vlan-segmentation` | installs_skill |
+| `module:devops-infra` | `skill:homelab-wireguard-vpn` | installs_skill |
 
 ## 如何使用
 

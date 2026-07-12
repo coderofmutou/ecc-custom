@@ -850,15 +850,6 @@
       }
     },
     {
-      "id": "skill:cisco-ios-patterns",
-      "type": "skill",
-      "name": "cisco-ios-patterns",
-      "path": "skills/cisco-ios-patterns/SKILL.md",
-      "meta": {
-        "description": "Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and safe change-window verification."
-      }
-    },
-    {
       "id": "skill:ck",
       "type": "skill",
       "name": "ck",
@@ -1480,42 +1471,6 @@
       }
     },
     {
-      "id": "skill:healthcare-cdss-patterns",
-      "type": "skill",
-      "name": "healthcare-cdss-patterns",
-      "path": "skills/healthcare-cdss-patterns/SKILL.md",
-      "meta": {
-        "description": "Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEWS2, qSOFA), alert severity classification, and integration into EMR workflows."
-      }
-    },
-    {
-      "id": "skill:healthcare-emr-patterns",
-      "type": "skill",
-      "name": "healthcare-emr-patterns",
-      "path": "skills/healthcare-emr-patterns/SKILL.md",
-      "meta": {
-        "description": "EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry."
-      }
-    },
-    {
-      "id": "skill:healthcare-eval-harness",
-      "type": "skill",
-      "name": "healthcare-eval-harness",
-      "path": "skills/healthcare-eval-harness/SKILL.md",
-      "meta": {
-        "description": "Patient safety evaluation harness for healthcare application deployments. Automated test suites for CDSS accuracy, PHI exposure, clinical workflow integrity, and integration compliance. Blocks deployments on safety failures."
-      }
-    },
-    {
-      "id": "skill:healthcare-phi-compliance",
-      "type": "skill",
-      "name": "healthcare-phi-compliance",
-      "path": "skills/healthcare-phi-compliance/SKILL.md",
-      "meta": {
-        "description": "Protected Health Information (PHI) and Personally Identifiable Information (PII) compliance patterns for healthcare applications. Covers data classification, access control, audit trails, encryption, and common leak vectors."
-      }
-    },
-    {
       "id": "skill:hermes-imports",
       "type": "skill",
       "name": "hermes-imports",
@@ -1531,60 +1486,6 @@
       "path": "skills/hexagonal-architecture/SKILL.md",
       "meta": {
         "description": "Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services."
-      }
-    },
-    {
-      "id": "skill:hipaa-compliance",
-      "type": "skill",
-      "name": "hipaa-compliance",
-      "path": "skills/hipaa-compliance/SKILL.md",
-      "meta": {
-        "description": "HIPAA-specific entrypoint for healthcare privacy and security work. Use when a task is explicitly framed around HIPAA, PHI handling, covered entities, BAAs, breach posture, or US healthcare compliance requirements."
-      }
-    },
-    {
-      "id": "skill:homelab-network-readiness",
-      "type": "skill",
-      "name": "homelab-network-readiness",
-      "path": "skills/homelab-network-readiness/SKILL.md",
-      "meta": {
-        "description": "Readiness checklist for homelab VLAN segmentation, local DNS filtering, and WireGuard-style remote access before changing router, firewall, DHCP, or VPN configuration."
-      }
-    },
-    {
-      "id": "skill:homelab-network-setup",
-      "type": "skill",
-      "name": "homelab-network-setup",
-      "path": "skills/homelab-network-setup/SKILL.md",
-      "meta": {
-        "description": "Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, and common beginner mistakes."
-      }
-    },
-    {
-      "id": "skill:homelab-pihole-dns",
-      "type": "skill",
-      "name": "homelab-pihole-dns",
-      "path": "skills/homelab-pihole-dns/SKILL.md",
-      "meta": {
-        "description": "Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting broken DNS resolution on a home network."
-      }
-    },
-    {
-      "id": "skill:homelab-vlan-segmentation",
-      "type": "skill",
-      "name": "homelab-vlan-segmentation",
-      "path": "skills/homelab-vlan-segmentation/SKILL.md",
-      "meta": {
-        "description": "Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — including switch trunk config, firewall rules, and wireless SSID mapping."
-      }
-    },
-    {
-      "id": "skill:homelab-wireguard-vpn",
-      "type": "skill",
-      "name": "homelab-wireguard-vpn",
-      "path": "skills/homelab-wireguard-vpn/SKILL.md",
-      "meta": {
-        "description": "WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients."
       }
     },
     {
@@ -1858,15 +1759,6 @@
       }
     },
     {
-      "id": "skill:marketing-campaign",
-      "type": "skill",
-      "name": "marketing-campaign",
-      "path": "skills/marketing-campaign/SKILL.md",
-      "meta": {
-        "description": "End-to-end marketing campaign planning and execution. Covers audience research, positioning, campaign angle definition, landing page copy, email sequences, social posts, ad copy, short-form video scripts, and content calendars. Use as the orchestration layer for multi-channel product launches."
-      }
-    },
-    {
       "id": "skill:mcp-server-patterns",
       "type": "skill",
       "name": "mcp-server-patterns",
@@ -1963,42 +1855,6 @@
       "path": "skills/nestjs-patterns/SKILL.md",
       "meta": {
         "description": "NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-grade TypeScript backends."
-      }
-    },
-    {
-      "id": "skill:netmiko-ssh-automation",
-      "type": "skill",
-      "name": "netmiko-ssh-automation",
-      "path": "skills/netmiko-ssh-automation/SKILL.md",
-      "meta": {
-        "description": "Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, and network automation error handling."
-      }
-    },
-    {
-      "id": "skill:network-bgp-diagnostics",
-      "type": "skill",
-      "name": "network-bgp-diagnostics",
-      "path": "skills/network-bgp-diagnostics/SKILL.md",
-      "meta": {
-        "description": "Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe evidence collection."
-      }
-    },
-    {
-      "id": "skill:network-config-validation",
-      "type": "skill",
-      "name": "network-config-validation",
-      "path": "skills/network-config-validation/SKILL.md",
-      "meta": {
-        "description": "Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, stale references, management-plane risk, and IOS-style security hygiene."
-      }
-    },
-    {
-      "id": "skill:network-interface-health",
-      "type": "skill",
-      "name": "network-interface-health",
-      "path": "skills/network-interface-health/SKILL.md",
-      "meta": {
-        "description": "Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, switches, and Linux hosts."
       }
     },
     {
@@ -2515,15 +2371,6 @@
       }
     },
     {
-      "id": "skill:seo",
-      "type": "skill",
-      "name": "seo",
-      "path": "skills/seo/SKILL.md",
-      "meta": {
-        "description": "Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and content strategy. Use when the user wants better search visibility, SEO remediation, schema markup, sitemap/robots work, or keyword mapping."
-      }
-    },
-    {
       "id": "skill:skill-comply",
       "type": "skill",
       "name": "skill-comply",
@@ -2834,16 +2681,6 @@
       }
     },
     {
-      "id": "agent:chief-of-staff",
-      "type": "agent",
-      "name": "chief-of-staff",
-      "path": "agents/chief-of-staff.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\", \"Edit\", \"Write\"]"
-      }
-    },
-    {
       "id": "agent:code-architect",
       "type": "agent",
       "name": "code-architect",
@@ -3014,26 +2851,6 @@
       }
     },
     {
-      "id": "agent:healthcare-reviewer",
-      "type": "agent",
-      "name": "healthcare-reviewer",
-      "path": "agents/healthcare-reviewer.md",
-      "meta": {
-        "model": "opus",
-        "tools": "[\"Read\", \"Grep\", \"Glob\"]"
-      }
-    },
-    {
-      "id": "agent:homelab-architect",
-      "type": "agent",
-      "name": "homelab-architect",
-      "path": "agents/homelab-architect.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\"]"
-      }
-    },
-    {
       "id": "agent:java-build-resolver",
       "type": "agent",
       "name": "java-build-resolver",
@@ -3064,16 +2881,6 @@
       }
     },
     {
-      "id": "agent:marketing-agent",
-      "type": "agent",
-      "name": "marketing-agent",
-      "path": "agents/marketing-agent.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"WebSearch\", \"WebFetch\"]"
-      }
-    },
-    {
       "id": "agent:mle-reviewer",
       "type": "agent",
       "name": "mle-reviewer",
@@ -3081,36 +2888,6 @@
       "meta": {
         "model": "sonnet",
         "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
-      "id": "agent:network-architect",
-      "type": "agent",
-      "name": "network-architect",
-      "path": "agents/network-architect.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\"]"
-      }
-    },
-    {
-      "id": "agent:network-config-reviewer",
-      "type": "agent",
-      "name": "network-config-reviewer",
-      "path": "agents/network-config-reviewer.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\"]"
-      }
-    },
-    {
-      "id": "agent:network-troubleshooter",
-      "type": "agent",
-      "name": "network-troubleshooter",
-      "path": "agents/network-troubleshooter.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Bash\", \"Grep\"]"
       }
     },
     {
@@ -3231,16 +3008,6 @@
       "meta": {
         "model": "sonnet",
         "tools": "[\"Read\", \"Grep\", \"Glob\", \"Bash\"]"
-      }
-    },
-    {
-      "id": "agent:seo-specialist",
-      "type": "agent",
-      "name": "seo-specialist",
-      "path": "agents/seo-specialist.md",
-      "meta": {
-        "model": "sonnet",
-        "tools": "[\"Read\", \"Grep\", \"Glob\", \"WebSearch\", \"WebFetch\"]"
       }
     },
     {
@@ -3621,16 +3388,6 @@
       "meta": {
         "description": "Inspect active loop state, progress, failure signals, and recommended intervention.",
         "commandType": "general"
-      }
-    },
-    {
-      "id": "command:marketing-campaign",
-      "type": "command",
-      "name": "marketing-campaign",
-      "path": "commands/marketing-campaign.md",
-      "meta": {
-        "description": "Plan and execute a full marketing campaign. Accepts a product brief and returns positioning, landing page copy, email sequence, social posts, ad variants, video scripts, and a content calendar. Can also review existing copy for conversion quality.",
-        "commandType": "testing"
       }
     },
     {
@@ -5317,26 +5074,6 @@
       "type": "references_skill"
     },
     {
-      "from": "skill:cisco-ios-patterns",
-      "to": "agent:network-config-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "skill:cisco-ios-patterns",
-      "to": "agent:network-troubleshooter",
-      "type": "references_agent"
-    },
-    {
-      "from": "skill:cisco-ios-patterns",
-      "to": "skill:network-config-validation",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:cisco-ios-patterns",
-      "to": "skill:network-interface-health",
-      "type": "references_skill"
-    },
-    {
       "from": "skill:codehealth-mcp",
       "to": "skill:verification-loop",
       "type": "references_skill"
@@ -5365,31 +5102,6 @@
       "from": "skill:gan-style-harness",
       "to": "agent:planner",
       "type": "references_agent"
-    },
-    {
-      "from": "skill:homelab-network-readiness",
-      "to": "skill:homelab-network-setup",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:homelab-network-readiness",
-      "to": "skill:network-config-validation",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:homelab-network-readiness",
-      "to": "skill:network-interface-health",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:homelab-network-setup",
-      "to": "skill:network-config-validation",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:homelab-network-setup",
-      "to": "skill:network-interface-health",
-      "type": "references_skill"
     },
     {
       "from": "skill:intent-driven-development",
@@ -5429,66 +5141,6 @@
     {
       "from": "skill:mysql-patterns",
       "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:netmiko-ssh-automation",
-      "to": "skill:cisco-ios-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:netmiko-ssh-automation",
-      "to": "skill:network-config-validation",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:netmiko-ssh-automation",
-      "to": "skill:network-interface-health",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:network-bgp-diagnostics",
-      "to": "skill:cisco-ios-patterns",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:network-bgp-diagnostics",
-      "to": "skill:network-config-validation",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:network-bgp-diagnostics",
-      "to": "skill:network-interface-health",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:network-config-validation",
-      "to": "agent:network-config-reviewer",
-      "type": "references_agent"
-    },
-    {
-      "from": "skill:network-config-validation",
-      "to": "agent:network-troubleshooter",
-      "type": "references_agent"
-    },
-    {
-      "from": "skill:network-config-validation",
-      "to": "skill:network-interface-health",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:network-interface-health",
-      "to": "agent:network-troubleshooter",
-      "type": "references_agent"
-    },
-    {
-      "from": "skill:network-interface-health",
-      "to": "skill:homelab-network-setup",
-      "type": "references_skill"
-    },
-    {
-      "from": "skill:network-interface-health",
-      "to": "skill:network-config-validation",
       "type": "references_skill"
     },
     {
@@ -5767,11 +5419,6 @@
       "type": "references_skill"
     },
     {
-      "from": "agent:marketing-agent",
-      "to": "skill:marketing-campaign",
-      "type": "references_skill"
-    },
-    {
       "from": "agent:mle-reviewer",
       "to": "skill:mle-workflow",
       "type": "references_skill"
@@ -5814,11 +5461,6 @@
     {
       "from": "agent:security-reviewer",
       "to": "skill:security-review",
-      "type": "references_skill"
-    },
-    {
-      "from": "agent:seo-specialist",
-      "to": "skill:seo",
       "type": "references_skill"
     },
     {
@@ -5874,11 +5516,6 @@
     {
       "from": "command:jira",
       "to": "skill:jira-integration",
-      "type": "references_skill"
-    },
-    {
-      "from": "command:marketing-campaign",
-      "to": "skill:marketing-campaign",
       "type": "references_skill"
     },
     {

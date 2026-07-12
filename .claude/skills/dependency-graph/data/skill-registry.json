@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "totalSkills": 247,
+  "totalSkills": 230,
   "skills": [
     {
       "skill": "accessibility",
@@ -234,19 +234,6 @@
       "description": ">",
       "agents": [],
       "skills": []
-    },
-    {
-      "skill": "cisco-ios-patterns",
-      "path": "skills/cisco-ios-patterns/SKILL.md",
-      "description": "Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and safe change-window verification.",
-      "agents": [
-        "network-config-reviewer",
-        "network-troubleshooter"
-      ],
-      "skills": [
-        "network-config-validation",
-        "network-interface-health"
-      ]
     },
     {
       "skill": "ck",
@@ -743,34 +730,6 @@
       "skills": []
     },
     {
-      "skill": "healthcare-cdss-patterns",
-      "path": "skills/healthcare-cdss-patterns/SKILL.md",
-      "description": "Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEWS2, qSOFA), alert severity classification, and integration into EMR workflows.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "healthcare-emr-patterns",
-      "path": "skills/healthcare-emr-patterns/SKILL.md",
-      "description": "EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "healthcare-eval-harness",
-      "path": "skills/healthcare-eval-harness/SKILL.md",
-      "description": "Patient safety evaluation harness for healthcare application deployments. Automated test suites for CDSS accuracy, PHI exposure, clinical workflow integrity, and integration compliance. Blocks deployments on safety failures.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "healthcare-phi-compliance",
-      "path": "skills/healthcare-phi-compliance/SKILL.md",
-      "description": "Protected Health Information (PHI) and Personally Identifiable Information (PII) compliance patterns for healthcare applications. Covers data classification, access control, audit trails, encryption, and common leak vectors.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "hermes-imports",
       "path": "skills/hermes-imports/SKILL.md",
       "description": "Convert local Hermes operator workflows into sanitized ECC skills and release-pack artifacts. Use when preparing a Hermes workflow for public ECC reuse without leaking private workspace state, credentials, or local-only paths.",
@@ -781,55 +740,6 @@
       "skill": "hexagonal-architecture",
       "path": "skills/hexagonal-architecture/SKILL.md",
       "description": "Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "hipaa-compliance",
-      "path": "skills/hipaa-compliance/SKILL.md",
-      "description": "HIPAA-specific entrypoint for healthcare privacy and security work. Use when a task is explicitly framed around HIPAA, PHI handling, covered entities, BAAs, breach posture, or US healthcare compliance requirements.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "homelab-network-readiness",
-      "path": "skills/homelab-network-readiness/SKILL.md",
-      "description": "Readiness checklist for homelab VLAN segmentation, local DNS filtering, and WireGuard-style remote access before changing router, firewall, DHCP, or VPN configuration.",
-      "agents": [],
-      "skills": [
-        "homelab-network-setup",
-        "network-config-validation",
-        "network-interface-health"
-      ]
-    },
-    {
-      "skill": "homelab-network-setup",
-      "path": "skills/homelab-network-setup/SKILL.md",
-      "description": "Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, and common beginner mistakes.",
-      "agents": [],
-      "skills": [
-        "network-config-validation",
-        "network-interface-health"
-      ]
-    },
-    {
-      "skill": "homelab-pihole-dns",
-      "path": "skills/homelab-pihole-dns/SKILL.md",
-      "description": "Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting broken DNS resolution on a home network.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "homelab-vlan-segmentation",
-      "path": "skills/homelab-vlan-segmentation/SKILL.md",
-      "description": "Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — including switch trunk config, firewall rules, and wireless SSID mapping.",
-      "agents": [],
-      "skills": []
-    },
-    {
-      "skill": "homelab-wireguard-vpn",
-      "path": "skills/homelab-wireguard-vpn/SKILL.md",
-      "description": "WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients.",
       "agents": [],
       "skills": []
     },
@@ -1046,13 +956,6 @@
       "skills": []
     },
     {
-      "skill": "marketing-campaign",
-      "path": "skills/marketing-campaign/SKILL.md",
-      "description": "End-to-end marketing campaign planning and execution. Covers audience research, positioning, campaign angle definition, landing page copy, email sequences, social posts, ad copy, short-form video scripts, and content calendars. Use as the orchestration layer for multi-channel product launches.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "mcp-server-patterns",
       "path": "skills/mcp-server-patterns/SKILL.md",
       "description": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API.",
@@ -1139,52 +1042,6 @@
       "description": "NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-grade TypeScript backends.",
       "agents": [],
       "skills": []
-    },
-    {
-      "skill": "netmiko-ssh-automation",
-      "path": "skills/netmiko-ssh-automation/SKILL.md",
-      "description": "Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, and network automation error handling.",
-      "agents": [],
-      "skills": [
-        "cisco-ios-patterns",
-        "network-config-validation",
-        "network-interface-health"
-      ]
-    },
-    {
-      "skill": "network-bgp-diagnostics",
-      "path": "skills/network-bgp-diagnostics/SKILL.md",
-      "description": "Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe evidence collection.",
-      "agents": [],
-      "skills": [
-        "cisco-ios-patterns",
-        "network-config-validation",
-        "network-interface-health"
-      ]
-    },
-    {
-      "skill": "network-config-validation",
-      "path": "skills/network-config-validation/SKILL.md",
-      "description": "Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, stale references, management-plane risk, and IOS-style security hygiene.",
-      "agents": [
-        "network-config-reviewer",
-        "network-troubleshooter"
-      ],
-      "skills": [
-        "network-interface-health"
-      ]
-    },
-    {
-      "skill": "network-interface-health",
-      "path": "skills/network-interface-health/SKILL.md",
-      "description": "Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, switches, and Linux hosts.",
-      "agents": [
-        "network-troubleshooter"
-      ],
-      "skills": [
-        "homelab-network-setup",
-        "network-config-validation"
-      ]
     },
     {
       "skill": "nextjs-turbopack",
@@ -1647,13 +1504,6 @@
       "skills": []
     },
     {
-      "skill": "seo",
-      "path": "skills/seo/SKILL.md",
-      "description": "Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and content strategy. Use when the user wants better search visibility, SEO remediation, schema markup, sitemap/robots work, or keyword mapping.",
-      "agents": [],
-      "skills": []
-    },
-    {
       "skill": "skill-comply",
       "path": "skills/skill-comply/SKILL.md",
       "description": "Visualize whether skills, rules, and agent definitions are actually followed — auto-generates scenarios at 3 prompt strictness levels, runs agents, classifies behavioral sequences, and reports compliance rates with full tool call timelines",
@@ -1875,7 +1725,6 @@
       "blueprint": 1,
       "browser-qa": 3,
       "canary-watch": 3,
-      "cisco-ios-patterns": 2,
       "clickhouse-io": 1,
       "context-budget": 1,
       "database-migrations": 2,
@@ -1886,9 +1735,6 @@
       "ecc-guide": 1,
       "error-handling": 1,
       "frontend-patterns": 2,
-      "homelab-network-setup": 2,
-      "network-config-validation": 6,
-      "network-interface-health": 6,
       "nextjs-turbopack": 1,
       "okx-agent-payments-protocol": 1,
       "okx-x402-payment": 1,
@@ -1910,8 +1756,6 @@
       "database-reviewer": 3,
       "general-purpose": 1,
       "mle-reviewer": 1,
-      "network-config-reviewer": 2,
-      "network-troubleshooter": 3,
       "planner": 3,
       "reviewer-class": 1,
       "security-reviewer": 2

@@ -344,10 +344,12 @@
     },
     {
       "id": "command:marketing-campaign",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户是 Java 后端工程师，市场营销工具与画像完全无关，不需要保留上下文占用"
+      "suggestedReason": "用户是 Java 后端工程师，市场营销工具与画像完全无关，不需要保留上下文占用",
+      "reason": "对应 marketing-agent/marketing-campaign skill 已裁剪,同步排除该命令入口,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "command:model-route",
@@ -914,10 +916,12 @@
     },
     {
       "id": "skill:cisco-ios-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像关系不大。用户是应用级开发工程师，不是网络工程师，这不是日常工作。"
+      "suggestedReason": "与用户画像关系不大。用户是应用级开发工程师，不是网络工程师，这不是日常工作。",
+      "reason": "Cisco IOS 路由器/交换机命令审查,属网络工程师工种,随 network-* agent 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:ck",
@@ -1503,31 +1507,39 @@
     },
     {
       "id": "skill:healthcare-cdss-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关",
+      "reason": "临床决策支持系统开发模式,与 Java 后端 WMS 画像无关,随 healthcare-reviewer 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:healthcare-emr-patterns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关",
+      "reason": "EMR/EHR 电子病历开发模式,与 Java 后端 WMS 画像无关,随 healthcare-reviewer 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:healthcare-eval-harness",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关",
+      "reason": "医疗应用患者安全评估框架,与 Java 后端 WMS 画像无关,随 healthcare-reviewer 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:healthcare-phi-compliance",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关"
+      "suggestedReason": "医疗领域专用工具，用户的项目不涉及医疗，与后端开发工作无关",
+      "reason": "PHI/PII 医疗数据合规模式,与 Java 后端 WMS 画像无关,随 healthcare-reviewer 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:hermes-imports",
@@ -1545,45 +1557,57 @@
     },
     {
       "id": "skill:hipaa-compliance",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "医疗合规工具，用户的后端开发工作不涉及医疗或 HIPAA 合规需求"
+      "suggestedReason": "医疗合规工具，用户的后端开发工作不涉及医疗或 HIPAA 合规需求",
+      "reason": "HIPAA 医疗合规,与 Java 后端 WMS 画像无关,随 healthcare-reviewer 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:homelab-network-readiness",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "个人网络运维工具，与用户的代码开发和插件维护工作无关"
+      "suggestedReason": "个人网络运维工具，与用户的代码开发和插件维护工作无关",
+      "reason": "家庭网络 VLAN/DNS/VPN 变更前检查清单,与 Java 后端开发画像无关,随 homelab-architect 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:homelab-network-setup",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "家庭网络工具，与后端工程师用户画像无关"
+      "suggestedReason": "家庭网络工具，与后端工程师用户画像无关",
+      "reason": "家庭/homelab 网络规划,与 Java 后端开发画像无关,随 homelab-architect 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:homelab-pihole-dns",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "DNS 家庭网络工具，不是后端开发相关技能"
+      "suggestedReason": "DNS 家庭网络工具，不是后端开发相关技能",
+      "reason": "Pi-hole DNS 广告过滤配置,与 Java 后端开发画像无关,随 homelab-architect 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:homelab-vlan-segmentation",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "家庭网络隔离方案，与用户的服务端工作无关"
+      "suggestedReason": "家庭网络隔离方案，与用户的服务端工作无关",
+      "reason": "家庭网络 VLAN 分段,与 Java 后端开发画像无关,随 homelab-architect 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:homelab-wireguard-vpn",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "家庭网络 VPN 工具，不属于后端开发范畴"
+      "suggestedReason": "家庭网络 VPN 工具，不属于后端开发范畴",
+      "reason": "WireGuard VPN 家庭远程访问搭建,与 Java 后端开发画像无关,随 homelab-architect 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:hookify-rules",
@@ -1860,10 +1884,12 @@
     },
     {
       "id": "skill:marketing-campaign",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "端到端营销活动策划工具，逻辑同已排除的command:marketing-campaign，与用户画像完全无关"
+      "suggestedReason": "端到端营销活动策划工具，逻辑同已排除的command:marketing-campaign，与用户画像完全无关",
+      "reason": "端到端营销活动策划执行,与 Java 后端开发画像无关,随 marketing-agent 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:mcp-server-patterns",
@@ -1944,31 +1970,39 @@
     },
     {
       "id": "skill:netmiko-ssh-automation",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-11",
-      "suggestedReason": "网络设备SSH自动化，用户是应用工程师非网络工程师，逻辑同已排除的cisco-ios-patterns等"
+      "suggestedReason": "网络设备SSH自动化，用户是应用工程师非网络工程师，逻辑同已排除的cisco-ios-patterns等",
+      "reason": "Netmiko 批量 SSH 网络设备自动化,属网络工程师工种,随 network-* agent 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:network-bgp-diagnostics",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "与用户画像完全无关，Java 后端工程师不需要 BGP 网络诊断能力"
+      "suggestedReason": "与用户画像完全无关，Java 后端工程师不需要 BGP 网络诊断能力",
+      "reason": "BGP 路由诊断,属网络工程师工种,随 network-* agent 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:network-config-validation",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "网络配置验证与 Java 开发和插件生态建设无相关性"
+      "suggestedReason": "网络配置验证与 Java 开发和插件生态建设无相关性",
+      "reason": "路由器/交换机配置部署前校验,属网络工程师工种,随 network-* agent 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:network-interface-health",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "exclude",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "网络接口诊断是网络工程师专属工具，与后端开发无关"
+      "suggestedReason": "网络接口诊断是网络工程师专属工具，与后端开发无关",
+      "reason": "网络接口错误/丢包/duplex 诊断,属网络工程师工种,随 network-* agent 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:nextjs-turbopack",
@@ -2427,10 +2461,12 @@
     },
     {
       "id": "skill:seo",
-      "decision": "pending",
+      "decision": "exclude",
       "suggestedDecision": "include",
       "suggestedAt": "2026-07-10",
-      "suggestedReason": "用户偶尔参与前端开发；Claude 可在站点优化时自动提示，用户也可手动调用。"
+      "suggestedReason": "用户偶尔参与前端开发；Claude 可在站点优化时自动提示，用户也可手动调用。",
+      "reason": "SEO 审计与技术优化,WMS 为内部管理系统无需搜索引擎优化,随 seo-specialist 一并裁剪,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     },
     {
       "id": "skill:skill-comply",
@@ -3241,6 +3277,252 @@
       "decision": "exclude",
       "reason": "移动端框架,与 Java 后端/WMS 画像无关",
       "decidedAt": "2026-07-11"
+    },
+    {
+      "id": "rule:python/coding-style.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:python/fastapi.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:python/hooks.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:python/patterns.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:python/security.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:python/testing.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:react/coding-style.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:vue/coding-style.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:typescript/coding-style.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:react/hooks.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:vue/hooks.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:typescript/hooks.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:react/patterns.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:vue/patterns.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:typescript/patterns.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:react/security.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:vue/security.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:typescript/security.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:react/testing.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:vue/testing.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:typescript/testing.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/coding-style.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/design-quality.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/hooks.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/patterns.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/performance.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/security.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:web/testing.md",
+      "decision": "include",
+      "reason": "用户确认保留:规则库不局限于当前 Java Spring Boot WMS 单一画像,需覆盖其他技术栈项目使用场景,不适用此前 swift/dart/kotlin/cpp/rust/csharp/fsharp/arkts/angular/nuxt 那批\"零使用场景故裁剪\"的判断逻辑",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:java/coding-style.md",
+      "decision": "include",
+      "reason": "保留但已知分叉:全局 ~/.claude/rules/java/*.md 已改写为贴合 java-springboot-rules/WMS Spring Boot 画像的定制版,内容与本仓库这份 upstream 通用基线不同。日常新建 Java 项目复制粘贴规则时以全局定制版为准,不要从本仓库 rules/java 复制,避免丢失定制内容;本仓库版本只作为 upstream 同步基线保留,不反向同步。",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:java/hooks.md",
+      "decision": "include",
+      "reason": "保留但已知分叉:全局 ~/.claude/rules/java/*.md 已改写为贴合 java-springboot-rules/WMS Spring Boot 画像的定制版,内容与本仓库这份 upstream 通用基线不同。日常新建 Java 项目复制粘贴规则时以全局定制版为准,不要从本仓库 rules/java 复制,避免丢失定制内容;本仓库版本只作为 upstream 同步基线保留,不反向同步。",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:java/patterns.md",
+      "decision": "include",
+      "reason": "保留但已知分叉:全局 ~/.claude/rules/java/*.md 已改写为贴合 java-springboot-rules/WMS Spring Boot 画像的定制版,内容与本仓库这份 upstream 通用基线不同。日常新建 Java 项目复制粘贴规则时以全局定制版为准,不要从本仓库 rules/java 复制,避免丢失定制内容;本仓库版本只作为 upstream 同步基线保留,不反向同步。",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:java/security.md",
+      "decision": "include",
+      "reason": "保留但已知分叉:全局 ~/.claude/rules/java/*.md 已改写为贴合 java-springboot-rules/WMS Spring Boot 画像的定制版,内容与本仓库这份 upstream 通用基线不同。日常新建 Java 项目复制粘贴规则时以全局定制版为准,不要从本仓库 rules/java 复制,避免丢失定制内容;本仓库版本只作为 upstream 同步基线保留,不反向同步。",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "rule:java/testing.md",
+      "decision": "include",
+      "reason": "保留但已知分叉:全局 ~/.claude/rules/java/*.md 已改写为贴合 java-springboot-rules/WMS Spring Boot 画像的定制版,内容与本仓库这份 upstream 通用基线不同。日常新建 Java 项目复制粘贴规则时以全局定制版为准,不要从本仓库 rules/java 复制,避免丢失定制内容;本仓库版本只作为 upstream 同步基线保留,不反向同步。",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:healthcare-reviewer",
+      "decision": "exclude",
+      "reason": "医疗 CDSS/PHI/EMR 合规审查,与 Java Spring Boot WMS 后端画像无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:homelab-architect",
+      "decision": "exclude",
+      "reason": "家用/小型实验室网络组网设计,与 Java 后端开发画像无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:network-architect",
+      "decision": "exclude",
+      "reason": "企业级多站点网络架构设计,属网络工程师工种,与应用层 Java 开发无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:network-config-reviewer",
+      "decision": "exclude",
+      "reason": "路由器/交换机配置审查,属网络工程师工种,与应用层 Java 开发无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:network-troubleshooter",
+      "decision": "exclude",
+      "reason": "网络连通性/路由/DNS 故障诊断,属网络工程师工种,与应用层 Java 开发无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:marketing-agent",
+      "decision": "exclude",
+      "reason": "市场营销策划与文案创作,与 Java 后端开发画像无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:seo-specialist",
+      "decision": "exclude",
+      "reason": "技术 SEO 审计,WMS 为内部管理系统无需搜索引擎优化,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
+    },
+    {
+      "id": "agent:chief-of-staff",
+      "decision": "exclude",
+      "reason": "个人多渠道通信(邮件/Slack/LINE/Messenger)分类与回复,与软件开发工作无关,dependents 查询为零依赖",
+      "decidedAt": "2026-07-12"
     }
   ]
 }
